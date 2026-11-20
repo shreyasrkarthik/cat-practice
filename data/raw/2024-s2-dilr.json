@@ -1,16 +1,225 @@
 {
- "year": 2024, "slot": 2, "section": "LRDI",
+ "year": 2024,
+ "slot": 2,
+ "section": "LRDI",
  "source": "https://online.2iim.com/CAT-question-paper/CAT-2024-Question-Paper-Slot-2-DILR/",
- "skipped": "Sets 1, 3, 4 and 5 (walkway map, number grid, ratings chart, firm plots) need images",
  "sets": [
-  {"title":"Gymnastics coaches","section":"LR",
-   "passage":"<p>Eight gymnastics players numbered 1 through 8 underwent a training camp where they were coached by three coaches - Xena, Yuki, and Zara. Each coach trained at least two players. Yuki trained only even numbered players, while Zara trained only odd numbered players. After the camp, the coaches evaluated the players and gave integer ratings to the respective players trained by them on a scale of 1 to 7, with 1 being the lowest rating and 7 the highest.</p><p>The following additional information is known.</p><ol><li>Xena trained more players than Yuki.</li><li>Player-1 and Player-4 were trained by the same coach, while the coaches who trained Player-2, Player-3 and Player-5 were all different.</li><li>Player-5 and Player-7 were trained by the same coach and got the same rating. All other players got a unique rating.</li><li>The average of the ratings of all the players was 4.</li><li>Player-2 got the highest rating.</li><li>The average of the ratings of the players trained by Yuki was twice that of the players trained by Xena and two more than that of the players trained by Zara.</li><li>Player-4's rating was double of Player-8's and less than Player-5's.</li></ol>",
-   "qs":[
-    {"n":5,"type":"MCQ","q":"What best can be concluded about the number of players coached by Zara?","opts":["Exactly 3","Either 2 or 3 or 4","Exactly 2","Either 2 or 3"]},
-    {"n":6,"type":"TITA","q":"What was the rating of Player-7?"},
-    {"n":7,"type":"TITA","q":"What was the rating of Player-6?"},
-    {"n":8,"type":"TITA","q":"For how many players the ratings can be determined with certainty?"},
-    {"n":9,"type":"MCQ","q":"Who all were the players trained by Xena?","opts":["Player-1, Player-3, Player-4, Player-6","Player-1, Player-4, Player-6, Player-8","Player-1, Player-3, Player-4, Player-8","Player-1, Player-3, Player-4"]}
-   ]}
+  {
+   "title": "Gymnastics coaches",
+   "section": "LR",
+   "passage": "<p>Eight gymnastics players numbered 1 through 8 underwent a training camp where they were coached by three coaches - Xena, Yuki, and Zara. Each coach trained at least two players. Yuki trained only even numbered players, while Zara trained only odd numbered players. After the camp, the coaches evaluated the players and gave integer ratings to the respective players trained by them on a scale of 1 to 7, with 1 being the lowest rating and 7 the highest.</p><p>The following additional information is known.</p><ol><li>Xena trained more players than Yuki.</li><li>Player-1 and Player-4 were trained by the same coach, while the coaches who trained Player-2, Player-3 and Player-5 were all different.</li><li>Player-5 and Player-7 were trained by the same coach and got the same rating. All other players got a unique rating.</li><li>The average of the ratings of all the players was 4.</li><li>Player-2 got the highest rating.</li><li>The average of the ratings of the players trained by Yuki was twice that of the players trained by Xena and two more than that of the players trained by Zara.</li><li>Player-4's rating was double of Player-8's and less than Player-5's.</li></ol>",
+   "qs": [
+    {
+     "n": 5,
+     "type": "MCQ",
+     "q": "What best can be concluded about the number of players coached by Zara?",
+     "opts": [
+      "Exactly 3",
+      "Either 2 or 3 or 4",
+      "Exactly 2",
+      "Either 2 or 3"
+     ]
+    },
+    {
+     "n": 6,
+     "type": "TITA",
+     "q": "What was the rating of Player-7?"
+    },
+    {
+     "n": 7,
+     "type": "TITA",
+     "q": "What was the rating of Player-6?"
+    },
+    {
+     "n": 8,
+     "type": "TITA",
+     "q": "For how many players the ratings can be determined with certainty?"
+    },
+    {
+     "n": 9,
+     "type": "MCQ",
+     "q": "Who all were the players trained by Xena?",
+     "opts": [
+      "Player-1, Player-3, Player-4, Player-6",
+      "Player-1, Player-4, Player-6, Player-8",
+      "Player-1, Player-3, Player-4, Player-8",
+      "Player-1, Player-3, Player-4"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Walkways and lakes",
+   "section": "LR",
+   "passage": "<img src=\"figs/2024-s2-walkways.png\" alt=\"Figure from the CAT 2024 Slot 2 DILR paper\"><p>The above is a schematic diagram of walkways (indicated by all the straight-lines) and lakes (3 of them, each in the shape of rectangles – shaded in the diagram) of a gated area. Different points on the walkway are indicated by letters (A through P) with distances being OP = 150 m, ON = MN = 300 m, ML = 400 m, EL = 200 m, DE = 400 m.</p><p>The following additional information about the facilities in the area is known.<br>1. The only entry/exit point is at C.<br>2. There are many residences within the gated area; all of them are located on the path AH and ML with four of them being at A, H, M, and L.<br>3. The post office is located at P and the bank is located at B.</p>",
+   "qs": [
+    {
+     "n": 1,
+     "type": "MCQ",
+     "q": "One resident whose house is located at L, needs to visit the post office as well as the bank. What is the minimum distance (in m) he has to walk starting from his residence and returning to his residence after visiting both the post office and the bank?",
+     "opts": [
+      "3200",
+      "2700",
+      "3000",
+      "3400"
+     ]
+    },
+    {
+     "n": 2,
+     "type": "MCQ",
+     "q": "One person enters the gated area and decides to walk as much as possible before leaving the area without walking along any path more than once and always walking next to one of the lakes. Note that he may cross a point multiple times. How much distance (in m) will he walk within the gated area?",
+     "opts": [
+      "3800",
+      "2800",
+      "3000",
+      "3200"
+     ]
+    },
+    {
+     "n": 3,
+     "type": "TITA",
+     "q": "One resident takes a walk within the gated area starting from A and returning to A without going through any point (other than A) more than once. What is the maximum distance (in m) she can walk in this way?"
+    },
+    {
+     "n": 4,
+     "type": "TITA",
+     "q": "Visitors coming for morning walks are allowed to enter as long as they do not pass by any of the residences and do not cross any point (except C) more than once. What is the maximum distance (in m) that such a visitor can walk within the gated area?"
+    }
+   ]
+  },
+  {
+   "title": "Number grid",
+   "section": "LR",
+   "passage": "<p>The numbers 1, 2, 3, 4, 5, 6, 7, 8, 9, and 10 are placed in ten slots of the following grid based on the conditions below.</p><img src=\"figs/2024-s2-grid.png\" alt=\"Figure from the CAT 2024 Slot 2 DILR paper\"><p>1. Numbers in any row appear in an increasing order from left to right.<br>2. Numbers in any column appear in a decreasing order from top to bottom.<br>3. 1 is placed either in the same row or in the same column as 10.<br>4. Neither 2 nor 3 is placed in the same row or in the same column as 10.<br>5. Neither 7 nor 8 is placed in the same row or in the same column as 9.<br>6. 4 and 6 are placed in the same row.</p>",
+   "qs": [
+    {
+     "n": 10,
+     "type": "TITA",
+     "q": "What is the row number which has the least sum of numbers placed in that row?"
+    },
+    {
+     "n": 11,
+     "type": "MCQ",
+     "q": "Which of the following statements MUST be true?<br>I. 10 is placed in a slot in Row 1.<br>II. 1 is placed in a slot in Row 4.",
+     "opts": [
+      "Both I and II",
+      "Only I",
+      "Only II",
+      "Neither I nor II"
+     ]
+    },
+    {
+     "n": 12,
+     "type": "MCQ",
+     "q": "Which of the following statements MUST be true?<br>I. 2 is placed in a slot in Column 2.<br>II. 3 is placed in a slot in Column 3.",
+     "opts": [
+      "Both I and II",
+      "Neither I nor II",
+      "Only II",
+      "Only I"
+     ]
+    },
+    {
+     "n": 13,
+     "type": "TITA",
+     "q": "For how many slots in the grid, placement of numbers CANNOT be determined with certainty?"
+    },
+    {
+     "n": 14,
+     "type": "TITA",
+     "q": "What is the sum of the numbers placed in Column 4?"
+    }
+   ]
+  },
+  {
+   "title": "Daily product ratings",
+   "section": "DI",
+   "passage": "<p>An online e-commerce firm receives daily integer product ratings from 1 through 5 given by buyers. The daily average is the average of the ratings given on that day. The cumulative average is the average of all ratings given on or before that day.</p><p>The rating system began on Day 1, and the cumulative averages were 3 and 3.1 at the end of Day 1 and Day 2, respectively. The distribution of ratings on Day 2 is given in the figure below.</p><img src=\"figs/2024-s2-day2.png\" alt=\"Figure from the CAT 2024 Slot 2 DILR paper\"><p>The following information is known about ratings on Day 3.<br>1. 100 buyers gave product ratings on Day 3.<br>2. The modes of the product ratings were 4 and 5.<br>3. The numbers of buyers giving each product rating are non-zero multiples of 10.<br>4. The same number of buyers gave product ratings of 1 and 2, and that number is half the number of buyers who gave a rating of 3.</p>",
+   "qs": [
+    {
+     "n": 15,
+     "type": "TITA",
+     "q": "How many buyers gave ratings on Day 1?"
+    },
+    {
+     "n": 16,
+     "type": "MCQ",
+     "q": "What is the daily average rating of Day 3?",
+     "opts": [
+      "3.5",
+      "3.2",
+      "3.0",
+      "3.6"
+     ]
+    },
+    {
+     "n": 17,
+     "type": "TITA",
+     "q": "What is the median of all ratings given on Day 3?"
+    },
+    {
+     "n": 18,
+     "type": "MCQ",
+     "q": "Which of the following is true about the cumulative average ratings of Day 2 and Day 3?",
+     "opts": [
+      "The cumulative average of Day 3 increased by less than 5% from Day 2.",
+      "The cumulative average of Day 3 increased by more than 8% from Day 2.",
+      "The cumulative average of Day 3 increased by a percentage between 5% and 8% from Day 2.",
+      "The cumulative average of Day 3 decreased from Day 2."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Firm profits and research spend",
+   "section": "DI",
+   "passage": "<p>The two plots below give the following information about six firms A, B, C, D, E, and F for 2019 and 2023.<br>PAT: The firm's profits after taxes in Rs. crores,<br>ES: The firm's employee strength, that is the number of employees in the firm, and<br>PRD: The percentage of the firm's PAT that they spend on Research and Development (R&amp;D).</p><p>In the plots, the horizontal and vertical coordinates of point representing each firm gives their ES and PAT values respectively. The PRD values of each firm are proportional to the areas around the points representing each firm. The areas are comparable between the two plots, i.e., equal areas in the two plots represent the same PRD values for the two years.</p><img src=\"figs/2024-s2-firms.png\" alt=\"Figure from the CAT 2024 Slot 2 DILR paper\">",
+   "qs": [
+    {
+     "n": 19,
+     "type": "MCQ",
+     "q": "Assume that the annual rate of growth in PAT over the previous year (ARG) remained constant over the years for each of the six firms. Which among the firms A, B, C, and E had the highest ARG?",
+     "opts": [
+      "Firm C",
+      "Firm B",
+      "Firm A",
+      "Firm E"
+     ]
+    },
+    {
+     "n": 20,
+     "type": "MCQ",
+     "q": "The ratio of the amount of money spent by Firm C on R&amp;D in 2019 to that in 2023 is closest to",
+     "opts": [
+      "5 : 9",
+      "9 : 5",
+      "9 : 4",
+      "5 : 6"
+     ]
+    },
+    {
+     "n": 21,
+     "type": "MCQ",
+     "q": "Which among the firms A, C, E, and F had the maximum PAT per employee in 2023?",
+     "opts": [
+      "Firm C",
+      "Firm A",
+      "Firm E",
+      "Firm F"
+     ]
+    },
+    {
+     "n": 22,
+     "type": "MCQ",
+     "q": "Which among the firms C, D, E, and F had the least amount of R&amp;D spending per employee in 2023?",
+     "opts": [
+      "Firm D",
+      "Firm E",
+      "Firm C",
+      "Firm F"
+     ]
+    }
+   ]
+  }
  ]
 }

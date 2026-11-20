@@ -1,31 +1,368 @@
 {
- "year": 2019, "slot": 1, "section": "LRDI",
+ "year": 2019,
+ "slot": 1,
+ "section": "LRDI",
  "source": "https://online.2iim.com/CAT-question-paper/CAT-2019-Question-Paper-Slot-1-DILR/",
- "skipped": "Sets 2, 3, 4, 6 and 7 (street map, crime charts, radar chart, archery table, letter-coding table) need images",
  "sets": [
-  {"title":"Game show boxes","section":"LR",
-   "passage":"<p>A new game show on TV has 100 boxes numbered 1, 2, ....., 100 in a row, each containing a mystery prize. The prizes are items of different types, a, b, c, ....., in decreasing order of value. The most expensive item is of type a, a diamond ring, and there is exactly one of these. You are told that the number of items at least doubles as you move to the next type. For example, there would be at least twice as many items of type b as of type a, at least twice as many items of type c as of type b and so on. There is no particular order in which the prizes are placed in the boxes.</p>",
-   "qs":[
-    {"n":1,"type":"TITA","q":"What is the minimum possible number of different types of prizes?"},
-    {"n":2,"type":"TITA","q":"What is the maximum possible number of different types of prizes?"},
-    {"n":3,"type":"MCQ","q":"Which of the following is not possible?","opts":["There are exactly 30 items of type b.","There are exactly 75 items of type e.","There are exactly 60 items of type d.","There are exactly 45 items of type c."]},
-    {"n":4,"type":"MCQ","q":"You ask for the type of item in box 45. Instead of being given a direct answer, you are told that there are 31 items of the same type as box 45 in boxes 1 to 44 and 43 items of the same type as box 45 in boxes 46 to 100. What is the maximum possible number of different types of items?","opts":["5","6","3","4"]}
-   ]},
-  {"title":"Supermarket shelves","section":"LR",
-   "passage":"<p>A supermarket has to place 12 items (coded A to L) in shelves numbered 1 to 16. Five of these items are types of biscuits, three are types of candies and the rest are types of savouries. Only one item can be kept in a shelf. Items are to be placed such that all items of same type are clustered together with no empty shelf between items of the same type and at least one empty shelf between two different types of items. At most two empty shelves can have consecutive numbers.</p><p>The following additional facts are known.</p><ol><li>A and B are to be placed in consecutively numbered shelves in increasing order.</li><li>I and J are to be placed in consecutively numbered shelves both higher numbered than the shelves in which A and B are kept.</li><li>D, E and F are savouries and are to be placed in consecutively numbered shelves in increasing order after all the biscuits and candies.</li><li>K is to be placed in shelf number 16.</li><li>L and J are items of the same type, while H is an item of a different type.</li><li>C is a candy and is to be placed in a shelf preceded by two empty shelves.</li><li>L is to be placed in a shelf preceded by exactly one empty shelf.</li></ol>",
-   "qs":[
-    {"n":17,"type":"MCQ","q":"In how many different ways can the items be arranged on the shelves?","opts":["2","1","4","8"]},
-    {"n":18,"type":"MCQ","q":"Which of the following items is not a type of biscuit?","opts":["B","A","L","G"]},
-    {"n":19,"type":"MCQ","q":"Which of the following can represent the numbers of the empty shelves in a possible arrangement?","opts":["1,7,11,12","1,5,6,12","1,2,6,12","1,2,8,12"]},
-    {"n":20,"type":"MCQ","q":"Which of the following statements is necessarily true?","opts":["There are two empty shelves between the biscuits and the candies.","All candies are kept before biscuits.","All biscuits are kept before candies.","There are at least four shelves between items B and C."]}
-   ]},
-  {"title":"Dance competition","section":"LR",
-   "passage":"<p>Princess, Queen, Rani and Samragni were the four finalists in a dance competition. Ashman, Badal, Gagan and Dyu were the four music composers who individually assigned items to the dancers. Each dancer had to individually perform in two dance items assigned by the different composers. The first items performed by the four dancers were all assigned by different music composers. No dancer performed her second item before the performance of the first item by any other dancers. The dancers performed their second items in the same sequence of their performance of their first items.</p><p>The following additional facts are known.</p><ol type=\"i\"><li>No composer who assigned item to Princess, assigned any item to Queen.</li><li>No composer who assigned item to Rani, assigned any item to Samragni.</li><li>The first performance was by Princess; this item was assigned by Badal.</li><li>The last performance was by Rani; this item was assigned by Gagan.</li><li>The items assigned by Ashman were performed consecutively. The number of performances between items assigned by each of the remaining composers was the same.</li></ol>",
-   "qs":[
-    {"n":29,"type":"MCQ","q":"Which of the following is true?","opts":["The third performance was composed by Ashman.","The second performance was composed by Dyu.","The second performance was composed by Gagan.","The third performance was composed by Dyu."]},
-    {"n":30,"type":"MCQ","q":"Which of the following is FALSE?","opts":["Queen did not perform in any item composed by Gagan.","Rani did not perform in any item composed by Badal.","Samragni did not perform in any item composed by Ashman.","Princess did not perform in any item composed by Dyu."]},
-    {"n":31,"type":"MCQ","q":"The sixth performance was composed by:","opts":["Gagan","Ashman","Badal","Dyu"]},
-    {"n":32,"type":"MCQ","q":"Which pair of performances were composed by the same composer?","opts":["The third and the seventh","The first and the seventh","The first and the sixth","The second and the sixth"]}
-   ]}
+  {
+   "title": "Game show boxes",
+   "section": "LR",
+   "passage": "<p>A new game show on TV has 100 boxes numbered 1, 2, ....., 100 in a row, each containing a mystery prize. The prizes are items of different types, a, b, c, ....., in decreasing order of value. The most expensive item is of type a, a diamond ring, and there is exactly one of these. You are told that the number of items at least doubles as you move to the next type. For example, there would be at least twice as many items of type b as of type a, at least twice as many items of type c as of type b and so on. There is no particular order in which the prizes are placed in the boxes.</p>",
+   "qs": [
+    {
+     "n": 1,
+     "type": "TITA",
+     "q": "What is the minimum possible number of different types of prizes?"
+    },
+    {
+     "n": 2,
+     "type": "TITA",
+     "q": "What is the maximum possible number of different types of prizes?"
+    },
+    {
+     "n": 3,
+     "type": "MCQ",
+     "q": "Which of the following is not possible?",
+     "opts": [
+      "There are exactly 30 items of type b.",
+      "There are exactly 75 items of type e.",
+      "There are exactly 60 items of type d.",
+      "There are exactly 45 items of type c."
+     ]
+    },
+    {
+     "n": 4,
+     "type": "MCQ",
+     "q": "You ask for the type of item in box 45. Instead of being given a direct answer, you are told that there are 31 items of the same type as box 45 in boxes 1 to 44 and 43 items of the same type as box 45 in boxes 46 to 100. What is the maximum possible number of different types of items?",
+     "opts": [
+      "5",
+      "6",
+      "3",
+      "4"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Supermarket shelves",
+   "section": "LR",
+   "passage": "<p>A supermarket has to place 12 items (coded A to L) in shelves numbered 1 to 16. Five of these items are types of biscuits, three are types of candies and the rest are types of savouries. Only one item can be kept in a shelf. Items are to be placed such that all items of same type are clustered together with no empty shelf between items of the same type and at least one empty shelf between two different types of items. At most two empty shelves can have consecutive numbers.</p><p>The following additional facts are known.</p><ol><li>A and B are to be placed in consecutively numbered shelves in increasing order.</li><li>I and J are to be placed in consecutively numbered shelves both higher numbered than the shelves in which A and B are kept.</li><li>D, E and F are savouries and are to be placed in consecutively numbered shelves in increasing order after all the biscuits and candies.</li><li>K is to be placed in shelf number 16.</li><li>L and J are items of the same type, while H is an item of a different type.</li><li>C is a candy and is to be placed in a shelf preceded by two empty shelves.</li><li>L is to be placed in a shelf preceded by exactly one empty shelf.</li></ol>",
+   "qs": [
+    {
+     "n": 17,
+     "type": "MCQ",
+     "q": "In how many different ways can the items be arranged on the shelves?",
+     "opts": [
+      "2",
+      "1",
+      "4",
+      "8"
+     ]
+    },
+    {
+     "n": 18,
+     "type": "MCQ",
+     "q": "Which of the following items is not a type of biscuit?",
+     "opts": [
+      "B",
+      "A",
+      "L",
+      "G"
+     ]
+    },
+    {
+     "n": 19,
+     "type": "MCQ",
+     "q": "Which of the following can represent the numbers of the empty shelves in a possible arrangement?",
+     "opts": [
+      "1,7,11,12",
+      "1,5,6,12",
+      "1,2,6,12",
+      "1,2,8,12"
+     ]
+    },
+    {
+     "n": 20,
+     "type": "MCQ",
+     "q": "Which of the following statements is necessarily true?",
+     "opts": [
+      "There are two empty shelves between the biscuits and the candies.",
+      "All candies are kept before biscuits.",
+      "All biscuits are kept before candies.",
+      "There are at least four shelves between items B and C."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Dance competition",
+   "section": "LR",
+   "passage": "<p>Princess, Queen, Rani and Samragni were the four finalists in a dance competition. Ashman, Badal, Gagan and Dyu were the four music composers who individually assigned items to the dancers. Each dancer had to individually perform in two dance items assigned by the different composers. The first items performed by the four dancers were all assigned by different music composers. No dancer performed her second item before the performance of the first item by any other dancers. The dancers performed their second items in the same sequence of their performance of their first items.</p><p>The following additional facts are known.</p><ol type=\"i\"><li>No composer who assigned item to Princess, assigned any item to Queen.</li><li>No composer who assigned item to Rani, assigned any item to Samragni.</li><li>The first performance was by Princess; this item was assigned by Badal.</li><li>The last performance was by Rani; this item was assigned by Gagan.</li><li>The items assigned by Ashman were performed consecutively. The number of performances between items assigned by each of the remaining composers was the same.</li></ol>",
+   "qs": [
+    {
+     "n": 29,
+     "type": "MCQ",
+     "q": "Which of the following is true?",
+     "opts": [
+      "The third performance was composed by Ashman.",
+      "The second performance was composed by Dyu.",
+      "The second performance was composed by Gagan.",
+      "The third performance was composed by Dyu."
+     ]
+    },
+    {
+     "n": 30,
+     "type": "MCQ",
+     "q": "Which of the following is FALSE?",
+     "opts": [
+      "Queen did not perform in any item composed by Gagan.",
+      "Rani did not perform in any item composed by Badal.",
+      "Samragni did not perform in any item composed by Ashman.",
+      "Princess did not perform in any item composed by Dyu."
+     ]
+    },
+    {
+     "n": 31,
+     "type": "MCQ",
+     "q": "The sixth performance was composed by:",
+     "opts": [
+      "Gagan",
+      "Ashman",
+      "Badal",
+      "Dyu"
+     ]
+    },
+    {
+     "n": 32,
+     "type": "MCQ",
+     "q": "Which pair of performances were composed by the same composer?",
+     "opts": [
+      "The third and the seventh",
+      "The first and the seventh",
+      "The first and the sixth",
+      "The second and the sixth"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Street intersection",
+   "section": "LR",
+   "passage": "<p>The figure below shows the street map for a certain region with the street intersections marked from a through l. A person standing at an intersection can see along straight lines to other intersections that are in her line of sight and all other people standing at these intersections. For example, a person standing at intersection g can see all people standing at intersections b, c, e, f, h, and k. In particular, the person standing at intersection g can see the person standing at intersection e irrespective of whether there is a person standing at intersection f.</p><img src=\"figs/2019-s1-street-1.png\" alt=\"Figure from the CAT 2019 Slot 1 DILR paper\"><p>Six people U, V, W, X, Y, and Z, are standing at different intersections. No two people are standing at the same intersection.</p><p>The following additional facts are known.</p><p>1. X, U, and Z are standing at the three corners of a triangle formed by three street segments.<br>2. X can see only U and Z.<br>3. Y can see only U and W.<br>4. U sees V standing in the next intersection behind Z.<br>5. W cannot see V or Z.<br>6. No one among the six is standing at intersection d.</p>",
+   "qs": [
+    {
+     "n": 5,
+     "type": "MCQ",
+     "q": "Who is standing at intersection a?",
+     "opts": [
+      "W",
+      "Y",
+      "No one",
+      "V"
+     ]
+    },
+    {
+     "n": 6,
+     "type": "MCQ",
+     "q": "Who can V see?",
+     "opts": [
+      "U, W and Z only",
+      "U and Z only",
+      "Z only",
+      "U only"
+     ]
+    },
+    {
+     "n": 7,
+     "type": "MCQ",
+     "q": "What is the minimum number of street segments that X must cross to reach Y?",
+     "opts": [
+      "3",
+      "2",
+      "1",
+      "4"
+     ]
+    },
+    {
+     "n": 8,
+     "type": "MCQ",
+     "q": "Should a new person stand at intersection d, who among the six would she see?",
+     "opts": [
+      "V and X only",
+      "U and Z only",
+      "U and W only",
+      "W and X only"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Crimes by foreigners",
+   "section": "DI",
+   "passage": "<p>The Ministry of Home Affairs is analysing crimes committed by foreigners in different states and union territories (UT) of India. All cases refer to the ones registered against foreigners in 2016. The number of cases – classified into three categories: IPC crimes, SLL crimes and other crimes – for nine states/UTs are shown in the figure below. These nine belong to the top ten states/UTs in terms of the total number of cases registered. The remaining state (among top ten) is West Bengal, where all the 520 cases registered were SLL crimes.</p><img src=\"figs/2019-s1-crimes-1.png\" alt=\"Figure from the CAT 2019 Slot 1 DILR paper\"><p>The table below shows the ranks of the ten states/UTs mentioned above among ALL states/UTs of India in terms of the number of cases registered in each of the three category of crimes. A state/UT is given rank r for a category of crimes if there are (r‐1) states/UTs having a larger number of cases registered in that category of crimes. For example, if two states have the same number of cases in a category, and exactly three other states/UTs have larger numbers of cases registered in the same category, then both the states are given rank 4 in that category. Missing ranks in the table are denoted by <sup>*</sup>.</p><img src=\"figs/2019-s1-crimes-2.png\" alt=\"Figure from the CAT 2019 Slot 1 DILR paper\">",
+   "qs": [
+    {
+     "n": 9,
+     "type": "TITA",
+     "q": "What is the rank of Kerala in the ‘IPC crimes’ category?"
+    },
+    {
+     "n": 10,
+     "type": "MCQ",
+     "q": "In the two states where the highest total number of cases are registered, the ratio of the total number of cases in IPC crimes to the total number in SLL crimes is closest to",
+     "opts": [
+      "19 : 20",
+      "11 : 10",
+      "1 : 9",
+      "3 : 2"
+     ]
+    },
+    {
+     "n": 11,
+     "type": "MCQ",
+     "q": "Which of the following is DEFINITELY true about the ranks of states/UT in the ‘other crimes’ category?<br>i) Tamil Nadu: 2<br>ii) Puducherry: 3",
+     "opts": [
+      "only ii)",
+      "both i) and ii)",
+      "only i)",
+      "neither i), nor ii)"
+     ]
+    },
+    {
+     "n": 12,
+     "type": "TITA",
+     "q": "What is the sum of the ranks of Delhi in the three categories of crimes?"
+    }
+   ]
+  },
+  {
+   "title": "Vendor radar chart",
+   "section": "DI",
+   "passage": "<p>Five vendors are being considered for a service. The evaluation committee evaluated each vendor on six aspects – Cost, Customer Service, Features, Quality, Reach, and Reliability. Each of these evaluations are on a scale of 0 (worst) to 100 (perfect). The evaluation scores on these aspects are shown in the radar chart. For example, Vendor 1 obtains a score of 52 on Reliability, Vendor 2 obtains a score of 45 on Features and Vendor 3 obtains a score of 90 on Cost.</p><img src=\"figs/2019-s1-vendor-1.png\" alt=\"Figure from the CAT 2019 Slot 1 DILR paper\">",
+   "qs": [
+    {
+     "n": 13,
+     "type": "MCQ",
+     "q": "On which aspect is the median score of the five vendors the least?",
+     "opts": [
+      "Cost",
+      "Quality",
+      "Reliability",
+      "Customer Service"
+     ]
+    },
+    {
+     "n": 14,
+     "type": "MCQ",
+     "q": "A vendor's final score is the average of their scores on all six aspects. Which vendor has the highest final score?",
+     "opts": [
+      "Vendor 1",
+      "Vendor 3",
+      "Vendor 4",
+      "Vendor 2"
+     ]
+    },
+    {
+     "n": 15,
+     "type": "MCQ",
+     "q": "List of all the vendors who are among the top two scorers on the maximum number of aspects is:",
+     "opts": [
+      "Vendor 1 and Vendor 2",
+      "Vendor 2, Vendor 3 and Vendor 4",
+      "Vendor 2 and Vendor 5",
+      "Vendor 1 and Vendor 5"
+     ]
+    },
+    {
+     "n": 16,
+     "type": "MCQ",
+     "q": "List of all the vendors who are among the top three vendors on all six aspects is:",
+     "opts": [
+      "None of the Vendors",
+      "Vendor 1",
+      "Vendor 1 and Vendor 3",
+      "Vendor 3"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Archery tournament",
+   "section": "LR",
+   "passage": "<p>Six players – Tanzi, Umeza, Wangdu, Xyla, Yonita and Zeneca competed in an archery tournament. The tournament had three compulsory rounds, Rounds 1 to 3. In each round every player shot an arrow at a target. Hitting the centre of the target (called bull’s eye) fetched the highest score of 5. The only other possible scores that a player could achieve were 4, 3, 2 and 1. Every bull’s eye score in the first three rounds gave a player one additional chance to shoot in the bonus rounds, Rounds 4 to 6. The possible scores in Rounds 4 to 6 were identical to the first three.</p><p>A player’s total score in the tournament was the sum of his/her scores in all rounds played by him/her. The table below presents partial information on points scored by the players after completion of the tournament. In the table, NP means that the player did not participate in that round, while a hyphen means that the player participated in that round and the score information is missing.</p><img src=\"figs/2019-s1-archery-1.png\" alt=\"Figure from the CAT 2019 Slot 1 DILR paper\"><p>The following facts are also known.</p><p>1. Tanzi, Umeza and Yonita had the same total score.<br>2. Total scores for all players, except one, were in multiples of three.<br>3. The highest total score was one more than double of the lowest total score.<br>4. The number of players hitting bull’s eye in Round 2 was double of that in Round 3.<br>5. Tanzi and Zeneca had the same score in Round 1 but different scores in Round 3.</p>",
+   "qs": [
+    {
+     "n": 21,
+     "type": "MCQ",
+     "q": "What was the highest total score?",
+     "opts": [
+      "23",
+      "24",
+      "25",
+      "21"
+     ]
+    },
+    {
+     "n": 22,
+     "type": "MCQ",
+     "q": "What was Zeneca's total score?",
+     "opts": [
+      "21",
+      "22",
+      "23",
+      "24"
+     ]
+    },
+    {
+     "n": 23,
+     "type": "MCQ",
+     "q": "Which of the following statements is true?",
+     "opts": [
+      "Zeneca’s score was 23.",
+      "Zeneca was the highest scorer",
+      "Xyla was the highest scorer.",
+      "Xyla’s score was 23"
+     ]
+    },
+    {
+     "n": 24,
+     "type": "MCQ",
+     "q": "What was Tanzi's score in Round 3?",
+     "opts": [
+      "1",
+      "5",
+      "3",
+      "4"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Letter coding addition",
+   "section": "LR",
+   "passage": "<p>The following table represents addition of two six-digit numbers given in the first and the second rows, while the sum is given in the third row. In the representation, each of the digits 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 has been coded with one letter among A, B, C, D, E, F, G, H, J, K, with distinct letters representing distinct digits.</p><img src=\"figs/2019-s1-letters-1.png\" alt=\"Figure from the CAT 2019 Slot 1 DILR paper\">",
+   "qs": [
+    {
+     "n": 25,
+     "type": "TITA",
+     "q": "Which digit does the letter A represent?"
+    },
+    {
+     "n": 26,
+     "type": "TITA",
+     "q": "Which digit does the letter B represent?"
+    },
+    {
+     "n": 27,
+     "type": "TITA",
+     "q": "Which among the digits 3, 4, 6 and 7 cannot be represented by the letter D?"
+    },
+    {
+     "n": 28,
+     "type": "TITA",
+     "q": "Which among the digits 4, 6, 7 and 8 cannot be represented by the letter G?"
+    }
+   ]
+  }
  ]
 }

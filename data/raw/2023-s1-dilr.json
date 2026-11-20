@@ -1,34 +1,208 @@
 {
- "year": 2023, "slot": 1, "section": "LRDI",
+ "year": 2023,
+ "slot": 1,
+ "section": "LRDI",
  "source": "https://online.2iim.com/CAT-question-paper/CAT-2023-Question-Paper-Slot-1-DILR/",
- "skipped": "Set 4 (housing complex, Q16-20) needs a diagram image",
  "sets": [
-  {"title":"Dean election","section":"LR",
-   "passage":"<p>Faculty members in a management school can belong to one of four departments – Finance and Accounting (F&amp;A), Marketing and Strategy (M&amp;S), Operations and Quants (O&amp;Q) and Behaviour and Human Resources (B&amp;H). The numbers of faculty members in F&amp;A, M&amp;S, O&amp;Q and B&amp;H departments are 9, 7, 5 and 3 respectively.</p><p>Prof. Pakrasi, Prof. Qureshi, Prof. Ramaswamy and Prof. Samuel are four members of the school's faculty who were candidates for the post of the Dean of the school. Only one of the candidates was from O&amp;Q.</p><p>Every faculty member, including the four candidates, voted for the post. In each department, all the faculty members who were not candidates voted for the same candidate. The rules for the election are listed below.</p><ol><li>There cannot be more than two candidates from a single department.</li><li>A candidate cannot vote for himself/herself.</li><li>Faculty members cannot vote for a candidate from their own department.</li></ol><p>After the election, it was observed that Prof. Pakrasi received 3 votes, Prof. Qureshi received 14 votes, Prof. Ramaswamy received 6 votes and Prof. Samuel received 1 vote. Prof. Pakrasi voted for Prof. Ramaswamy, Prof. Qureshi for Prof. Samuel, Prof. Ramaswamy for Prof. Qureshi and Prof. Samuel for Prof. Pakrasi.</p>",
-   "qs":[
-    {"n":1,"type":"MCQ","q":"Which two candidates can belong to the same department?","opts":["Prof. Pakrasi and Prof. Samuel","Prof. Pakrasi and Prof. Qureshi","Prof. Qureshi and Prof. Ramaswamy","Prof. Ramaswamy and Prof. Samuel"]},
-    {"n":2,"type":"MCQ","q":"Which of the following can be the number of votes that Prof. Qureshi received from a single department?","opts":["8","7","9","6"]},
-    {"n":3,"type":"MCQ","q":"If Prof. Samuel belongs to B&amp;H, which of the following statements is/are true?<br>Statement A: Prof. Pakrasi belongs to M&amp;S.<br>Statement B: Prof. Ramaswamy belongs to O&amp;Q.","opts":["Both statements A and B","Only statement B","Only statement A","Neither statement A nor statement B"]},
-    {"n":4,"type":"MCQ","q":"What best can be concluded about the candidate from O&amp;Q?","opts":["It was either Prof. Pakrasi or Prof. Qureshi.","It was Prof. Samuel.","It was Prof. Ramaswamy.","It was either Prof. Ramaswamy or Prof. Samuel."]},
-    {"n":5,"type":"MCQ","q":"Which of the following statements is/are true?<br>Statement A: Non-candidates from M&amp;S voted for Prof. Qureshi.<br>Statement B: Non-candidates from F&amp;A voted for Prof. Qureshi.","opts":["Only statement B","Only statement A","Both statements A and B","Neither statement A nor statement B"]}
-   ]},
-  {"title":"Gig worker ratings","section":"DI",
-   "passage":"<p>Five restaurants, coded R1, R2, R3, R4 and R5 gave integer ratings to five gig workers – Ullas, Vasu, Waman, Xavier and Yusuf, on a scale of 1 to 5.</p><p>The means of the ratings given by R1, R2, R3, R4 and R5 were 3.4, 2.2, 3.8, 2.8 and 3.4 respectively.</p><p>The summary statistics of these ratings for the five workers is given below.</p><table><tr><th></th><th>Ullas</th><th>Vasu</th><th>Waman</th><th>Xavier</th><th>Yusuf</th></tr><tr><th>Mean rating</th><td>2.2</td><td>3.8</td><td>3.4</td><td>3.6</td><td>2.6</td></tr><tr><th>Median rating</th><td>2</td><td>4</td><td>4</td><td>4</td><td>3</td></tr><tr><th>Modal rating</th><td>2</td><td>4</td><td>5</td><td>5</td><td>1 and 4</td></tr><tr><th>Range of rating*</th><td>3</td><td>3</td><td>4</td><td>4</td><td>3</td></tr></table><p>* Range of ratings is defined as the difference between the maximum and minimum ratings awarded to a worker.</p><p>The following is partial information about ratings of 1 and 5 awarded by the restaurants to the workers.</p><p>(a) R1 awarded a rating of 5 to Waman, as did R2 to Xavier, R3 to Waman and Xavier, and R5 to Vasu.<br>(b) R1 awarded a rating of 1 to Ullas, as did R2 to Waman and Yusuf, and R3 to Yusuf.</p>",
-   "qs":[
-    {"n":6,"type":"TITA","q":"How many individual ratings cannot be determined from the above information?"},
-    {"n":7,"type":"TITA","q":"To how many workers did R2 give a rating of 4?"},
-    {"n":8,"type":"TITA","q":"What rating did R1 give to Xavier?"},
-    {"n":9,"type":"TITA","q":"What is the median of the ratings given by R3 to the five workers?"},
-    {"n":10,"type":"MCQ","q":"Which among the following restaurants gave its median rating to exactly one of the workers?","opts":["R5","R2","R3","R4"]}
-   ]},
-  {"title":"Visa processing office","section":"LR",
-   "passage":"<p>A visa processing office (VPO) accepts visa applications in four categories – US, UK, Schengen, and Others. The applications are scheduled for processing in twenty 15-minute slots starting at 9:00 am and ending at 2:00 pm. Ten applications are scheduled in each slot.</p><p>There are ten counters in the office, four dedicated to US applications, and two each for UK applications, Schengen applications and Others applications. Applicants are called in for processing sequentially on a first-come-first-served basis whenever a counter gets freed for their category. The processing time for an application is the same within each category. But it may vary across the categories. Each US and UK application requires 10 minutes of processing time. Depending on the number of applications in a category and time required to process an application for that category, it is possible that an applicant for a slot may be processed later.</p><p>On a particular day, Ira, Vijay and Nandini were scheduled for Schengen visa processing in that order. They had a 9:15 am slot but entered the VPO at 9:20 am. When they entered the office, exactly six out of the ten counters were either processing applications, or had finished processing one and ready to start processing the next.</p><p>Mahira and Osman were scheduled in the 9:30 am slot on that day for visa processing in the Others category.</p><p>The following additional information is known about that day.</p><ol><li>All slots were full.</li><li>The number of US applications was the same in all the slots. The same was true for the other three categories.</li><li>50% of the applications were US applications.</li><li>All applicants except Ira, Vijay and Nandini arrived on time.</li><li>Vijay was called to a counter at 9:25 am.</li></ol>",
-   "qs":[
-    {"n":11,"type":"TITA","q":"How many UK applications were scheduled on that day?"},
-    {"n":12,"type":"TITA","q":"What is the maximum possible value of the total time (in minutes, nearest to its integer value) required to process all applications in the Others category on that day?"},
-    {"n":13,"type":"MCQ","q":"Which of the following is the closest to the time when Nandini's application process got over?","opts":["9:35 am","9:50 am","9:37 am","9:45 am"]},
-    {"n":14,"type":"MCQ","q":"Which of the following statements is false?","opts":["The application process of Mahira was completed before Nandini's.","The application process of Osman was completed before Vijay's.","The application process of Osman was completed before 9:45 am.","The application process of Mahira started after Nandini's."]},
-    {"n":15,"type":"MCQ","q":"When did the application processing for all US applicants get over on that day?","opts":["2:25 pm","3:40 pm","2:00 pm","2:05 pm"]}
-   ]}
+  {
+   "title": "Dean election",
+   "section": "LR",
+   "passage": "<p>Faculty members in a management school can belong to one of four departments – Finance and Accounting (F&amp;A), Marketing and Strategy (M&amp;S), Operations and Quants (O&amp;Q) and Behaviour and Human Resources (B&amp;H). The numbers of faculty members in F&amp;A, M&amp;S, O&amp;Q and B&amp;H departments are 9, 7, 5 and 3 respectively.</p><p>Prof. Pakrasi, Prof. Qureshi, Prof. Ramaswamy and Prof. Samuel are four members of the school's faculty who were candidates for the post of the Dean of the school. Only one of the candidates was from O&amp;Q.</p><p>Every faculty member, including the four candidates, voted for the post. In each department, all the faculty members who were not candidates voted for the same candidate. The rules for the election are listed below.</p><ol><li>There cannot be more than two candidates from a single department.</li><li>A candidate cannot vote for himself/herself.</li><li>Faculty members cannot vote for a candidate from their own department.</li></ol><p>After the election, it was observed that Prof. Pakrasi received 3 votes, Prof. Qureshi received 14 votes, Prof. Ramaswamy received 6 votes and Prof. Samuel received 1 vote. Prof. Pakrasi voted for Prof. Ramaswamy, Prof. Qureshi for Prof. Samuel, Prof. Ramaswamy for Prof. Qureshi and Prof. Samuel for Prof. Pakrasi.</p>",
+   "qs": [
+    {
+     "n": 1,
+     "type": "MCQ",
+     "q": "Which two candidates can belong to the same department?",
+     "opts": [
+      "Prof. Pakrasi and Prof. Samuel",
+      "Prof. Pakrasi and Prof. Qureshi",
+      "Prof. Qureshi and Prof. Ramaswamy",
+      "Prof. Ramaswamy and Prof. Samuel"
+     ]
+    },
+    {
+     "n": 2,
+     "type": "MCQ",
+     "q": "Which of the following can be the number of votes that Prof. Qureshi received from a single department?",
+     "opts": [
+      "8",
+      "7",
+      "9",
+      "6"
+     ]
+    },
+    {
+     "n": 3,
+     "type": "MCQ",
+     "q": "If Prof. Samuel belongs to B&amp;H, which of the following statements is/are true?<br>Statement A: Prof. Pakrasi belongs to M&amp;S.<br>Statement B: Prof. Ramaswamy belongs to O&amp;Q.",
+     "opts": [
+      "Both statements A and B",
+      "Only statement B",
+      "Only statement A",
+      "Neither statement A nor statement B"
+     ]
+    },
+    {
+     "n": 4,
+     "type": "MCQ",
+     "q": "What best can be concluded about the candidate from O&amp;Q?",
+     "opts": [
+      "It was either Prof. Pakrasi or Prof. Qureshi.",
+      "It was Prof. Samuel.",
+      "It was Prof. Ramaswamy.",
+      "It was either Prof. Ramaswamy or Prof. Samuel."
+     ]
+    },
+    {
+     "n": 5,
+     "type": "MCQ",
+     "q": "Which of the following statements is/are true?<br>Statement A: Non-candidates from M&amp;S voted for Prof. Qureshi.<br>Statement B: Non-candidates from F&amp;A voted for Prof. Qureshi.",
+     "opts": [
+      "Only statement B",
+      "Only statement A",
+      "Both statements A and B",
+      "Neither statement A nor statement B"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Gig worker ratings",
+   "section": "DI",
+   "passage": "<p>Five restaurants, coded R1, R2, R3, R4 and R5 gave integer ratings to five gig workers – Ullas, Vasu, Waman, Xavier and Yusuf, on a scale of 1 to 5.</p><p>The means of the ratings given by R1, R2, R3, R4 and R5 were 3.4, 2.2, 3.8, 2.8 and 3.4 respectively.</p><p>The summary statistics of these ratings for the five workers is given below.</p><table><tr><th></th><th>Ullas</th><th>Vasu</th><th>Waman</th><th>Xavier</th><th>Yusuf</th></tr><tr><th>Mean rating</th><td>2.2</td><td>3.8</td><td>3.4</td><td>3.6</td><td>2.6</td></tr><tr><th>Median rating</th><td>2</td><td>4</td><td>4</td><td>4</td><td>3</td></tr><tr><th>Modal rating</th><td>2</td><td>4</td><td>5</td><td>5</td><td>1 and 4</td></tr><tr><th>Range of rating*</th><td>3</td><td>3</td><td>4</td><td>4</td><td>3</td></tr></table><p>* Range of ratings is defined as the difference between the maximum and minimum ratings awarded to a worker.</p><p>The following is partial information about ratings of 1 and 5 awarded by the restaurants to the workers.</p><p>(a) R1 awarded a rating of 5 to Waman, as did R2 to Xavier, R3 to Waman and Xavier, and R5 to Vasu.<br>(b) R1 awarded a rating of 1 to Ullas, as did R2 to Waman and Yusuf, and R3 to Yusuf.</p>",
+   "qs": [
+    {
+     "n": 6,
+     "type": "TITA",
+     "q": "How many individual ratings cannot be determined from the above information?"
+    },
+    {
+     "n": 7,
+     "type": "TITA",
+     "q": "To how many workers did R2 give a rating of 4?"
+    },
+    {
+     "n": 8,
+     "type": "TITA",
+     "q": "What rating did R1 give to Xavier?"
+    },
+    {
+     "n": 9,
+     "type": "TITA",
+     "q": "What is the median of the ratings given by R3 to the five workers?"
+    },
+    {
+     "n": 10,
+     "type": "MCQ",
+     "q": "Which among the following restaurants gave its median rating to exactly one of the workers?",
+     "opts": [
+      "R5",
+      "R2",
+      "R3",
+      "R4"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Visa processing office",
+   "section": "LR",
+   "passage": "<p>A visa processing office (VPO) accepts visa applications in four categories – US, UK, Schengen, and Others. The applications are scheduled for processing in twenty 15-minute slots starting at 9:00 am and ending at 2:00 pm. Ten applications are scheduled in each slot.</p><p>There are ten counters in the office, four dedicated to US applications, and two each for UK applications, Schengen applications and Others applications. Applicants are called in for processing sequentially on a first-come-first-served basis whenever a counter gets freed for their category. The processing time for an application is the same within each category. But it may vary across the categories. Each US and UK application requires 10 minutes of processing time. Depending on the number of applications in a category and time required to process an application for that category, it is possible that an applicant for a slot may be processed later.</p><p>On a particular day, Ira, Vijay and Nandini were scheduled for Schengen visa processing in that order. They had a 9:15 am slot but entered the VPO at 9:20 am. When they entered the office, exactly six out of the ten counters were either processing applications, or had finished processing one and ready to start processing the next.</p><p>Mahira and Osman were scheduled in the 9:30 am slot on that day for visa processing in the Others category.</p><p>The following additional information is known about that day.</p><ol><li>All slots were full.</li><li>The number of US applications was the same in all the slots. The same was true for the other three categories.</li><li>50% of the applications were US applications.</li><li>All applicants except Ira, Vijay and Nandini arrived on time.</li><li>Vijay was called to a counter at 9:25 am.</li></ol>",
+   "qs": [
+    {
+     "n": 11,
+     "type": "TITA",
+     "q": "How many UK applications were scheduled on that day?"
+    },
+    {
+     "n": 12,
+     "type": "TITA",
+     "q": "What is the maximum possible value of the total time (in minutes, nearest to its integer value) required to process all applications in the Others category on that day?"
+    },
+    {
+     "n": 13,
+     "type": "MCQ",
+     "q": "Which of the following is the closest to the time when Nandini's application process got over?",
+     "opts": [
+      "9:35 am",
+      "9:50 am",
+      "9:37 am",
+      "9:45 am"
+     ]
+    },
+    {
+     "n": 14,
+     "type": "MCQ",
+     "q": "Which of the following statements is false?",
+     "opts": [
+      "The application process of Mahira was completed before Nandini's.",
+      "The application process of Osman was completed before Vijay's.",
+      "The application process of Osman was completed before 9:45 am.",
+      "The application process of Mahira started after Nandini's."
+     ]
+    },
+    {
+     "n": 15,
+     "type": "MCQ",
+     "q": "When did the application processing for all US applicants get over on that day?",
+     "opts": [
+      "2:25 pm",
+      "3:40 pm",
+      "2:00 pm",
+      "2:05 pm"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Housing complex prices",
+   "section": "LR",
+   "passage": "<p>The schematic diagram below shows 12 rectangular houses in a housing complex. House numbers are mentioned in the rectangles representing the houses. The houses are located in six columns – Column-A through Column-F, and two rows – Row-1 and Row-2. The houses are divided into two blocks - Block XX and Block YY. The diagram also shows two roads, one passing in front of the houses in Row-2 and another between the two blocks.</p><img src=\"figs/2023-s1-housing.png\" alt=\"Housing complex diagram from the CAT 2023 Slot 1 DILR paper\"><p>Some of the houses are occupied. The remaining ones are vacant and are the only ones available for sale.</p><p>The road adjacency value of a house is the number of its sides adjacent to a road. For example, the road adjacency values of C2, F2, and B1 are 2, 1, and 0, respectively. The neighbour count of a house is the number of sides of that house adjacent to occupied houses in the same block. For example, E1 and C1 can have the maximum possible neighbour counts of 3 and 2, respectively.</p><p>The base price of a vacant house is Rs. 10 lakhs if the house does not have a parking space, and Rs. 12 lakhs if it does. The quoted price (in lakhs of Rs.) of a vacant house is calculated as (base price) + 5 × (road adjacency value) + 3 × (neighbour count).</p><p>The following information is also known.<br>1. The maximum quoted price of a house in Block XX is Rs. 24 lakhs. The minimum quoted price of a house in block YY is Rs. 15 lakhs, and one such house is in Column-E.<br>2. Row-1 has two occupied houses, one in each block.<br>3. Both houses in Column-E are vacant. Each of Column-D and Column-F has at least one occupied house.<br>4. There is only one house with parking space in Block YY.</p>",
+   "qs": [
+    {
+     "n": 16,
+     "type": "TITA",
+     "q": "How many houses are vacant in Block XX?"
+    },
+    {
+     "n": 17,
+     "type": "MCQ",
+     "q": "Which of the following houses are definitely occupied?<br><small>(2IIM notes: the original question had issues, and they modified it to fix them.)</small>",
+     "opts": [
+      "F2 and A2",
+      "D2 and B2",
+      "D2 and B1",
+      "A1 and D2"
+     ]
+    },
+    {
+     "n": 18,
+     "type": "MCQ",
+     "q": "Which of the following options best describes the number of vacant houses in Row-2?",
+     "opts": [
+      "Either 3 or 4",
+      "Either 2 or 3",
+      "Exactly 3",
+      "Exactly 2"
+     ]
+    },
+    {
+     "n": 19,
+     "type": "TITA",
+     "q": "What is the maximum possible quoted price (in lakhs of Rs.) for a vacant house in Column-E?"
+    },
+    {
+     "n": 20,
+     "type": "MCQ",
+     "q": "Which house in Block YY has parking space?",
+     "opts": [
+      "F2",
+      "F1",
+      "E2",
+      "E1"
+     ]
+    }
+   ]
+  }
  ]
 }

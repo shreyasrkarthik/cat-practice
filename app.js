@@ -83,7 +83,7 @@
       u.qs.forEach(function (q) {
         var s = store.q[q.id] || {};
         if (f.mode === "new" && s.done) return;
-        if (f.mode === "mistakes" && !(s.done && !s.lastCorrect)) return;
+        if (f.mode === "mistakes" && !((s.done && !s.lastCorrect) || (s.revealed && !s.done))) return;
         if (f.mode === "flagged" && !s.flag) return;
         seq.push(q.id);
       });
@@ -195,7 +195,8 @@
     } else {
       qhtml += '<div class="tita"><input id="titaIn" type="text" inputmode="decimal" autocomplete="off" placeholder="Your answer" aria-label="Your answer"></div>';
     }
-    qhtml += '<div class="actions"><button class="check" id="checkBtn" disabled>Check</button></div>';
+    qhtml += '<div class="actions"><button class="check" id="checkBtn" disabled>Check</button>' +
+      '<button class="ghost reveal" id="revealBtn">Show answer</button></div>';
     qhtml += '<div id="result"></div></div>';
 
     var body;
@@ -230,6 +231,32 @@
       if (!s.done || s.retrying) setTimeout(function () { try { inp.focus({ preventScroll: true }); } catch (e) {} }, 0);
     }
     checkBtn.onclick = doCheck;
+    document.getElementById("revealBtn").onclick = reveal;
+  }
+
+  // Show the answer without an attempt. Not counted as solved; if you never
+  // answered first, the question shows up in "My mistakes" so you come back to it.
+  function reveal() {
+    var id = seq[pos], q = qIndex[id].q, s = st(id);
+    if (!s.done) { s.revealed = true; save(); }
+    stopTimer();
+    if (q.type === "MCQ") {
+      Array.prototype.forEach.call(document.querySelectorAll(".opt"), function (b) {
+        b.disabled = true; b.classList.remove("picked");
+        if (Number(b.getAttribute("data-i")) === q.ans) b.classList.add("right");
+      });
+    } else {
+      document.getElementById("titaIn").disabled = true;
+    }
+    document.getElementById("checkBtn").style.display = "none";
+    document.getElementById("revealBtn").style.display = "none";
+    document.getElementById("result").innerHTML = '<div class="result shown">The answer is <b>' + render(ansText(q)) + "</b>. " +
+      '<a href="' + esc(q.sol) + '" target="_blank" rel="noopener">See the explanation on 2IIM</a>' +
+      '<div class="sub">' + (s.done ? "" : "Not counted as solved. ") +
+      (q.unverified ? "Answer key not double-checked. " : "") +
+      '<button class="retry" id="retryBtn">Hide and try it</button></div></div>';
+    document.getElementById("retryBtn").onclick = retry;
+    renderStats();
   }
 
   function pick(i) {
@@ -279,6 +306,7 @@
       inp.value = s.lastAnswer; inp.disabled = true;
     }
     document.getElementById("checkBtn").style.display = "none";
+    document.getElementById("revealBtn").style.display = "none";
     var html = '<div class="result ' + (ok ? "good" : "bad") + '">' +
       (ok ? "<b>Correct.</b> " : "<b>Not quite.</b> The answer is <b>" + render(ansText(q)) + "</b>. ") +
       '<a href="' + esc(q.sol) + '" target="_blank" rel="noopener">See the explanation on 2IIM</a>' +
@@ -409,4 +437,31 @@
   initFilters();
   buildSeq(store.cur);
   show();
+})();
+
+/* Tap a chart or diagram to see it full size */
+(function () {
+  var box = document.createElement("div");
+  box.className = "zoom";
+  box.hidden = true;
+  box.setAttribute("role", "dialog");
+  box.setAttribute("aria-label", "Figure, full size");
+  box.innerHTML = '<button class="zoom-close" aria-label="Close">&times;</button><div class="zoom-inner"><img alt=""></div>';
+  document.body.appendChild(box);
+  var big = box.querySelector("img");
+  function close() { box.hidden = true; big.removeAttribute("src"); document.body.classList.remove("zoomed"); }
+  document.addEventListener("click", function (e) {
+    var t = e.target;
+    if (t.tagName === "IMG" && t.closest(".passage, .qtext")) {
+      big.src = t.getAttribute("src");
+      big.alt = t.alt || "";
+      box.hidden = false;
+      document.body.classList.add("zoomed");
+    } else if (!box.hidden && (t === box || t.classList.contains("zoom-close") || t.classList.contains("zoom-inner"))) {
+      close();
+    }
+  });
+  document.addEventListener("keydown", function (e) {
+    if (!box.hidden) { e.stopPropagation(); if (e.key === "Escape") close(); }
+  }, true);
 })();

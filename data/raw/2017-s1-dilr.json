@@ -1,0 +1,400 @@
+{
+ "year": 2017,
+ "slot": 1,
+ "section": "LRDI",
+ "source": "https://online.2iim.com/CAT-question-paper/CAT-2017-Question-Paper-Slot-1-DILR/",
+ "sets": [
+  {
+   "title": "Airlines company",
+   "section": "LR",
+   "passage": "<p>A new airlines company is planning to start operations in a country. The company has identified ten different cities which they plan to connect through their network to start with. The flight duration between any pair of cities will be less than one hour. To start operations, the company has to decide on a daily schedule.</p><p>The underlying principle that they are working on is the following:</p><p>Any person staying in any of these 10 cities should be able to make a trip to any other city in the morning and should be able to return by the evening of the same day.</p>",
+   "qs": [
+    {
+     "n": 1,
+     "type": "MCQ",
+     "q": "If the underlying principle is to be satisfied in such a way that the journey between any two cities can be performed using only direct (non-stop) flights, then the minimum number of direct flights to be scheduled is:",
+     "opts": [
+      "45",
+      "90",
+      "180",
+      "135"
+     ],
+     "sol": "https://iim-cat-questions-answers.2iim.com/DILR_CAT-2017-1_Airlines_Company/Airlines_Company_1.shtml"
+    },
+    {
+     "n": 2,
+     "type": "MCQ",
+     "q": "Suppose three of the ten cities are to be developed as hubs. A hub is a city which is connected with every other city by direct flights each way, both in the morning as well as in the evening. The only direct flights which will be scheduled are originating and/or terminating in one of the hubs. Then the minimum number of direct flights that need to be scheduled so that the underlying principle of the airline to serve all the ten cities is met without visiting more than one hub during one trip is:<img src=\"figs/2017-s1-airlines.png\" alt=\"Figure from the CAT 2017 Slot 1 DILR paper\">",
+     "opts": [
+      "54",
+      "120",
+      "96",
+      "60"
+     ],
+     "sol": "https://iim-cat-questions-answers.2iim.com/DILR_CAT-2017-1_Airlines_Company/Airlines_Company_2.shtml"
+    },
+    {
+     "n": 3,
+     "type": "TITA",
+     "q": "Suppose the 10 cities are divided into 4 distinct groups G1, G2, G3, G4 having 3, 3, 2 and 2 cities respectively and that G1 consists of cities named A, B and C. Further, suppose that direct flights are allowed only between two cities satisfying one of the following:<br>1. Both cities are in G1<br>2. Between A and any city in G2<br>3. Between B and any city in G3<br>4. Between C and any city in G4<br>Then the minimum number of direct flights that satisfies the underlying principle of the airline is:",
+     "sol": "https://iim-cat-questions-answers.2iim.com/DILR_CAT-2017-1_Airlines_Company/Airlines_Company_3.shtml"
+    },
+    {
+     "n": 4,
+     "type": "TITA",
+     "q": "Suppose the 10 cities are divided into 4 distinct groups G1, G2, G3, G4 having 3, 3, 2 and 2 cities respectively and that G1 consists of cities named A, B and C. Further, suppose that direct flights are allowed only between two cities satisfying one of the following:<br>1. Both cities are in G1<br>2. Between A and any city in G2<br>3. Between B and any city in G3<br>4. Between C and any city in G4<br>However, due to operational difficulties at A, it was later decided that the only flights that would operate at A would be those to and from B. Cities in G2 would have to be assigned to G3 or to G4.<br>What would be the maximum reduction in the number of direct flights as compared to the situation before the operational difficulties arose?",
+     "sol": "https://iim-cat-questions-answers.2iim.com/DILR_CAT-2017-1_Airlines_Company/Airlines_Company_4.shtml"
+    }
+   ]
+  },
+  {
+   "title": "Cars travel route",
+   "section": "LR",
+   "passage": "<p>Four cars need to travel from Akala (A) to Bakala (B). Two routes are available, one via Mamur (M) and the other via Nanur (N). The roads from A to M, and from N to B, are both short and narrow. In each case, one car takes 6 minutes to cover the distance, and each additional car increases the travel time per car by 3 minutes because of congestion. (For example, if only two cars drive from A to M, each car takes 9 minutes.) On the road from A to N, one car takes 20 minutes, and each additional car increases the travel time per car by 1 minute. On the road from M to B, one car takes 20 minutes, and each additional car increases the travel time per car by 0.9 minute.</p><p>The police department orders each car to take a particular route in such a manner that it is not possible for any car to reduce its travel time by not following the order, while the other cars are following the order.</p>",
+   "qs": [
+    {
+     "n": 5,
+     "type": "TITA",
+     "q": "How many cars would be asked to take the route A-N-B, that is Akala-Nanur-Bakala route, by the police department?",
+     "sol": "https://iim-cat-questions-answers.2iim.com/DILR_CAT-2017-1_Cars_Travel_Route/Cars_Travel_Route_1.shtml"
+    },
+    {
+     "n": 6,
+     "type": "MCQ",
+     "q": "If all the cars follow the police order, what is the difference in travel time (in minutes) between a car which takes the route A-N-B and a car that takes the route A-M-B?",
+     "opts": [
+      "1",
+      "0.1",
+      "0.2",
+      "0.9"
+     ],
+     "sol": "https://iim-cat-questions-answers.2iim.com/DILR_CAT-2017-1_Cars_Travel_Route/Cars_Travel_Route_2.shtml"
+    },
+    {
+     "n": 7,
+     "type": "TITA",
+     "q": "A new one-way road is built from M to N. Each car now has three possible routes to travel from A to B: A-M-B, A-N-B and A-M-N-B. On the road from M to N, one car takes 7 minutes and each additional car increases the travel time per car by 1 minute. Assume that any car taking the A-M-N-B route travels the A-M portion at the same time as other cars taking the A-M-B route, and the N-B portion at the same time as other cars taking the A-N-B route.<br>How many cars would the police department order to take the A-M-N-B route so that it is not possible for any car to reduce its travel time by not following the order while the other cars follow the order? (Assume that the police department would never order all the cars to take the same route.)",
+     "sol": "https://iim-cat-questions-answers.2iim.com/DILR_CAT-2017-1_Cars_Travel_Route/Cars_Travel_Route_3.shtml"
+    },
+    {
+     "n": 8,
+     "type": "MCQ",
+     "q": "A new one-way road is built from M to N. Each car now has three possible routes to travel from A to B: A-M-B, A-N-B and A-M-N-B. On the road from M to N, one car takes 7 minutes and each additional car increases the travel time per car by 1 minute. Assume that any car taking the A-M-N-B route travels the A-M portion at the same time as other cars taking the A-M-B route, and the N-B portion at the same time as other cars taking the A-N-B route.<br>If all the cars follow the police order, what is the minimum travel time (in minutes) from A to B? (Assume that the police department would never order all the cars to take the same route.)",
+     "opts": [
+      "26",
+      "32",
+      "29.9",
+      "30"
+     ],
+     "sol": "https://iim-cat-questions-answers.2iim.com/DILR_CAT-2017-1_Cars_Travel_Route/Cars_Travel_Route_4.shtml"
+    }
+   ]
+  },
+  {
+   "title": "Common entrance test",
+   "section": "LR",
+   "passage": "<p>Applicants for the doctoral programmes of Ambi Institute of Engineering (AIE) and Bambi Institute of Engineering (BIE) have to appear for a Common Entrance Test (CET). The test has three sections: Physics (P), Chemistry (C), and Maths (M). Among those appearing for CET, those at or above the 80th percentile in at least two sections, and at or above the 90th percentile overall, are selected for Advanced Entrance Test (AET) conducted by AIE. AET is used by AIE for final selection.</p><p>For the 200 candidates who are at or above the 90th percentile overall based on CET, the following are known about their performance in CET:</p><p>1. No one is below the 80th percentile in all 3 sections.<br>2. 150 are at or above the 80th percentile in exactly two sections.<br>3. The number of candidates at or above the 80th percentile only in P is the same as the number of candidates at or above the 80th percentile only in C. The same is the number of candidates at or above the 80th percentile only in M.<br>4. Number of candidates below 80th percentile in P: Number of candidates below 80th percentile in C: Number of candidates below 80th percentile in M = 4:2:1.</p><p>BIE uses a different process for selection. If any candidate is appearing in the AET by AIE, BIE considers their AET score for final selection provided the candidate is at or above the 80th percentile in P. Any other candidate at or above the 80th percentile in P in CET, but who is not eligible for the AET, is required to appear in a separate test to be conducted by BIE for being considered for final selection. Altogether, there are 400 candidates this year who are at or above the 80th percentile in P.</p>",
+   "qs": [
+    {
+     "n": 9,
+     "type": "MCQ",
+     "q": "What best can be concluded about the number of candidates sitting for the separate test for BIE who were at or above the 90th percentile overall in CET?",
+     "opts": [
+      "3 or 10",
+      "10",
+      "5",
+      "7 or 10"
+     ],
+     "sol": "https://iim-cat-questions-answers.2iim.com/DILR_CAT-2017-1_CET/CET1_1.shtml"
+    },
+    {
+     "n": 10,
+     "type": "TITA",
+     "q": "If the number of candidates who are at or above the 90th percentile overall and also at or above the 80th percentile in all three sections in CET is actually a multiple of 5, what is the number of candidates who are at or above the 90th percentile overall and at or above the 80th percentile in both P and M in CET?",
+     "sol": "https://iim-cat-questions-answers.2iim.com/DILR_CAT-2017-1_CET/CET1_2.shtml"
+    },
+    {
+     "n": 11,
+     "type": "TITA",
+     "q": "If the number of candidates who are at or above the 90th percentile overall and also at or above the 80th percentile in all three sections in CET is actually a multiple of 5, then how many candidates were shortlisted for the AET for AIE?",
+     "sol": "https://iim-cat-questions-answers.2iim.com/DILR_CAT-2017-1_CET/CET1_3.shtml"
+    },
+    {
+     "n": 12,
+     "type": "MCQ",
+     "q": "If the number of candidates who are at or above the 90th percentile overall and also are at or above the 80th percentile in P in CET, is more than 100, how many candidates had to sit for the separate test for BIE?",
+     "opts": [
+      "299",
+      "310",
+      "321",
+      "330"
+     ],
+     "sol": "https://iim-cat-questions-answers.2iim.com/DILR_CAT-2017-1_CET/CET1_4.shtml"
+    }
+   ]
+  },
+  {
+   "title": "Fast food joint",
+   "section": "LR",
+   "passage": "<p>Healthy Bites is a fast food joint serving three items: burgers, fries and ice cream. It has two employees Anish and Bani who prepare the items ordered by the clients. Preparation time is 10 minutes for a burger and 2 minutes for an order of ice cream. An employee can prepare only one of these items at a time. The fries are prepared in an automatic fryer which can prepare up to 3 portions of fries at a time, and take 5 minutes irrespective of the number of portions. The fryer does not need an employee to constantly attend to it, and we can ignore time taken by an employee to start and stop the fryer; thus, an employee can be engaged in preparing other items while the frying is on. However, fries cannot be prepared in anticipation of future orders.</p><p>Healthy Bites wishes to serve the orders as early as possible. The individual items in any orders are served as and when ready; however, the order is considered to be completely served only when all the items of that order are served.</p><p>The table below gives the orders of three clients and the times at which they placed their orders:</p><img src=\"figs/2017-s1-fastfood.png\" alt=\"Figure from the CAT 2017 Slot 1 DILR paper\">",
+   "qs": [
+    {
+     "n": 13,
+     "type": "MCQ",
+     "q": "Assume that only one client’s order can be processed at any given point of time. So, Anish or Bani cannot start preparing a new order while previous order is being prepared.<br>At what time is the order placed by client 1 completely served?",
+     "opts": [
+      "10:17",
+      "10:10",
+      "10:15",
+      "10:20"
+     ],
+     "sol": "https://iim-cat-questions-answers.2iim.com/DILR_CAT-2017-1_Fast_Food_Joint/Fast_Food_Joint1_1.shtml"
+    },
+    {
+     "n": 14,
+     "type": "MCQ",
+     "q": "Assume that only one client’s order can be processed at any given point of time. So, Anish or Bani cannot start preparing a new order while previous order is being prepared.<br>At what time is the order placed by client 3 completely served?",
+     "opts": [
+      "10:35",
+      "10:22",
+      "10:25",
+      "10:17"
+     ],
+     "sol": "https://iim-cat-questions-answers.2iim.com/DILR_CAT-2017-1_Fast_Food_Joint/Fast_Food_Joint1_2.shtml"
+    },
+    {
+     "n": 15,
+     "type": "MCQ",
+     "q": "Suppose the employees are allowed to process multiple orders at a time, but the preference would be to finish orders of clients who placed their orders earlier.<br>At what time is the order placed by client 2 completely served?",
+     "opts": [
+      "10:10",
+      "10:12",
+      "10:15",
+      "10:17"
+     ],
+     "sol": "https://iim-cat-questions-answers.2iim.com/DILR_CAT-2017-1_Fast_Food_Joint/Fast_Food_Joint1_3.shtml"
+    },
+    {
+     "n": 16,
+     "type": "MCQ",
+     "q": "Suppose the employees are allowed to process multiple orders at a time, but the preference would be to finish orders of clients who placed their orders earlier.<br>Also assume that the fourth client came in only at 10:35. Between 10:00 and 10:30, for how many minutes is exactly one of the employees idle?",
+     "opts": [
+      "7",
+      "10",
+      "15",
+      "23"
+     ],
+     "sol": "https://iim-cat-questions-answers.2iim.com/DILR_CAT-2017-1_Fast_Food_Joint/Fast_Food_Joint1_4.shtml"
+    }
+   ]
+  },
+  {
+   "title": "Rural kids survey",
+   "section": "DI",
+   "passage": "<p>A study to look at the early learning of rural kids was carried out in a number of village spanning three states, chosen from the North East (NE), the West (W) and the South (S). 50 four-year old kids each were sampled from each of the 150 villages from NE, 250 villages from W and 200 villages from S. It was found that of the 30000 surveyed kids 55% studied in primary schools run by government (G), 37% in private schools (P) while the remaining 8% did not go to school (O).</p><p>The kids surveyed were further divided into two groups based on whether their mothers dropped out of school before completing primary education or not. The table below gives the number of kids in different type of schools for mothers who dropped out of school before completing primary education:</p><img src=\"figs/2017-s1-rural.png\" alt=\"Figure from the CAT 2017 Slot 1 DILR paper\"><p>It is also known that:</p><p>1. In S, 60% of the surveyed kids were in G. Moreover, in S, all surveyed kids whose mothers had completed primary education were in school.<br>2. In NE, among the O kids, 50% had mothers who had dropped out before completing primary education.<br>3. The number of kids in G in NE was the same as the number of kids in G in W.</p>",
+   "qs": [
+    {
+     "n": 17,
+     "type": "MCQ",
+     "q": "What percentage of kids from S were studying in P?",
+     "opts": [
+      "37%",
+      "6%",
+      "79%",
+      "56%"
+     ],
+     "sol": "https://iim-cat-questions-answers.2iim.com/DILR_CAT-2017-1_Rural_Kids_Survey/Rural_Kids_Survey1_1.shtml"
+    },
+    {
+     "n": 18,
+     "type": "MCQ",
+     "q": "Among the kids in W whose mothers had completed primary education, how many were not in school?",
+     "opts": [
+      "300",
+      "1200",
+      "1050",
+      "1500"
+     ],
+     "sol": "https://iim-cat-questions-answers.2iim.com/DILR_CAT-2017-1_Rural_Kids_Survey/Rural_Kids_Survey1_2.shtml"
+    },
+    {
+     "n": 19,
+     "type": "MCQ",
+     "q": "In a follow up survey of the same kids two years later, it was found that all the kids were now in school. Of the kids who were not in school earlier, in one region, 25% were in G now, whereas the rest were enrolled in P; in the second region, all such kids were in G now; while in the third region, 50% of such kids had now joined G while the rest had joined P. As a result, in all three regions put together, 50% of the kids who were earlier out of school had joined G. It was also seen that no surveyed kid had changed schools.<br>What number of the surveyed kids now were in G in W?",
+     "opts": [
+      "6000",
+      "5250",
+      "6750",
+      "6300"
+     ],
+     "sol": "https://iim-cat-questions-answers.2iim.com/DILR_CAT-2017-1_Rural_Kids_Survey/Rural_Kids_Survey1_3.shtml"
+    },
+    {
+     "n": 20,
+     "type": "MCQ",
+     "q": "In a follow up survey of the same kids two years later, it was found that all the kids were now in school. Of the kids who were not in school earlier, in one region, 25% were in G now, whereas the rest were enrolled in P; in the second region, all such kids were in G now; while in the third region, 50% of such kids had now joined G while the rest had joined P. As a result, in all three regions put together, 50% of the kids who were earlier out of school had joined G. It was also seen that no surveyed kid had changed schools.<br>What percentage of the surveyed kids in S, whose mothers had dropped out before completing primary education, were in G now?",
+     "opts": [
+      "94.7%",
+      "89.5%",
+      "93.4%",
+      "Cannot be determined"
+     ],
+     "sol": "https://iim-cat-questions-answers.2iim.com/DILR_CAT-2017-1_Rural_Kids_Survey/Rural_Kids_Survey1_4.shtml"
+    }
+   ]
+  },
+  {
+   "title": "Simple happiness index",
+   "section": "DI",
+   "passage": "<p>Simple Happiness index (SHI) of a country is computed on the basis of three parameters: social support (S), freedom to life choices (F) and corruption perception (C). Each of these three parameters is measured on a scale of 0 to 8 (integers only). A country is then categorized based on the total score obtained by summing the scores of ail the three parameters, as shown in the following table:</p><img src=\"figs/2017-s1-shi-1.png\" alt=\"Figure from the CAT 2017 Slot 1 DILR paper\"><p>Following diagram depicts the frequency distribution of the scores in S, F and C of 10 countries - Amda, Benga, Calla, Delma, Eppa, Varsa, Wanna, Xanda, Yanga and Zooma:</p><img src=\"figs/2017-s1-shi-2.png\" alt=\"Figure from the CAT 2017 Slot 1 DILR paper\"><p>Further, the following are known:</p><p>1. Amda and Calla jointly have the lowest total score, 7, with identical scores in all the three parameters.<br>2. Zooma has a total score of 17.<br>3. All the 3 countries, which categorised as happy, have the highest score in exactly one parameter.</p>",
+   "qs": [
+    {
+     "n": 21,
+     "type": "TITA",
+     "q": "What is Amda's score in F?",
+     "sol": "https://iim-cat-questions-answers.2iim.com/DILR_CAT-2017-1_Simple_Happiness_Index/Simple_Happiness_Index1_1.shtml"
+    },
+    {
+     "n": 22,
+     "type": "TITA",
+     "q": "What is Zooma's score in S?",
+     "sol": "https://iim-cat-questions-answers.2iim.com/DILR_CAT-2017-1_Simple_Happiness_Index/Simple_Happiness_Index1_2.shtml"
+    },
+    {
+     "n": 23,
+     "type": "MCQ",
+     "q": "Benga and Delma, two countries categorized as happy, are tied with the same total score. What is the maximum score they can have?",
+     "opts": [
+      "14",
+      "15",
+      "16",
+      "17"
+     ],
+     "sol": "https://iim-cat-questions-answers.2iim.com/DILR_CAT-2017-1_Simple_Happiness_Index/Simple_Happiness_Index1_3.shtml"
+    },
+    {
+     "n": 24,
+     "type": "MCQ",
+     "q": "If Benga scores 16 and Delma scores 15, then what is the maximum number of countries with a score of 13?",
+     "opts": [
+      "0",
+      "1",
+      "2",
+      "3"
+     ],
+     "sol": "https://iim-cat-questions-answers.2iim.com/DILR_CAT-2017-1_Simple_Happiness_Index/Simple_Happiness_Index1_4.shtml"
+    }
+   ]
+  },
+  {
+   "title": "Square layout",
+   "section": "LR",
+   "passage": "<p>In a square layout of size 5m × 5m, 25 equal sized square platforms of different heights are built. The heights (in metres) of individual platforms are as shown below:</p><img src=\"figs/2017-s1-square.png\" alt=\"Figure from the CAT 2017 Slot 1 DILR paper\"><p>Individuals (all of same height) are seated on these platforms. We say an individual A can reach an individual B if all the three following conditions are met:</p><p>i.) A and B are In the same row or column<br>ii.) A is at a lower height than B<br>iii.) If there is/are any individual(s) between A and B, such individual(s) must be at a height lower than that of A.</p><p>Thus in the table given above, consider the Individual seated at height 8 on 3rd row and 2nd column. He can be reached by four individuals. He can be reached by the individual on his left at height 7, by the two individuals on his right at heights of 4 and 6 and by the individual above at height 5. Rows in the layout are numbered from top to bottom and columns are numbered from left to right.</p>",
+   "qs": [
+    {
+     "n": 25,
+     "type": "MCQ",
+     "q": "How many individuals in this layout can be reached by just one individual?",
+     "opts": [
+      "3",
+      "5",
+      "7",
+      "8"
+     ],
+     "sol": "https://iim-cat-questions-answers.2iim.com/DILR_CAT-2017-1_Square_Layout/Square_Layout_1.shtml"
+    },
+    {
+     "n": 26,
+     "type": "MCQ",
+     "q": "Which of the following is true for any individual at a platform of height 1m in this layout?",
+     "opts": [
+      "They can be reached by all the individuals in their own row and column.",
+      "They can be reached by at least 4 individuals.",
+      "They can be reached by at least one individual.",
+      "They cannot be reached by anyone."
+     ],
+     "sol": "https://iim-cat-questions-answers.2iim.com/DILR_CAT-2017-1_Square_Layout/Square_Layout_2.shtml"
+    },
+    {
+     "n": 27,
+     "type": "MCQ",
+     "q": "We can find two individuals who cannot be reached by anyone in",
+     "opts": [
+      "the last row",
+      "the fourth row",
+      "the fourth column",
+      "the middle column"
+     ],
+     "sol": "https://iim-cat-questions-answers.2iim.com/DILR_CAT-2017-1_Square_Layout/Square_Layout_3.shtml"
+    },
+    {
+     "n": 28,
+     "type": "MCQ",
+     "q": "Which of the following statements is true about this layout?",
+     "opts": [
+      "Each row has an individual who can be reached by 5 or more individuals",
+      "Each row has an individual who cannot be reached by anyone",
+      "Each row has at least two individuals who can be reached by an equal number of individuals",
+      "All individuals at the height of 9 m can be reached by at least 5 individuals"
+     ],
+     "sol": "https://iim-cat-questions-answers.2iim.com/DILR_CAT-2017-1_Square_Layout/Square_Layout_4.shtml"
+    }
+   ]
+  },
+  {
+   "title": "Team project",
+   "section": "LR",
+   "passage": "<p>There are 21 employees working in a division, out of whom 10 are special-skilled employees (SE) and the remaining are regular skilled employees (RE). During the next five months, the division has to complete five projects every month. Out of the 25 projects, 5 projects are \"challenging\", while the remaining ones are \"standard\". Each of the challenging projects has to be completed in different months. Every month, five teams - T1, T2, T3, T4 and T5, work on one project each. T1, T2, T3, T4 and T5 are allotted the challenging project in the first, second, third, fourth and fifth month, respectively. The team assigned the challenging project has one more employee than the rest.</p><p>In the first month, T1 has one more SE than T2, T2 has one more SE than T3, T3 has one more SE than T4, and T4 has one more SE than T5. Between two successive months, the composition of the teams changes as follows:</p><p>a. The team allotted the challenging project, gets two SE from the team which was allotted the challenging project in the previous month. In exchange, one RE is shifted from the former team to the latter team.<br>b. After the above exchange, if T1 has any SE and T5 has any RE, then one SE is shifted from T1 to T5, and one RE is shifted from T 5 to T1. Also, if T2 has any SE and T4 has any RE, then one SE is shifted from T2 to T4, and one RE is shifted from T4 to T2.</p><p>Each standard project has a total of 100 credit points, while each challenging project has 200 credit points. The credit points are equally shared between the employees included in that team.</p>",
+   "qs": [
+    {
+     "n": 29,
+     "type": "MCQ",
+     "q": "The number of times in which the composition of team T2 and the number of times in which composition of team T4 remained unchanged in two successive months are:",
+     "opts": [
+      "(2,1)",
+      "(1,0)",
+      "(0,0)",
+      "(1,1)"
+     ],
+     "sol": "https://iim-cat-questions-answers.2iim.com/DILR_CAT-2017-1_Team_Project/Team_Project_1.shtml"
+    },
+    {
+     "n": 30,
+     "type": "MCQ",
+     "q": "The number of SE in T1 and T5 for the projects in the third month are, respectively:",
+     "opts": [
+      "(0,2)",
+      "(0,3)",
+      "(1,2)",
+      "(1,3)"
+     ],
+     "sol": "https://iim-cat-questions-answers.2iim.com/DILR_CAT-2017-1_Team_Project/Team_Project_2.shtml"
+    },
+    {
+     "n": 31,
+     "type": "MCQ",
+     "q": "Which of the following CANNOT be the total credit points earned by any employee from the projects?",
+     "opts": [
+      "140",
+      "150",
+      "170",
+      "200"
+     ],
+     "sol": "https://iim-cat-questions-answers.2iim.com/DILR_CAT-2017-1_Team_Project/Team_Project_3.shtml"
+    },
+    {
+     "n": 32,
+     "type": "MCQ",
+     "q": "One of the employees named Aneek scored 185 points. Which of the following CANNOT be true?",
+     "opts": [
+      "Aneek worked only in teams T1, T2, T3, and T4",
+      "Aneek worked only in teams T1, T2, T4, and T5",
+      "Aneek worked only in teams T2, T3, T4, and T5",
+      "Aneek worked only in teams T1, T3, T4, and T5"
+     ],
+     "sol": "https://iim-cat-questions-answers.2iim.com/DILR_CAT-2017-1_Team_Project/Team_Project_4.shtml"
+    }
+   ]
+  }
+ ]
+}

@@ -70,7 +70,7 @@ for path in sorted(glob.glob(os.path.join(RAW, "*.json"))):
                 if note: problems.append(f"{tag} {s['title']} q{q['n']}: {note}")
                 qs.append({"id": f"{tag}-lr-{q['n']}", "n": q["n"], "type": q["type"], "q": q["q"],
                            "opts": q.get("opts"), "ans": ans, "unverified": unv,
-                           "sol": base + (q.get("sol") or pat.format(n=q["n"]))})
+                           "sol": (lambda s: s if s.startswith("http") else base + s)(q.get("sol") or pat.format(n=q["n"]))})
             units.append({"id": f"{tag}-set-{si+1}", "kind": "set", "section": s["section"],
                           "year": d["year"], "slot": d["slot"], "title": s["title"],
                           "passage": s["passage"], "qs": qs, "source": base})

@@ -1,25 +1,226 @@
 {
- "year": 2021, "slot": 2, "section": "LRDI",
+ "year": 2021,
+ "slot": 2,
+ "section": "LRDI",
  "source": "https://online.2iim.com/CAT-question-paper/CAT-2021-Question-Paper-Slot-2-DILR/",
- "skipped": "Sets 1 and 2 (value table, order bar chart, Q1-10) need images",
  "sets": [
-  {"title":"Chango championship","section":"LR",
-   "passage":"<p>The game of Chango is a game where two people play against each other; one of them wins and the other loses, i.e., there are no drawn Chango games. 12 players participated in a Chango championship. They were divided into four groups: Group A consisted of Aruna, Azul, and Arif; Group B consisted of Brinda, Brij, and Biju; Group C consisted of Chitra, Chetan, and Chhavi; and Group D consisted of Dipen, Donna, and Deb.</p><p>Players within each group had a distinct rank going into the championship. The players have NOT been listed necessarily according to their ranks. In the group stage of the game, the second and third ranked players play against each other, and the winner of that game plays against the first ranked player of the group. The winner of this second game is considered as the winner of the group and enters a semi-final.</p><p>The winners from Groups A and B play against each other in one semi-final, while the winners from Groups C and D play against each other in the other semi-final. The winners of the two semi-finals play against each other in the final to decide the winner of the championship.</p><p>It is known that:</p><ol><li>Chitra did not win the championship.</li><li>Aruna did not play against Arif. Brij did not play against Brinda.</li><li>Aruna, Biju, Chitra, and Dipen played three games each, Azul and Chetan played two games each, and the remaining players played one game each.</li></ol>",
-   "qs":[
-    {"n":11,"type":"MCQ","q":"Who among the following was DEFINITELY NOT ranked first in his/her group?","opts":["Chitra","Aruna","Dipen","Brij"]},
-    {"n":12,"type":"MCQ","q":"Which of the following pairs must have played against each other in the championship?","opts":["Azul, Biju","Donna, Chetan","Deb, Donna","Chitra, Dipen"]},
-    {"n":13,"type":"MCQ","q":"Who won the championship?","opts":["Brij","Chitra","Cannot be determined","Aruna"]},
-    {"n":14,"type":"MCQ","q":"Who among the following did NOT play against Chitra in the championship?","opts":["Aruna","Dipen","Chetan","Biju"]}
-   ]},
-  {"title":"Delivery ratings","section":"LR",
-   "passage":"<p>Ravi works in an online food-delivery company. After each delivery, customers rate Ravi on each of four parameters – Behaviour, Packaging, Hygiene, and Timeliness, on a scale from 1 to 9. If the total of the four rating points is 25 or more, then Ravi gets a bonus of ₹20 for that delivery. Additionally, a customer may or may not give Ravi a tip. If the customer gives a tip, it is either ₹30 or ₹50.</p><p>One day, Ravi made four deliveries - one to each of Atal, Bihari, Chirag and Deepak, and received a total of ₹120 in bonus and tips. He did not get both a bonus and a tip from the same customer.</p><p>The following additional facts are also known.</p><ol><li>In Timeliness, Ravi received a total of 21 points, and three of the customers gave him the same rating points in this parameter. Atal gave higher rating points than Bihari and Chirag in this parameter.</li><li>Ravi received distinct rating points in Packaging from the four customers adding up to 29 points. Similarly, Ravi received distinct rating points in Hygiene from the four customers adding up to 26 points.</li><li>Chirag gave the same rating points for Packaging and Hygiene.</li><li>Among the four customers, Bihari gave the highest rating points in Packaging, and Chirag gave the highest rating points in Hygiene.</li><li>Everyone rated Ravi between 5 and 7 in Behaviour. Unique maximum and minimum ratings in this parameter were given by Atal and Deepak respectively.</li><li>If the customers are ranked based on ratings given by them in individual parameters, then Atal's rank based on Packaging is the same as that based on Hygiene. This is also true for Deepak.</li></ol>",
-   "qs":[
-    {"n":15,"type":"TITA","q":"What was the minimum rating that Ravi received from any customer in any parameter?"},
-    {"n":16,"type":"MCQ","q":"The COMPLETE list of customers who gave the maximum total rating points to Ravi is","opts":["Bihari","Bihari and Chirag","Atal","Atal and Bihari"]},
-    {"n":17,"type":"TITA","q":"What rating did Atal give on Timeliness?"},
-    {"n":18,"type":"MCQ","q":"What BEST can be concluded about the tip amount given by Deepak?","opts":["Either ₹30 or ₹50","Either ₹0 or ₹30 or ₹50","₹50","₹30"]},
-    {"n":19,"type":"MCQ","q":"In which parameter did Atal give the maximum rating points to Ravi?","opts":["Behaviour","Hygiene","Packaging","Timeliness"]},
-    {"n":20,"type":"MCQ","q":"What rating did Deepak give on Packaging?","opts":["5","7","8","6"]}
-   ]}
+  {
+   "title": "Chango championship",
+   "section": "LR",
+   "passage": "<p>The game of Chango is a game where two people play against each other; one of them wins and the other loses, i.e., there are no drawn Chango games. 12 players participated in a Chango championship. They were divided into four groups: Group A consisted of Aruna, Azul, and Arif; Group B consisted of Brinda, Brij, and Biju; Group C consisted of Chitra, Chetan, and Chhavi; and Group D consisted of Dipen, Donna, and Deb.</p><p>Players within each group had a distinct rank going into the championship. The players have NOT been listed necessarily according to their ranks. In the group stage of the game, the second and third ranked players play against each other, and the winner of that game plays against the first ranked player of the group. The winner of this second game is considered as the winner of the group and enters a semi-final.</p><p>The winners from Groups A and B play against each other in one semi-final, while the winners from Groups C and D play against each other in the other semi-final. The winners of the two semi-finals play against each other in the final to decide the winner of the championship.</p><p>It is known that:</p><ol><li>Chitra did not win the championship.</li><li>Aruna did not play against Arif. Brij did not play against Brinda.</li><li>Aruna, Biju, Chitra, and Dipen played three games each, Azul and Chetan played two games each, and the remaining players played one game each.</li></ol>",
+   "qs": [
+    {
+     "n": 11,
+     "type": "MCQ",
+     "q": "Who among the following was DEFINITELY NOT ranked first in his/her group?",
+     "opts": [
+      "Chitra",
+      "Aruna",
+      "Dipen",
+      "Brij"
+     ]
+    },
+    {
+     "n": 12,
+     "type": "MCQ",
+     "q": "Which of the following pairs must have played against each other in the championship?",
+     "opts": [
+      "Azul, Biju",
+      "Donna, Chetan",
+      "Deb, Donna",
+      "Chitra, Dipen"
+     ]
+    },
+    {
+     "n": 13,
+     "type": "MCQ",
+     "q": "Who won the championship?",
+     "opts": [
+      "Brij",
+      "Chitra",
+      "Cannot be determined",
+      "Aruna"
+     ]
+    },
+    {
+     "n": 14,
+     "type": "MCQ",
+     "q": "Who among the following did NOT play against Chitra in the championship?",
+     "opts": [
+      "Aruna",
+      "Dipen",
+      "Chetan",
+      "Biju"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Delivery ratings",
+   "section": "LR",
+   "passage": "<p>Ravi works in an online food-delivery company. After each delivery, customers rate Ravi on each of four parameters – Behaviour, Packaging, Hygiene, and Timeliness, on a scale from 1 to 9. If the total of the four rating points is 25 or more, then Ravi gets a bonus of ₹20 for that delivery. Additionally, a customer may or may not give Ravi a tip. If the customer gives a tip, it is either ₹30 or ₹50.</p><p>One day, Ravi made four deliveries - one to each of Atal, Bihari, Chirag and Deepak, and received a total of ₹120 in bonus and tips. He did not get both a bonus and a tip from the same customer.</p><p>The following additional facts are also known.</p><ol><li>In Timeliness, Ravi received a total of 21 points, and three of the customers gave him the same rating points in this parameter. Atal gave higher rating points than Bihari and Chirag in this parameter.</li><li>Ravi received distinct rating points in Packaging from the four customers adding up to 29 points. Similarly, Ravi received distinct rating points in Hygiene from the four customers adding up to 26 points.</li><li>Chirag gave the same rating points for Packaging and Hygiene.</li><li>Among the four customers, Bihari gave the highest rating points in Packaging, and Chirag gave the highest rating points in Hygiene.</li><li>Everyone rated Ravi between 5 and 7 in Behaviour. Unique maximum and minimum ratings in this parameter were given by Atal and Deepak respectively.</li><li>If the customers are ranked based on ratings given by them in individual parameters, then Atal's rank based on Packaging is the same as that based on Hygiene. This is also true for Deepak.</li></ol>",
+   "qs": [
+    {
+     "n": 15,
+     "type": "TITA",
+     "q": "What was the minimum rating that Ravi received from any customer in any parameter?"
+    },
+    {
+     "n": 16,
+     "type": "MCQ",
+     "q": "The COMPLETE list of customers who gave the maximum total rating points to Ravi is",
+     "opts": [
+      "Bihari",
+      "Bihari and Chirag",
+      "Atal",
+      "Atal and Bihari"
+     ]
+    },
+    {
+     "n": 17,
+     "type": "TITA",
+     "q": "What rating did Atal give on Timeliness?"
+    },
+    {
+     "n": 18,
+     "type": "MCQ",
+     "q": "What BEST can be concluded about the tip amount given by Deepak?",
+     "opts": [
+      "Either ₹30 or ₹50",
+      "Either ₹0 or ₹30 or ₹50",
+      "₹50",
+      "₹30"
+     ]
+    },
+    {
+     "n": 19,
+     "type": "MCQ",
+     "q": "In which parameter did Atal give the maximum rating points to Ravi?",
+     "opts": [
+      "Behaviour",
+      "Hygiene",
+      "Packaging",
+      "Timeliness"
+     ]
+    },
+    {
+     "n": 20,
+     "type": "MCQ",
+     "q": "What rating did Deepak give on Packaging?",
+     "opts": [
+      "5",
+      "7",
+      "8",
+      "6"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Object bundles and envy",
+   "section": "LR",
+   "passage": "<p>Ten objects o1, o2, …, o10 were distributed among Amar, Barat, Charles, Disha, and Elise. Each item went to exactly one person. Each person got exactly two of the items, and this pair of objects is called her/his bundle.</p><p>The following table shows how each person values each object.</p><img src=\"figs/2021-s2-values.png\" alt=\"Figure from the CAT 2021 Slot 2 DILR paper\"><p>The value of any bundle by a person is the sum of that person's values of the objects in that bundle. A person X envies another person Y if X values Y's bundle more than X's own bundle.</p><p>For example, hypothetically suppose Amar's bundle consists of o1 and o2, and Barat's bundle consists of o3 and o4. Then Amar values his own bundle at 4 + 9 = 13 and Barat's bundle at 9 + 3 = 12. Hence Amar does not envy Barat. On the other hand, Barat values his own bundle at 7 + 5 = 12 and Amar's bundle at 5 + 9 = 14. Hence Barat envies Amar.</p><p>The following facts are known about the actual distribution of the objects among the five people.</p><p>1. If someone's value for an object is 10, then she/he received that object.<br>2. Objects o1, o2, and o3 were given to three different people.<br>3. Objects o1 and o8 were given to different people.<br>4. Three people value their own bundles at 16. No one values her/his own bundle at a number higher than 16.<br>5. Disha values her own bundle at an odd number. All others value their own bundles at an even number.<br>6. Some people who value their own bundles less than 16 envy some other people who value their own bundle at 16. No one else envies others.</p>",
+   "qs": [
+    {
+     "n": 1,
+     "type": "MCQ",
+     "q": "What BEST can be said about object o8?",
+     "opts": [
+      "o8 was given to Disha",
+      "o8 was given to Amar, Charles, or Disha",
+      "o8 was given to Charles or Disha",
+      "o8 was given to Charles"
+     ]
+    },
+    {
+     "n": 2,
+     "type": "MCQ",
+     "q": "Who among the following envies someone else?",
+     "opts": [
+      "Amar",
+      "Barat",
+      "Charles",
+      "Elise"
+     ]
+    },
+    {
+     "n": 3,
+     "type": "TITA",
+     "q": "What is Amar's value for his own bundle?"
+    },
+    {
+     "n": 4,
+     "type": "MCQ",
+     "q": "Object o4 was given to",
+     "opts": [
+      "Disha",
+      "Barat",
+      "Charles",
+      "Elise"
+     ]
+    },
+    {
+     "n": 5,
+     "type": "MCQ",
+     "q": "Object o5 was given to",
+     "opts": [
+      "Amar",
+      "Elise",
+      "Charles",
+      "Disha"
+     ]
+    },
+    {
+     "n": 6,
+     "type": "MCQ",
+     "q": "What BEST can be said about the distribution of object o1?",
+     "opts": [
+      "o1 was given to Charles or Disha",
+      "o1 was given to Charles, Disha, or Elise",
+      "o1 was given to Charles",
+      "o1 was given to Disha"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Store orders by ship mode",
+   "section": "DI",
+   "passage": "<img src=\"figs/2021-s2-orders.png\" alt=\"Figure from the CAT 2021 Slot 2 DILR paper\"><p>The different bars in the diagram above provide information about different orders in various categories (Art, Binders, ….) that were booked in the first two weeks of September of a store for one client. The colour and pattern of a bar denotes the ship mode (First Class / Second Class / Standard Class). The left end point of a bar indicates the booking day of the order, while the right end point indicates the dispatch day of the order. The difference between the dispatch day and the booking day (measured in terms of the number of days) is called the processing time of the order. For the same category, an order is considered for booking only after the previous order of the same category is dispatched. No two consecutive orders of the same category had identical ship mode during this period.</p><p>For example, there were only two orders in the furnishing category during this period. The first one was shipped in the Second Class. It was booked on Sep 1 and dispatched on Sep 5. The second order was shipped in the Standard class. It was booked on Sep 5 (although the order might have been placed before that) and dispatched on Sep 12. So the processing times were 4 and 7 days respectively for these orders.</p>",
+   "qs": [
+    {
+     "n": 7,
+     "type": "TITA",
+     "q": "How many days between Sep 1 and Sep 14 (both inclusive) had no booking from this client considering all the above categories?"
+    },
+    {
+     "n": 8,
+     "type": "TITA",
+     "q": "What was the average processing time of all orders in the categories which had only one type of ship mode?"
+    },
+    {
+     "n": 9,
+     "type": "MCQ",
+     "q": "The sequence of categories -- Art, Binders, Paper and Phones -- in decreasing order of average processing time of their orders in this period is:",
+     "opts": [
+      "Art, Binders, Paper, Phones",
+      "Paper, Binders, Art, Phones",
+      "Phones, Binders, Art, Paper",
+      "Phones, Art, Binders, Paper"
+     ]
+    },
+    {
+     "n": 10,
+     "type": "MCQ",
+     "q": "Approximately what percentage of orders had a processing time of one day during the period Sep 1 to Sep 22 (both dates inclusive)?",
+     "opts": [
+      "16%",
+      "20%",
+      "25%",
+      "22%"
+     ]
+    }
+   ]
+  }
  ]
 }
