@@ -1,0 +1,25 @@
+{
+ "year": 2021, "slot": 2, "section": "LRDI",
+ "source": "https://online.2iim.com/CAT-question-paper/CAT-2021-Question-Paper-Slot-2-DILR/",
+ "skipped": "Sets 1 and 2 (value table, order bar chart, Q1-10) need images",
+ "sets": [
+  {"title":"Chango championship","section":"LR",
+   "passage":"<p>The game of Chango is a game where two people play against each other; one of them wins and the other loses, i.e., there are no drawn Chango games. 12 players participated in a Chango championship. They were divided into four groups: Group A consisted of Aruna, Azul, and Arif; Group B consisted of Brinda, Brij, and Biju; Group C consisted of Chitra, Chetan, and Chhavi; and Group D consisted of Dipen, Donna, and Deb.</p><p>Players within each group had a distinct rank going into the championship. The players have NOT been listed necessarily according to their ranks. In the group stage of the game, the second and third ranked players play against each other, and the winner of that game plays against the first ranked player of the group. The winner of this second game is considered as the winner of the group and enters a semi-final.</p><p>The winners from Groups A and B play against each other in one semi-final, while the winners from Groups C and D play against each other in the other semi-final. The winners of the two semi-finals play against each other in the final to decide the winner of the championship.</p><p>It is known that:</p><ol><li>Chitra did not win the championship.</li><li>Aruna did not play against Arif. Brij did not play against Brinda.</li><li>Aruna, Biju, Chitra, and Dipen played three games each, Azul and Chetan played two games each, and the remaining players played one game each.</li></ol>",
+   "qs":[
+    {"n":11,"type":"MCQ","q":"Who among the following was DEFINITELY NOT ranked first in his/her group?","opts":["Chitra","Aruna","Dipen","Brij"]},
+    {"n":12,"type":"MCQ","q":"Which of the following pairs must have played against each other in the championship?","opts":["Azul, Biju","Donna, Chetan","Deb, Donna","Chitra, Dipen"]},
+    {"n":13,"type":"MCQ","q":"Who won the championship?","opts":["Brij","Chitra","Cannot be determined","Aruna"]},
+    {"n":14,"type":"MCQ","q":"Who among the following did NOT play against Chitra in the championship?","opts":["Aruna","Dipen","Chetan","Biju"]}
+   ]},
+  {"title":"Delivery ratings","section":"LR",
+   "passage":"<p>Ravi works in an online food-delivery company. After each delivery, customers rate Ravi on each of four parameters – Behaviour, Packaging, Hygiene, and Timeliness, on a scale from 1 to 9. If the total of the four rating points is 25 or more, then Ravi gets a bonus of ₹20 for that delivery. Additionally, a customer may or may not give Ravi a tip. If the customer gives a tip, it is either ₹30 or ₹50.</p><p>One day, Ravi made four deliveries - one to each of Atal, Bihari, Chirag and Deepak, and received a total of ₹120 in bonus and tips. He did not get both a bonus and a tip from the same customer.</p><p>The following additional facts are also known.</p><ol><li>In Timeliness, Ravi received a total of 21 points, and three of the customers gave him the same rating points in this parameter. Atal gave higher rating points than Bihari and Chirag in this parameter.</li><li>Ravi received distinct rating points in Packaging from the four customers adding up to 29 points. Similarly, Ravi received distinct rating points in Hygiene from the four customers adding up to 26 points.</li><li>Chirag gave the same rating points for Packaging and Hygiene.</li><li>Among the four customers, Bihari gave the highest rating points in Packaging, and Chirag gave the highest rating points in Hygiene.</li><li>Everyone rated Ravi between 5 and 7 in Behaviour. Unique maximum and minimum ratings in this parameter were given by Atal and Deepak respectively.</li><li>If the customers are ranked based on ratings given by them in individual parameters, then Atal's rank based on Packaging is the same as that based on Hygiene. This is also true for Deepak.</li></ol>",
+   "qs":[
+    {"n":15,"type":"TITA","q":"What was the minimum rating that Ravi received from any customer in any parameter?"},
+    {"n":16,"type":"MCQ","q":"The COMPLETE list of customers who gave the maximum total rating points to Ravi is","opts":["Bihari","Bihari and Chirag","Atal","Atal and Bihari"]},
+    {"n":17,"type":"TITA","q":"What rating did Atal give on Timeliness?"},
+    {"n":18,"type":"MCQ","q":"What BEST can be concluded about the tip amount given by Deepak?","opts":["Either ₹30 or ₹50","Either ₹0 or ₹30 or ₹50","₹50","₹30"]},
+    {"n":19,"type":"MCQ","q":"In which parameter did Atal give the maximum rating points to Ravi?","opts":["Behaviour","Hygiene","Packaging","Timeliness"]},
+    {"n":20,"type":"MCQ","q":"What rating did Deepak give on Packaging?","opts":["5","7","8","6"]}
+   ]}
+ ]
+}

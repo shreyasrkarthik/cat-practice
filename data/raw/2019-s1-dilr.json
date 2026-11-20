@@ -1,0 +1,31 @@
+{
+ "year": 2019, "slot": 1, "section": "LRDI",
+ "source": "https://online.2iim.com/CAT-question-paper/CAT-2019-Question-Paper-Slot-1-DILR/",
+ "skipped": "Sets 2, 3, 4, 6 and 7 (street map, crime charts, radar chart, archery table, letter-coding table) need images",
+ "sets": [
+  {"title":"Game show boxes","section":"LR",
+   "passage":"<p>A new game show on TV has 100 boxes numbered 1, 2, ....., 100 in a row, each containing a mystery prize. The prizes are items of different types, a, b, c, ....., in decreasing order of value. The most expensive item is of type a, a diamond ring, and there is exactly one of these. You are told that the number of items at least doubles as you move to the next type. For example, there would be at least twice as many items of type b as of type a, at least twice as many items of type c as of type b and so on. There is no particular order in which the prizes are placed in the boxes.</p>",
+   "qs":[
+    {"n":1,"type":"TITA","q":"What is the minimum possible number of different types of prizes?"},
+    {"n":2,"type":"TITA","q":"What is the maximum possible number of different types of prizes?"},
+    {"n":3,"type":"MCQ","q":"Which of the following is not possible?","opts":["There are exactly 30 items of type b.","There are exactly 75 items of type e.","There are exactly 60 items of type d.","There are exactly 45 items of type c."]},
+    {"n":4,"type":"MCQ","q":"You ask for the type of item in box 45. Instead of being given a direct answer, you are told that there are 31 items of the same type as box 45 in boxes 1 to 44 and 43 items of the same type as box 45 in boxes 46 to 100. What is the maximum possible number of different types of items?","opts":["5","6","3","4"]}
+   ]},
+  {"title":"Supermarket shelves","section":"LR",
+   "passage":"<p>A supermarket has to place 12 items (coded A to L) in shelves numbered 1 to 16. Five of these items are types of biscuits, three are types of candies and the rest are types of savouries. Only one item can be kept in a shelf. Items are to be placed such that all items of same type are clustered together with no empty shelf between items of the same type and at least one empty shelf between two different types of items. At most two empty shelves can have consecutive numbers.</p><p>The following additional facts are known.</p><ol><li>A and B are to be placed in consecutively numbered shelves in increasing order.</li><li>I and J are to be placed in consecutively numbered shelves both higher numbered than the shelves in which A and B are kept.</li><li>D, E and F are savouries and are to be placed in consecutively numbered shelves in increasing order after all the biscuits and candies.</li><li>K is to be placed in shelf number 16.</li><li>L and J are items of the same type, while H is an item of a different type.</li><li>C is a candy and is to be placed in a shelf preceded by two empty shelves.</li><li>L is to be placed in a shelf preceded by exactly one empty shelf.</li></ol>",
+   "qs":[
+    {"n":17,"type":"MCQ","q":"In how many different ways can the items be arranged on the shelves?","opts":["2","1","4","8"]},
+    {"n":18,"type":"MCQ","q":"Which of the following items is not a type of biscuit?","opts":["B","A","L","G"]},
+    {"n":19,"type":"MCQ","q":"Which of the following can represent the numbers of the empty shelves in a possible arrangement?","opts":["1,7,11,12","1,5,6,12","1,2,6,12","1,2,8,12"]},
+    {"n":20,"type":"MCQ","q":"Which of the following statements is necessarily true?","opts":["There are two empty shelves between the biscuits and the candies.","All candies are kept before biscuits.","All biscuits are kept before candies.","There are at least four shelves between items B and C."]}
+   ]},
+  {"title":"Dance competition","section":"LR",
+   "passage":"<p>Princess, Queen, Rani and Samragni were the four finalists in a dance competition. Ashman, Badal, Gagan and Dyu were the four music composers who individually assigned items to the dancers. Each dancer had to individually perform in two dance items assigned by the different composers. The first items performed by the four dancers were all assigned by different music composers. No dancer performed her second item before the performance of the first item by any other dancers. The dancers performed their second items in the same sequence of their performance of their first items.</p><p>The following additional facts are known.</p><ol type=\"i\"><li>No composer who assigned item to Princess, assigned any item to Queen.</li><li>No composer who assigned item to Rani, assigned any item to Samragni.</li><li>The first performance was by Princess; this item was assigned by Badal.</li><li>The last performance was by Rani; this item was assigned by Gagan.</li><li>The items assigned by Ashman were performed consecutively. The number of performances between items assigned by each of the remaining composers was the same.</li></ol>",
+   "qs":[
+    {"n":29,"type":"MCQ","q":"Which of the following is true?","opts":["The third performance was composed by Ashman.","The second performance was composed by Dyu.","The second performance was composed by Gagan.","The third performance was composed by Dyu."]},
+    {"n":30,"type":"MCQ","q":"Which of the following is FALSE?","opts":["Queen did not perform in any item composed by Gagan.","Rani did not perform in any item composed by Badal.","Samragni did not perform in any item composed by Ashman.","Princess did not perform in any item composed by Dyu."]},
+    {"n":31,"type":"MCQ","q":"The sixth performance was composed by:","opts":["Gagan","Ashman","Badal","Dyu"]},
+    {"n":32,"type":"MCQ","q":"Which pair of performances were composed by the same composer?","opts":["The third and the seventh","The first and the seventh","The first and the sixth","The second and the sixth"]}
+   ]}
+ ]
+}

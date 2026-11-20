@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CAT Practice</title>
+<meta name="description" content="Random practice from past CAT papers: Quant, LR and DI, with progress tracking.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">CAT Practice</div>
+  <div class="stats" id="stats" aria-live="polite"></div>
+  <button class="ghost small" id="themeBtn" title="Switch light or dark">Theme</button>
+</header>
+
+<section class="filters" aria-label="Filters">
+  <div class="chips" id="sectionChips">
+    <button class="chip on" data-sec="Quant">Quant</button>
+    <button class="chip on" data-sec="LR">LR</button>
+    <button class="chip on" data-sec="DI">DI</button>
+  </div>
+  <label class="sel">Year
+    <select id="yearSel"><option value="all">All years</option></select>
+  </label>
+  <label class="sel">Show
+    <select id="modeSel">
+      <option value="all">All questions</option>
+      <option value="new">Not attempted</option>
+      <option value="mistakes">My mistakes</option>
+      <option value="flagged">Flagged</option>
+    </select>
+  </label>
+  <button class="ghost small" id="shuffleBtn">Reshuffle</button>
+</section>
+
+<main id="main">
+  <div class="card" id="card"></div>
+</main>
+
+<nav class="bottom" aria-label="Question navigation">
+  <button class="nav" id="prevBtn">&larr; Previous</button>
+  <div class="pos" id="pos"></div>
+  <button class="nav primary" id="nextBtn">Next &rarr;</button>
+</nav>
+
+<footer class="foot">
+  <p>Questions are from past CAT papers (set by the IIMs), transcribed from <a href="https://online.2iim.com/CAT-question-paper/" target="_blank" rel="noopener">2IIM's question bank</a>. Explanation links go to 2IIM. Sets that need a chart or picture are left out.</p>
+  <p>Keys: <kbd>A</kbd>–<kbd>D</kbd> pick, <kbd>Enter</kbd> check, <kbd>&larr;</kbd> <kbd>&rarr;</kbd> move, <kbd>F</kbd> flag. Progress is saved in this browser only.
+  <button class="link" id="resetBtn">Reset progress</button></p>
+</footer>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
