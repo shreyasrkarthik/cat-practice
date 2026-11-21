@@ -1,0 +1,122 @@
+{
+ "1": {
+  "ans": "B",
+  "hints": [
+   "Subtract each candidate's own vote from the totals. What's left came from whole department blocks: Pakrasi 2, Ramaswamy 5, Qureshi 13.",
+   "Which department's block can be exactly 2? Once that's fixed, which block can be exactly 5?"
+  ],
+  "why": "<p>All 24 votes: Pakrasi 3, Qureshi 14, Ramaswamy 6, Samuel 1. Take out the four candidates' own votes, and the non-candidate blocks gave Pakrasi 2, Ramaswamy 5, Qureshi 13, Samuel 0.</p><p>Only B&H's block can be as small as 2, so B&H has one candidate and its 2 others vote Pakrasi. Ramaswamy's 5 can only be M&S with two candidates. Then F&A (9, no candidates) and O&Q (4 non-candidates) vote Qureshi: 9 + 4 = 13.</p><p>M&S's pair can't include Ramaswamy (M&S votes for him). Pakrasi–Samuel and Qureshi–Samuel can't share a department, because one votes for the other. So M&S = Pakrasi and Qureshi. Ramaswamy and Samuel are split between O&Q and B&H.</p><p>So <b>Pakrasi and Qureshi</b> are in the same department (M&S).</p>"
+ },
+ "2": {
+  "ans": "C",
+  "hints": [
+   "Subtract each candidate's own vote from the totals. What's left came from whole department blocks: Pakrasi 2, Ramaswamy 5, Qureshi 13.",
+   "Qureshi gets F&A's whole block, O&Q's block, and Ramaswamy's vote. How big is F&A's block?"
+  ],
+  "why": "<p>All 24 votes: Pakrasi 3, Qureshi 14, Ramaswamy 6, Samuel 1. Take out the four candidates' own votes, and the non-candidate blocks gave Pakrasi 2, Ramaswamy 5, Qureshi 13, Samuel 0.</p><p>Only B&H's block can be as small as 2, so B&H has one candidate and its 2 others vote Pakrasi. Ramaswamy's 5 can only be M&S with two candidates. Then F&A (9, no candidates) and O&Q (4 non-candidates) vote Qureshi: 9 + 4 = 13.</p><p>M&S's pair can't include Ramaswamy (M&S votes for him). Pakrasi–Samuel and Qureshi–Samuel can't share a department, because one votes for the other. So M&S = Pakrasi and Qureshi. Ramaswamy and Samuel are split between O&Q and B&H.</p><p>F&A has no candidates, so all <b>9</b> of its members vote Qureshi. (O&Q gives 4, or 5 if Ramaswamy is in O&Q, so 8, 7 and 6 can't come from one department.)</p>"
+ },
+ "3": {
+  "ans": "A",
+  "hints": [
+   "Subtract each candidate's own vote from the totals. What's left came from whole department blocks: Pakrasi 2, Ramaswamy 5, Qureshi 13.",
+   "Pakrasi's department is fixed by the main logic. If Samuel is in B&H, which department is left for Ramaswamy?"
+  ],
+  "why": "<p>All 24 votes: Pakrasi 3, Qureshi 14, Ramaswamy 6, Samuel 1. Take out the four candidates' own votes, and the non-candidate blocks gave Pakrasi 2, Ramaswamy 5, Qureshi 13, Samuel 0.</p><p>Only B&H's block can be as small as 2, so B&H has one candidate and its 2 others vote Pakrasi. Ramaswamy's 5 can only be M&S with two candidates. Then F&A (9, no candidates) and O&Q (4 non-candidates) vote Qureshi: 9 + 4 = 13.</p><p>M&S's pair can't include Ramaswamy (M&S votes for him). Pakrasi–Samuel and Qureshi–Samuel can't share a department, because one votes for the other. So M&S = Pakrasi and Qureshi. Ramaswamy and Samuel are split between O&Q and B&H.</p><p>Pakrasi is in M&S, and with Samuel in B&H, Ramaswamy must be in O&Q. <b>Both statements</b> are true.</p>"
+ },
+ "4": {
+  "ans": "D",
+  "hints": [
+   "Subtract each candidate's own vote from the totals. What's left came from whole department blocks: Pakrasi 2, Ramaswamy 5, Qureshi 13.",
+   "After placing the two M&S candidates, which two people are left for O&Q and B&H? Does anything decide between them?"
+  ],
+  "why": "<p>All 24 votes: Pakrasi 3, Qureshi 14, Ramaswamy 6, Samuel 1. Take out the four candidates' own votes, and the non-candidate blocks gave Pakrasi 2, Ramaswamy 5, Qureshi 13, Samuel 0.</p><p>Only B&H's block can be as small as 2, so B&H has one candidate and its 2 others vote Pakrasi. Ramaswamy's 5 can only be M&S with two candidates. Then F&A (9, no candidates) and O&Q (4 non-candidates) vote Qureshi: 9 + 4 = 13.</p><p>M&S's pair can't include Ramaswamy (M&S votes for him). Pakrasi–Samuel and Qureshi–Samuel can't share a department, because one votes for the other. So M&S = Pakrasi and Qureshi. Ramaswamy and Samuel are split between O&Q and B&H.</p><p>Nothing decides which of the two is in O&Q, so it's <b>either Ramaswamy or Samuel</b>.</p>"
+ },
+ "5": {
+  "ans": "A",
+  "hints": [
+   "Subtract each candidate's own vote from the totals. What's left came from whole department blocks: Pakrasi 2, Ramaswamy 5, Qureshi 13.",
+   "Ramaswamy's 5 block votes come from one department. Which one? And who does F&A vote for?"
+  ],
+  "why": "<p>All 24 votes: Pakrasi 3, Qureshi 14, Ramaswamy 6, Samuel 1. Take out the four candidates' own votes, and the non-candidate blocks gave Pakrasi 2, Ramaswamy 5, Qureshi 13, Samuel 0.</p><p>Only B&H's block can be as small as 2, so B&H has one candidate and its 2 others vote Pakrasi. Ramaswamy's 5 can only be M&S with two candidates. Then F&A (9, no candidates) and O&Q (4 non-candidates) vote Qureshi: 9 + 4 = 13.</p><p>M&S's pair can't include Ramaswamy (M&S votes for him). Pakrasi–Samuel and Qureshi–Samuel can't share a department, because one votes for the other. So M&S = Pakrasi and Qureshi. Ramaswamy and Samuel are split between O&Q and B&H.</p><p>M&S's non-candidates voted Ramaswamy, and F&A's voted Qureshi. So <b>only statement B</b> is true.</p>"
+ },
+ "11": {
+  "ans": "0",
+  "hints": [
+   "Count each category per slot: 5 US, and at least 3 Schengen and 2 Others from the names given. What does that leave for UK?",
+   "Ira, Vijay and Nandini are all in one slot, and Mahira and Osman in another. Every slot has the same mix."
+  ],
+  "why": "<p>Each slot has 10 applications: 5 US (50%), at least 3 Schengen (Ira, Vijay, Nandini) and at least 2 Others (Mahira, Osman). That's all 10, so there are no UK applications.</p><p>Schengen: the 9:00 slot's 3 applicants share 2 counters. Ira is called at 9:20 and Vijay only at 9:25, so one counter freed at or before 9:20 and the other at 9:25. That fits only a Schengen time of 12.5 min (counters free at 9:12.5 and 9:25).</p><p>At 9:20 the six active counters are the 4 US and the 2 Schengen counters. So the Others counters were already idle: Others take at most 5 minutes each.</p><p>So <b>0</b> UK applications were scheduled.</p>"
+ },
+ "12": {
+  "ans": "200",
+  "hints": [
+   "Count each category per slot: 5 US, and at least 3 Schengen and 2 Others from the names given. What does that leave for UK?",
+   "At 9:20, which six counters were busy? What does that say about the longest an Others application can take?"
+  ],
+  "why": "<p>Each slot has 10 applications: 5 US (50%), at least 3 Schengen (Ira, Vijay, Nandini) and at least 2 Others (Mahira, Osman). That's all 10, so there are no UK applications.</p><p>Schengen: the 9:00 slot's 3 applicants share 2 counters. Ira is called at 9:20 and Vijay only at 9:25, so one counter freed at or before 9:20 and the other at 9:25. That fits only a Schengen time of 12.5 min (counters free at 9:12.5 and 9:25).</p><p>At 9:20 the six active counters are the 4 US and the 2 Schengen counters. So the Others counters were already idle: Others take at most 5 minutes each.</p><p>2 Others per slot × 20 slots = 40 applications, at most 5 minutes each: <b>200 minutes</b>.</p>"
+ },
+ "13": {
+  "ans": "D",
+  "hints": [
+   "Count each category per slot: 5 US, and at least 3 Schengen and 2 Others from the names given. What does that leave for UK?",
+   "Vijay was called at 9:25, but Ira was called on arrival at 9:20. Work out the Schengen processing time from the 9:00 slot's three applicants on two counters."
+  ],
+  "why": "<p>Each slot has 10 applications: 5 US (50%), at least 3 Schengen (Ira, Vijay, Nandini) and at least 2 Others (Mahira, Osman). That's all 10, so there are no UK applications.</p><p>Schengen: the 9:00 slot's 3 applicants share 2 counters. Ira is called at 9:20 and Vijay only at 9:25, so one counter freed at or before 9:20 and the other at 9:25. That fits only a Schengen time of 12.5 min (counters free at 9:12.5 and 9:25).</p><p>At 9:20 the six active counters are the 4 US and the 2 Schengen counters. So the Others counters were already idle: Others take at most 5 minutes each.</p><p>Ira runs 9:20–9:32.5, so Nandini starts at 9:32.5 and finishes at 9:45. Closest: <b>9:45 am</b>.</p>"
+ },
+ "14": {
+  "ans": "D",
+  "hints": [
+   "Count each category per slot: 5 US, and at least 3 Schengen and 2 Others from the names given. What does that leave for UK?",
+   "Find when Vijay and Nandini start and finish (Schengen takes 12.5 min). Mahira and Osman start at 9:30 and take at most 5 min."
+  ],
+  "why": "<p>Each slot has 10 applications: 5 US (50%), at least 3 Schengen (Ira, Vijay, Nandini) and at least 2 Others (Mahira, Osman). That's all 10, so there are no UK applications.</p><p>Schengen: the 9:00 slot's 3 applicants share 2 counters. Ira is called at 9:20 and Vijay only at 9:25, so one counter freed at or before 9:20 and the other at 9:25. That fits only a Schengen time of 12.5 min (counters free at 9:12.5 and 9:25).</p><p>At 9:20 the six active counters are the 4 US and the 2 Schengen counters. So the Others counters were already idle: Others take at most 5 minutes each.</p><p>Vijay: 9:25–9:37.5. Nandini: 9:32.5–9:45. Mahira and Osman: 9:30 to at most 9:35.</p><p>Mahira started at 9:30, before Nandini's 9:32.5, so <b>\"Mahira started after Nandini\"</b> is false. The rest are true.</p>"
+ },
+ "15": {
+  "ans": "D",
+  "hints": [
+   "Count each category per slot: 5 US, and at least 3 Schengen and 2 Others from the names given. What does that leave for UK?",
+   "US: 5 applications arrive every 15 minutes, 4 counters, 10 minutes each. Walk through the first few slots and look for a pattern in the queue."
+  ],
+  "why": "<p>Each slot has 10 applications: 5 US (50%), at least 3 Schengen (Ira, Vijay, Nandini) and at least 2 Others (Mahira, Osman). That's all 10, so there are no UK applications.</p><p>Schengen: the 9:00 slot's 3 applicants share 2 counters. Ira is called at 9:20 and Vijay only at 9:25, so one counter freed at or before 9:20 and the other at 9:25. That fits only a Schengen time of 12.5 min (counters free at 9:12.5 and 9:25).</p><p>At 9:20 the six active counters are the 4 US and the 2 Schengen counters. So the Others counters were already idle: Others take at most 5 minutes each.</p><p>Four counters handle 6 US applications per 15 minutes, but the arrival times leave a small queue that keeps shifting. Simulating all 20 slots, the 1:45 pm batch's last applicant starts at 1:55 and finishes at <b>2:05 pm</b>.</p>"
+ },
+ "16": {
+  "ans": "3",
+  "hints": [
+   "Start with the 15-lakh house in Column E of Block YY. Is it E1 or E2? Try each and check the rule about Row-1.",
+   "For Block XX, which mix of base price, road value and neighbours can add up to exactly 24?"
+  ],
+  "why": "<p>A Block YY house costing 15 in Column E: E2 can't be it, because it would need D2 and F2 vacant, and then D1 and F1 would both be occupied, which is two in Row-1 of YY. So E1 is 15 = 12 (parking) + 3 × 1 neighbour.</p><p>Exactly one of D1, F1 is occupied. If it were D1, then F2 must be occupied and vacant F1 would cost 13, below the minimum of 15. So F1 and D2 are occupied, D1 is vacant, and F2 is open.</p><p>A Block XX price of 24 can only be 10 + 5 + 3 × 3: a Row-2 house with three occupied neighbours, which is B2. So A2, C2 and B1 are occupied, and A1, C1 and B2 are vacant.</p><p>So Block XX has <b>3</b> vacant houses.</p>"
+ },
+ "17": {
+  "ans": "C",
+  "hints": [
+   "Start with the 15-lakh house in Column E of Block YY. Is it E1 or E2? Try each and check the rule about Row-1.",
+   "The 24-lakh house in Block XX pins down three occupied houses around it."
+  ],
+  "why": "<p>A Block YY house costing 15 in Column E: E2 can't be it, because it would need D2 and F2 vacant, and then D1 and F1 would both be occupied, which is two in Row-1 of YY. So E1 is 15 = 12 (parking) + 3 × 1 neighbour.</p><p>Exactly one of D1, F1 is occupied. If it were D1, then F2 must be occupied and vacant F1 would cost 13, below the minimum of 15. So F1 and D2 are occupied, D1 is vacant, and F2 is open.</p><p>A Block XX price of 24 can only be 10 + 5 + 3 × 3: a Row-2 house with three occupied neighbours, which is B2. So A2, C2 and B1 are occupied, and A1, C1 and B2 are vacant.</p><p>Definitely occupied: A2, B1, C2, D2 and F1. F2 could go either way. So the answer is <b>D2 and B1</b>.</p>"
+ },
+ "18": {
+  "ans": "B",
+  "hints": [
+   "Start with the 15-lakh house in Column E of Block YY. Is it E1 or E2? Try each and check the rule about Row-1.",
+   "List Row-2: A2, B2, C2, D2, E2, F2. Which are fixed as vacant, and which one is still open?"
+  ],
+  "why": "<p>A Block YY house costing 15 in Column E: E2 can't be it, because it would need D2 and F2 vacant, and then D1 and F1 would both be occupied, which is two in Row-1 of YY. So E1 is 15 = 12 (parking) + 3 × 1 neighbour.</p><p>Exactly one of D1, F1 is occupied. If it were D1, then F2 must be occupied and vacant F1 would cost 13, below the minimum of 15. So F1 and D2 are occupied, D1 is vacant, and F2 is open.</p><p>A Block XX price of 24 can only be 10 + 5 + 3 × 3: a Row-2 house with three occupied neighbours, which is B2. So A2, C2 and B1 are occupied, and A1, C1 and B2 are vacant.</p><p>Row-2 vacant: B2 and E2 for sure, plus F2 if it's vacant. So <b>either 2 or 3</b>.</p>"
+ },
+ "19": {
+  "ans": "21",
+  "hints": [
+   "Start with the 15-lakh house in Column E of Block YY. Is it E1 or E2? Try each and check the rule about Row-1.",
+   "E2 has no parking (Block YY's one parking spot is elsewhere). Its price is 10 + 5 + 3 × (occupied neighbours among D2, F2)."
+  ],
+  "why": "<p>A Block YY house costing 15 in Column E: E2 can't be it, because it would need D2 and F2 vacant, and then D1 and F1 would both be occupied, which is two in Row-1 of YY. So E1 is 15 = 12 (parking) + 3 × 1 neighbour.</p><p>Exactly one of D1, F1 is occupied. If it were D1, then F2 must be occupied and vacant F1 would cost 13, below the minimum of 15. So F1 and D2 are occupied, D1 is vacant, and F2 is open.</p><p>A Block XX price of 24 can only be 10 + 5 + 3 × 3: a Row-2 house with three occupied neighbours, which is B2. So A2, C2 and B1 are occupied, and A1, C1 and B2 are vacant.</p><p>E1 is 15. E2 is 10 + 5 + 3 × 2 = 21 when F2 is occupied. Maximum: <b>21</b>.</p>"
+ },
+ "20": {
+  "ans": "D",
+  "hints": [
+   "Start with the 15-lakh house in Column E of Block YY. Is it E1 or E2? Try each and check the rule about Row-1.",
+   "A 15-lakh price with road value 0 needs a base of 12."
+  ],
+  "why": "<p>A Block YY house costing 15 in Column E: E2 can't be it, because it would need D2 and F2 vacant, and then D1 and F1 would both be occupied, which is two in Row-1 of YY. So E1 is 15 = 12 (parking) + 3 × 1 neighbour.</p><p>Exactly one of D1, F1 is occupied. If it were D1, then F2 must be occupied and vacant F1 would cost 13, below the minimum of 15. So F1 and D2 are occupied, D1 is vacant, and F2 is open.</p><p>A Block XX price of 24 can only be 10 + 5 + 3 × 3: a Row-2 house with three occupied neighbours, which is B2. So A2, C2 and B1 are occupied, and A1, C1 and B2 are vacant.</p><p>So Block YY's one parking space is at <b>E1</b>.</p>"
+ }
+}

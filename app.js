@@ -286,7 +286,7 @@
     // result line
     var res = "";
     if (expl) {
-      res = '<div class="result shown"><div>The answer is <b>' + render(ansText(q)) + "</b>.</div>" +
+      res = '<div class="result shown"><div>The answer is <b>' + render(ansText(q)) + "</b>" + (/[.?!]\s*$/.test(ansText(q)) ? "" : ".") + "</div>" +
         (q.why ? '<div class="why">' + render(q.why) + "</div>" : "") +
         '<div class="sub"><a href="' + esc(q.sol) + '" target="_blank" rel="noopener">2IIM\'s explanation</a>' +
         (s.done && s.lastCorrect && !s.peeked ? "" : " · Not counted as solved.") +
