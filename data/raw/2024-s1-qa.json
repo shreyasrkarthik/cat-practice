@@ -1,0 +1,225 @@
+{
+ "year": 2024,
+ "slot": 1,
+ "section": "QA",
+ "source": "https://online.2iim.com/CAT-question-paper/CAT-2024-Question-Paper-Slot-1-Quant/",
+ "solPattern": "quants-question-{n}.shtml",
+ "items": [
+  {
+   "n": 1,
+   "topic": "Ratio & proportion",
+   "type": "TITA",
+   "q": "A fruit seller has a total of 187 fruits consisting of apples, mangoes and oranges. The number of apples and mangoes are in the ratio 5 : 2. After she sells 75 apples, 26 mangoes and half of the oranges, the ratio of number of unsold apples to number of unsold oranges becomes 3 : 2. The total number of unsold fruits is"
+  },
+  {
+   "n": 2,
+   "topic": "Surds",
+   "type": "MCQ",
+   "q": "If (a + b√n) is the positive square root of (29 − 12√5), where a and b are integers, and n is a natural number, then the maximum possible value of (a + b + n) is",
+   "opts": [
+    "22",
+    "6",
+    "18",
+    "4"
+   ]
+  },
+  {
+   "n": 3,
+   "topic": "Exponents",
+   "type": "MCQ",
+   "q": "The sum of all real values of k for which ([[1||8]])<sup>k</sup> × ([[1||32768]])<sup>1/3</sup> = [[1||8]] × ([[1||32768]])<sup>1/k</sup>, is",
+   "opts": [
+    "[[2||3]]",
+    "−[[2||3]]",
+    "[[4||3]]",
+    "−[[4||3]]"
+   ]
+  },
+  {
+   "n": 4,
+   "topic": "Coordinate geometry",
+   "type": "MCQ",
+   "q": "In the XY-plane, the area, in sq. units, of the region defined by the inequalities y ≥ x + 4 and −4 ≤ x<sup>2</sup> + y<sup>2</sup> + 4(x − y) ≤ 0 is",
+   "opts": [
+    "4π",
+    "2π",
+    "π",
+    "3π"
+   ]
+  },
+  {
+   "n": 5,
+   "topic": "Time & work",
+   "type": "TITA",
+   "q": "Renu would take 15 days working 4 hours per day to complete a certain task whereas Seema would take 8 days working 5 hours per day to complete the same task. They decide to work together to complete this task. Seema agrees to work for double the number of hours per day as Renu, while Renu agrees to work for double the number of days as Seema. If Renu works 2 hours per day, then the number of days Seema will work, is"
+  },
+  {
+   "n": 6,
+   "topic": "Percentages",
+   "type": "MCQ",
+   "q": "In September, the incomes of Kamal, Amal and Vimal are in the ratio 8 : 6 : 5. They rent a house together, and Kamal pays 15%, Amal pays 12% and Vimal pays 18% of their respective incomes to cover the total house rent in that month. In October, the house rent remains unchanged while their incomes increase by 10%, 12% and 15%, respectively. In October, the percentage of their total income that will be paid as house rent, is nearest to",
+   "opts": [
+    "14.84",
+    "12.75",
+    "13.26",
+    "15.18"
+   ]
+  },
+  {
+   "n": 7,
+   "topic": "Functions",
+   "type": "MCQ",
+   "q": "Consider two sets A = {2, 3, 5, 7, 11, 13} and B = {1, 8, 27}. Let f be a function from A to B such that for every element b in B, there is at least one element a in A such that f(a) = b. Then, the total number of such functions f is",
+   "opts": [
+    "540",
+    "537",
+    "665",
+    "667"
+   ]
+  },
+  {
+   "n": 8,
+   "topic": "Algebra",
+   "type": "MCQ",
+   "q": "Let x, y, and z be real numbers satisfying<br>4(x<sup>2</sup> + y<sup>2</sup> + z<sup>2</sup>) = a<br>4(x − y − z) = 3 + a<br>Then a equals",
+   "opts": [
+    "3",
+    "1 [[1||3]]",
+    "1",
+    "4"
+   ]
+  },
+  {
+   "n": 9,
+   "topic": "Permutations & combinations",
+   "type": "TITA",
+   "q": "The sum of all four-digit numbers that can be formed with the distinct non-zero digits a, b, c, and d, with each digit appearing exactly once in every number, is 153310 + n, where n is a single digit natural number. Then, the value of (a + b + c + d + n) is"
+  },
+  {
+   "n": 10,
+   "topic": "Remainders",
+   "type": "MCQ",
+   "q": "When 10<sup>100</sup> is divided by 7, the remainder is",
+   "opts": [
+    "3",
+    "6",
+    "1",
+    "4"
+   ]
+  },
+  {
+   "n": 11,
+   "topic": "Averages",
+   "type": "TITA",
+   "q": "There are four numbers such that average of first two numbers is 1 more than the first number, average of first three numbers is 2 more than average of first two numbers, and average of first four numbers is 3 more than average of first three numbers. Then, the difference between the largest and the smallest numbers, is"
+  },
+  {
+   "n": 12,
+   "topic": "Interest",
+   "type": "MCQ",
+   "q": "An amount of Rs 10000 is deposited in bank A for a certain number of years at a simple interest of 5% per annum. On maturity, the total amount received is deposited in bank B for another 5 years at a simple interest of 6% per annum. If the interests received from bank A and bank B are in the ratio 10 : 13, then the investment period, in years, in bank A is",
+   "opts": [
+    "4",
+    "3",
+    "6",
+    "5"
+   ]
+  },
+  {
+   "n": 13,
+   "topic": "Linear equations",
+   "type": "MCQ",
+   "q": "A shop wants to sell a certain quantity (in kg) of grains. It sells half the quantity and an additional 3 kg of these grains to the first customer. Then, it sells half of the remaining quantity and an additional 3 kg of these grains to the second customer. Finally, when the shop sells half of the remaining quantity and an additional 3 kg of these grains to the third customer, there are no grains left. The initial quantity, in kg, of grains is",
+   "opts": [
+    "18",
+    "36",
+    "50",
+    "42"
+   ]
+  },
+  {
+   "n": 14,
+   "topic": "Sequences & series",
+   "type": "MCQ",
+   "q": "Suppose x<sub>1</sub>, x<sub>2</sub>, x<sub>3</sub>, ..., x<sub>100</sub> are in arithmetic progression such that x<sub>5</sub> = −4 and 2x<sub>6</sub> + 2x<sub>9</sub> = x<sub>11</sub> + x<sub>13</sub>. Then, x<sub>100</sub> equals",
+   "opts": [
+    "204",
+    "−194",
+    "−196",
+    "206"
+   ]
+  },
+  {
+   "n": 15,
+   "topic": "Time, speed & distance",
+   "type": "MCQ",
+   "q": "Two places A and B are 45 kms apart and connected by a straight road. Anil goes from A to B while Sunil goes from B to A. Starting at the same time, they cross each other in exactly 1 hour 30 minutes. If Anil reaches B exactly 1 hour 15 minutes after Sunil reaches A, the speed of Anil, in km per hour, is",
+   "opts": [
+    "16",
+    "14",
+    "12",
+    "18"
+   ]
+  },
+  {
+   "n": 16,
+   "topic": "Mensuration",
+   "type": "MCQ",
+   "q": "The surface area of a closed rectangular box, which is inscribed in a sphere, is 846 sq cm, and the sum of the lengths of all its edges is 144 cm. The volume, in cubic cm, of the sphere is",
+   "opts": [
+    "750π",
+    "1125π√2",
+    "1125π",
+    "750π√2"
+   ]
+  },
+  {
+   "n": 17,
+   "topic": "Mixtures",
+   "type": "MCQ",
+   "q": "A glass is filled with milk. Two-thirds of its content is poured out and replaced with water. If this process of pouring out two-thirds the content and replacing with water is repeated three more times, then the final ratio of milk to water in the glass, is",
+   "opts": [
+    "1 : 27",
+    "1 : 81",
+    "1 : 26",
+    "1 : 80"
+   ]
+  },
+  {
+   "n": 18,
+   "topic": "Functions",
+   "type": "TITA",
+   "q": "For any natural number n, let a<sub>n</sub> be the largest integer not exceeding √n. Then the value of a<sub>1</sub> + a<sub>2</sub> + ... + a<sub>50</sub> is"
+  },
+  {
+   "n": 19,
+   "topic": "Geometry",
+   "type": "TITA",
+   "q": "ABCD is a rectangle with sides AB = 56 cm and BC = 45 cm, and E is the midpoint of side CD. Then, the length, in cm, of radius of incircle of ΔADE is"
+  },
+  {
+   "n": 20,
+   "topic": "Quadratic equations",
+   "type": "TITA",
+   "q": "If the equations x<sup>2</sup> + mx + 9 = 0, x<sup>2</sup> + nx + 17 = 0 and x<sup>2</sup> + (m + n)x + 35 = 0 have a common negative root, then the value of (2m + 3n) is"
+  },
+  {
+   "n": 21,
+   "topic": "Profit & loss",
+   "type": "MCQ",
+   "q": "The selling price of a product is fixed to ensure 40% profit. If the product had cost 40% less and had been sold for 5 rupees less, then the resulting profit would have been 50%. The original selling price, in rupees, of the product is",
+   "opts": [
+    "10",
+    "15",
+    "20",
+    "14"
+   ]
+  },
+  {
+   "n": 22,
+   "topic": "Logarithms",
+   "type": "TITA",
+   "q": "If x is a positive real number such that 4 log<sub>10</sub> x + 4 log<sub>100</sub> x + 8 log<sub>1000</sub> x = 13, then the greatest integer not exceeding x, is"
+  }
+ ]
+}
