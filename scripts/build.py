@@ -88,3 +88,16 @@ print("by section:", dict(Counter(s for s, _, _ in qs)))
 print("by year:", dict(sorted(Counter(y for _, y, _ in qs).items())))
 print("unverified:", sum(1 for *_, q in qs if q["unverified"]))
 print("problems:", problems)
+
+# Stamp index.html so browsers fetch the new data.js/app.js/styles.css instead of a cached copy.
+import hashlib
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+h = hashlib.md5()
+for f in ("data.js", "app.js", "styles.css"):
+    h.update(open(os.path.join(ROOT, f), "rb").read())
+idx = os.path.join(ROOT, "index.html")
+html = open(idx, encoding="utf-8").read()
+new = re.sub(r'((?:data|app)\.js|styles\.css)(\?v=[0-9a-z]*)?"', r'\1?v=' + h.hexdigest()[:8] + '"', html)
+if new != html:
+    open(idx, "w", encoding="utf-8").write(new)
+print("cache stamp:", h.hexdigest()[:8])
