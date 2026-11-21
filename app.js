@@ -177,6 +177,7 @@
     var meta = '<div class="meta"><span class="tag sec">' + u.section + "</span>" +
       '<span class="tag">CAT ' + u.year + " · Slot " + u.slot + "</span>" +
       (q.topic ? '<span class="tag">' + esc(q.topic) + "</span>" : "") +
+      (q.noKey ? '<span class="tag nokey" title="The source has no official answer for this one. The answer was worked out and double-checked.">No official key</span>' : "") +
       '<span class="tag">' + (q.type === "TITA" ? "Type in answer" : "Multiple choice") + "</span>" +
       '<span class="spacer"></span>' +
       '<button class="flag' + (s.flag ? " on" : "") + '" id="flagBtn">' + (s.flag ? "Flagged" : "Flag") + "</button>" +
@@ -287,6 +288,7 @@
     var res = "";
     if (expl) {
       res = '<div class="result shown"><div>The answer is <b>' + render(ansText(q)) + "</b>" + (/[.?!]\s*$/.test(ansText(q)) ? "" : ".") + "</div>" +
+        (q.noKey ? '<div class="nokeynote">Answer worked out, no official key.</div>' : "") +
         (q.why ? '<div class="why">' + render(q.why) + "</div>" : "") +
         '<div class="sub"><a href="' + esc(q.sol) + '" target="_blank" rel="noopener">2IIM\'s explanation</a>' +
         (s.done && s.lastCorrect && !s.peeked ? "" : " · Not counted as solved.") +
@@ -300,6 +302,7 @@
         (s.hints ? " · " + s.hints + (s.hints === 1 ? " hint" : " hints") : "") +
         (!s.firstCorrect ? " · counted as a miss in your first-try score" : "") +
         (s.peeked ? " · not counted as solved, you opened the explanation first" : "") +
+        (q.noKey ? " · answer worked out, no official key" : "") +
         ' · <button class="retry" id="retryBtn">Try again</button></div></div>';
     } else if (s.done && !s.lastCorrect && !s.retrying) {
       res = '<div class="result bad"><b>Not quite.</b> ' +

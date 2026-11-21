@@ -39,6 +39,8 @@ main{max-width:1180px;margin:12px auto;padding:0 16px 110px}
 .meta{display:flex;gap:8px;flex-wrap:wrap;align-items:center;font-size:14px;color:var(--muted);margin-bottom:14px}
 .tag{background:var(--surface2);border-radius:6px;padding:2px 8px}
 .tag.sec{font-weight:600;color:var(--text)}
+.tag.nokey{border:1px dashed var(--muted,#888)}
+.nokeynote{font-size:.9em;font-style:italic;margin:4px 0 6px;opacity:.85}
 .spacer{flex:1}
 .timer{font-variant-numeric:tabular-nums;font-size:16px;color:var(--text);min-width:56px;text-align:right}
 .flag{border:1px solid var(--border);background:var(--surface);border-radius:8px;padding:4px 10px;cursor:pointer;font-size:14px}

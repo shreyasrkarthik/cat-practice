@@ -17,9 +17,11 @@ def load_keys(path, strip_sets):
             if not m:
                 continue
             n, eq, val = int(m.group(1)), m.group(2), m.group(3)
+            nokey = val.endswith("*")   # answer worked out by us, no official key
+            val = val.rstrip("*")
             unsure = val.endswith("?")
             val = val.rstrip("?")
-            d[n] = {"kind": "TITA" if eq else "MCQ", "val": val, "unsure": unsure}
+            d[n] = {"kind": "TITA" if eq else "MCQ", "val": val, "unsure": unsure, "nokey": nokey}
         keys[tag.strip()] = d
     return keys
 
@@ -84,6 +86,8 @@ for path in sorted(glob.glob(os.path.join(RAW, "*.json"))):
                         "ans": ans, "unverified": unv,
                         "sol": base + pat.format(n=it["n"])}],
                 "source": base})
+            if keys.get(it["n"], {}).get("nokey"):
+                units[-1]["qs"][0]["noKey"] = True
             add_hints(units[-1]["qs"][0], hints.get(it["n"]), f"{tag} QA q{it['n']}")
     else:
         pat = d.get("solPattern", "dilr-question-{n}.shtml")
@@ -97,6 +101,8 @@ for path in sorted(glob.glob(os.path.join(RAW, "*.json"))):
                 qs.append({"id": f"{tag}-lr-{q['n']}", "n": q["n"], "type": q["type"], "q": q["q"],
                            "opts": q.get("opts"), "ans": ans, "unverified": unv,
                            "sol": (lambda s: s if s.startswith("http") else base + s)(q.get("sol") or pat.format(n=q["n"]))})
+                if keys.get(q["n"], {}).get("nokey"):
+                    qs[-1]["noKey"] = True
                 add_hints(qs[-1], hints.get(q["n"]), f"{tag} DILR q{q['n']}")
             units.append({"id": f"{tag}-set-{si+1}", "kind": "set", "section": s["section"],
                           "year": d["year"], "slot": d["slot"], "title": s["title"],
@@ -114,6 +120,7 @@ print("questions:", len(qs), "units:", len(units))
 print("by section:", dict(Counter(s for s, _, _ in qs)))
 print("by year:", dict(sorted(Counter(y for _, y, _ in qs).items())))
 print("unverified:", sum(1 for *_, q in qs if q["unverified"]))
+print("worked out, no official key:", sum(1 for *_, q in qs if q.get("noKey")))
 print("problems:", problems)
 print("with hints:", hint_stats["with"], "without:", hint_stats["without"])
 print("hint answer mismatches:", hint_stats["mismatch"])

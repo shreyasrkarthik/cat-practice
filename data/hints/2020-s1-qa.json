@@ -1,0 +1,210 @@
+{
+ "1": {
+  "ans": "21",
+  "hints": [
+   "The product can be 3, 4, 5 or 6. No digit can be 0.",
+   "List the digit groups for each product, like {1, 1, 3} for 3, then count the ways to arrange each group."
+  ],
+  "why": "<p>Product 3: {1,1,3}, 3 ways. Product 4: {1,1,4} and {1,2,2}, 3 + 3 ways. Product 5: {1,1,5}, 3 ways. Product 6: {1,1,6} 3 ways and {1,2,3} 6 ways.</p><p>Total 3 + 6 + 3 + 9 = <b>21</b>.</p>"
+ },
+ "2": {
+  "ans": "D",
+  "hints": [
+   "f(5 + x) = f(5 − x) means the graph is a mirror image about x = 5.",
+   "If r is a root, what other number must also be a root?"
+  ],
+  "why": "<p>The graph is symmetric about x = 5, so roots come in pairs 5 + a and 5 − a, each pair adding to 10. Four roots make two pairs: <b>20</b>. (40 counts each root as 10; 10 counts only one pair.)</p>"
+ },
+ "3": {
+  "ans": "12",
+  "hints": [
+   "Write each balance after t years from Veeru's start. Joy has only t − 2 years of interest.",
+   "Set 10000 + 500t equal to 8000 + 800(t − 2)."
+  ],
+  "why": "<p>10000 + 500t = 8000 + 800(t − 2) = 6400 + 800t, so 300t = 3600 and t = <b>12</b>.</p>"
+ },
+ "4": {
+  "ans": "B",
+  "hints": [
+   "At one-third speed the trip takes 3 times as long. Use the 30-minute delay to find the usual trip time.",
+   "On the way back, 9 minutes are gone after covering only 5 minutes' worth of distance. How much time is left for the rest?"
+  ],
+  "why": "<p>3T − T = 30, so the usual trip T is 15 minutes. Going back, 5 minutes at usual speed covers a third of the way, then 4 minutes are lost. 6 minutes remain for the other two-thirds, which normally takes 10 minutes.</p><p>Speed must rise to 10/6 of usual: about 67% more, so <b>67</b>.</p>"
+ },
+ "5": {
+  "ans": "36",
+  "hints": [
+   "Write every log in terms of natural logs (or any one base).",
+   "log<sub>6</sub> √5 = ½ log<sub>6</sub> 5. The ln 5 on both sides cancels."
+  ],
+  "why": "<p>ln5/ln4 = (ln y/ln4) × (½ ln5/ln6). Cancel ln5 and ln4: 1 = ln y ÷ (2 ln6), so ln y = 2 ln6 and y = <b>36</b>.</p>"
+ },
+ "6": {
+  "ans": "B",
+  "hints": [
+   "What's the smallest value 2<sup>x</sup> + 2<sup>−x</sup> can take, and for which x?",
+   "What's the largest value the right side can take, and for which x?"
+  ],
+  "why": "<p>The left side is at least 2 (equal only at x = 0). The right side is at most 2 (equal only at x = 2). Both would have to equal 2 at the same x, which can't happen. <b>0</b> solutions.</p>"
+ },
+ "7": {
+  "ans": "A",
+  "hints": [
+   "Each car covers, after the meeting, the distance the other covered before it.",
+   "This gives (v1/v2)² = t2/t1, using the times after the meeting."
+  ],
+  "why": "<p>v1/v2 = √(20/45) = 2/3, so v2 = 60 × 3/2 = <b>90</b> km/hr.</p>"
+ },
+ "8": {
+  "ans": "A",
+  "hints": [
+   "Double both conditions to clear the fractions.",
+   "Subtract one from the other to get B − A. Then remember all three are positive integers."
+  ],
+  "why": "<p>2A + B + C = 10 and A + 2B + C = 14. Subtracting: B − A = 4. With A = 1, B = 5, C = 3 works. A = 2 gives B = 6 and C = 0, which isn't positive. So A + B = <b>6</b>.</p>"
+ },
+ "9": {
+  "ans": "C",
+  "hints": [
+   "4096 = 2<sup>12</sup> and 64 = 2<sup>6</sup>. What power of x gives 64?",
+   "(7 + 4√3)(7 − 4√3) = 1."
+  ],
+  "why": "<p>x = 2<sup>12(7 + 4√3)</sup>. For x<sup>k</sup> = 2<sup>6</sup>, k = 1 ÷ (2(7 + 4√3)) = (7 − 4√3)/2 = 7/2 − 2√3. So 64 = x<sup>7/2</sup> ÷ x<sup>2√3</sup>: option <b>C</b>.</p>"
+ },
+ "10": {
+  "ans": "A",
+  "hints": [
+   "aabb = 1100a + 11b. What values can a and b take?",
+   "Even means b is 0, 2, 4, 6 or 8. Every a pairs with every b, so average them separately."
+  ],
+  "why": "<p>a runs 1 to 9 (average 5), b runs over 0, 2, 4, 6, 8 (average 4). Mean = 1100 × 5 + 11 × 4 = <b>5544</b>.</p>"
+ },
+ "11": {
+  "ans": "1",
+  "hints": [
+   "Let t = x + 1/x and solve the quadratic in t.",
+   "For real x, x + 1/x can't be between −2 and 2."
+  ],
+  "why": "<p>t² − 3t + 2 = 0 gives t = 1 or 2. t = 1 has no real x. t = 2 gives only x = 1. So <b>1</b> root.</p>"
+ },
+ "12": {
+  "ans": "20000",
+  "hints": [
+   "Let the desktop cost D, so the laptop costs 50000 − D.",
+   "Overall profit is 2% of 50000 = 1000."
+  ],
+  "why": "<p>0.2D − 0.1(50000 − D) = 1000, so 0.3D = 6000 and D = <b>20000</b>.</p>"
+ },
+ "13": {
+  "ans": "D",
+  "hints": [
+   "Spread the 100 students as evenly as you can over 12 months.",
+   "100 ÷ 12 is a little over 8."
+  ],
+  "why": "<p>If every month had 8 or fewer, there'd be at most 96 students. So some month has at least 9, and 9 is reachable (four months of 9, eight of 8). Answer <b>9</b>.</p>"
+ },
+ "14": {
+  "ans": "B",
+  "hints": [
+   "The train's length = (train speed − walker speed) × crossing time, for each walker.",
+   "Set the two lengths equal to find the train's speed."
+  ],
+  "why": "<p>(v − 2) × 90 = (v − 4) × 100, so v = 22 km/h. The length is 20 km/h × 90 s. Crossing a post takes 20 × 90 ÷ 22 ≈ 81.8 s, nearest <b>82</b>.</p>"
+ },
+ "15": {
+  "ans": "A",
+  "hints": [
+   "A power equals 1 in three ways: base 1, exponent 0 (with a non-zero base), or base −1 with an even exponent.",
+   "Check each case for positive integers x."
+  ],
+  "why": "<p>Base 1: x² − 7x + 10 = 0, x = 2 or 5. Exponent 0: x = 6 or 7 (base is 5 or 11, not 0). Base −1: x = 3 or 4, with exponents 12 and 6, both even. Total <b>6</b>. (Missing the base −1 case gives 4.)</p>"
+ },
+ "16": {
+  "ans": "3",
+  "hints": [
+   "Rewrite |x| − y ≤ 1 as y ≥ |x| − 1. Sketch this V shape.",
+   "Cut it between y = 0 and y = 1. What shape is left?"
+  ],
+  "why": "<p>At y = 0, x runs from −1 to 1 (width 2). At y = 1, x runs from −2 to 2 (width 4). It's a trapezium of height 1: (2 + 4)/2 × 1 = <b>3</b>.</p>"
+ },
+ "17": {
+  "ans": "C",
+  "hints": [
+   "The small top cone has height 27 − 18 = 9, a third of the full height.",
+   "Volumes of similar cones scale with the cube of the height."
+  ],
+  "why": "<p>Top cone = V/27, bottom piece = 26V/27. The difference is 25V/27 = 225, so V = <b>243</b>.</p>"
+ },
+ "18": {
+  "ans": "B",
+  "hints": [
+   "Find the rhombus's side and area from its diagonals.",
+   "For a shape with an inscribed circle, area = ½ × perimeter × radius."
+  ],
+  "why": "<p>Side = √(6² + 8²) = 10, area = ½ × 12 × 16 = 96. 96 = ½ × 40 × r, so r = 4.8. Ratio = π × 23.04 ÷ 96 = 0.24π = <b>6π/25</b>.</p>"
+ },
+ "19": {
+  "ans": "A",
+  "hints": [
+   "The two speeds differ by 35 minutes of travel time. Use that to find the distance.",
+   "Then he has 50 minutes for that distance."
+  ],
+  "why": "<p>d/8 − d/15 = 35/60, so 7d/120 = 7/12 and d = 10 km. 10 km in 50 minutes is <b>12</b> km/h.</p>"
+ },
+ "20": {
+  "ans": "C",
+  "hints": [
+   "b must divide both 432 and 96. What's their HCF?",
+   "c = 96/b must be below 9, so b must be at least 11. Try each possible b."
+  ],
+  "why": "<p>b divides 48 and b > 10.67, so b is 12, 16, 24 or 48. a + b + c = 528/b + b gives 56, 49, 46, 59. The smallest is <b>46</b> (a = 18, b = 24, c = 4).</p>"
+ },
+ "21": {
+  "ans": "A",
+  "hints": [
+   "Take log base 2 of both sides.",
+   "log<sub>3</sub> 5 = log<sub>2</sub> 5 ÷ log<sub>2</sub> 3."
+  ],
+  "why": "<p>y² log<sub>3</sub> 5 = log<sub>2</sub> 3 × log<sub>2</sub> 5. Replace log<sub>3</sub> 5 and cancel log<sub>2</sub> 5: y² = (log<sub>2</sub> 3)². y is negative, so y = −log<sub>2</sub> 3 = <b>log<sub>2</sub>(1/3)</b>. (Option C is the positive root.)</p>"
+ },
+ "22": {
+  "ans": "A",
+  "hints": [
+   "The circle's diameter equals the shorter side. Unpainted = ⅔ painted means the sheet is 5/3 of the circle's area.",
+   "Find r from 5/3 × πr² = 135, then the other side from the area."
+  ],
+  "why": "<p>πr² × 5/3 = 135, so r² = 81/π and the short side is 2r = 18/√π. The long side = 135 ÷ (18/√π) = 7.5√π. Perimeter = 15√π + 36/√π = <b>3√π(5 + 12/π)</b>.</p>"
+ },
+ "23": {
+  "ans": "C",
+  "hints": [
+   "Take 100 people and fill a 2 × 2 table: young/old by literate/illiterate.",
+   "Young literates are 25% of the 65 literates."
+  ],
+  "why": "<p>Literates 65: young 16.25, old 48.75. Illiterates 35: young 28 − 16.25 = 11.75, old 23.25. 23.25 ÷ 35 ≈ 66.4%, nearest <b>66</b>.</p>"
+ },
+ "24": {
+  "ans": "A",
+  "hints": [
+   "Weight = volume × weight per unit volume, for each metal.",
+   "Multiply 3 : 4 : 7 by 5 : 2 : 6 term by term."
+  ],
+  "why": "<p>Weights are 15 : 8 : 42, total 65. C = 42/65 × 130 = <b>84</b> kg.</p>"
+ },
+ "25": {
+  "ans": "62",
+  "hints": [
+   "Work backwards from the last child.",
+   "Before a child, the stock was (stock after + 1) × 2."
+  ],
+  "why": "<p>After child 5: 0. Before: 2, then 6, 14, 30, <b>62</b>.</p>"
+ },
+ "26": {
+  "ans": "8",
+  "hints": [
+   "Track dye and water separately: start with 16 dye, 24 water.",
+   "Dye doesn't change when water is added. Find the water at 2 : 5, then take out a quarter of each."
+  ],
+  "why": "<p>At 2 : 5, water = 40 (dye 16). Taking out a quarter leaves dye 12, water 30. For 2 : 3 with 30 water, dye must be 20: add <b>8</b> litres.</p>"
+ }
+}
