@@ -47,6 +47,38 @@
   ],
   "why": "<p>Values of 10 fix two objects: Barat gets o9 and Elise gets o10. Barat's total must be even and at most 16, so his other object is o7 (10 + 6 = 16). Elise's must be even and at most 16, so her other object is o1 or o5 (10 + 6).</p><p>A third person is at 16, and it can't be Disha (her total is odd). Checking the rest against the rules on o1, o2, o3 and o8 and on envy leaves one allocation:</p><p>Amar o2 + o6 (12), Barat o7 + o9 (16), Charles o3 + o8 (16), Disha o1 + o4 (13), Elise o5 + o10 (16). Amar envies Barat and Charles, Disha envies Barat, and nobody else envies anyone.</p><p>o1 went to <b>Disha</b> (o1 + o4 = 13, her odd total).</p>"
  },
+ "7": {
+  "ans": "6",
+  "hints": [
+   "List each bar as (booking day, dispatch day). A colour change inside a row starts a new order.",
+   "Bookings happen only at the left end of each bar. Which days from Sep 1 to 14 have no left end?"
+  ],
+  "why": "<p>Orders as (booked–dispatched): Art 1–3, 3–4, 4–6, 6–13, 13–21. Binders 1–2, 2–4, 4–5, 5–16. Paper 2–4, 4–7, 7–12. Phones 2–4, 4–5, 5–17. Appliances 2–4, 4–12. Bookcases 3–4, 4–6, 6–7. Fasteners 2–4, 4–6, 6–8. Furnishings 1–5, 5–12. Labels 2–4, 4–12. Tables 2–4, 4–10. Chairs 2–3, 3–9. Accessories 1–19. Envelopes 3–7. Storage 2–7, 7–22. That's 35 orders.</p><p>Bookings fall on Sep 1–7 and Sep 13 only. No booking on Sep 8, 9, 10, 11, 12 and 14: <b>6</b> days.</p>"
+ },
+ "8": {
+  "ans": "11",
+  "hints": [
+   "List each bar as (booking day, dispatch day). A colour change inside a row starts a new order.",
+   "Which rows are a single colour all the way?"
+  ],
+  "why": "<p>Orders as (booked–dispatched): Art 1–3, 3–4, 4–6, 6–13, 13–21. Binders 1–2, 2–4, 4–5, 5–16. Paper 2–4, 4–7, 7–12. Phones 2–4, 4–5, 5–17. Appliances 2–4, 4–12. Bookcases 3–4, 4–6, 6–7. Fasteners 2–4, 4–6, 6–8. Furnishings 1–5, 5–12. Labels 2–4, 4–12. Tables 2–4, 4–10. Chairs 2–3, 3–9. Accessories 1–19. Envelopes 3–7. Storage 2–7, 7–22. That's 35 orders.</p><p>Only Accessories (18 days) and Envelopes (4 days) use one ship mode. Average (18 + 4) ÷ 2 = <b>11</b>.</p>"
+ },
+ "9": {
+  "ans": "D",
+  "hints": [
+   "List each bar as (booking day, dispatch day). A colour change inside a row starts a new order.",
+   "Average processing time = (last dispatch − first booking) ÷ number of orders, since orders follow each other with no gap."
+  ],
+  "why": "<p>Orders as (booked–dispatched): Art 1–3, 3–4, 4–6, 6–13, 13–21. Binders 1–2, 2–4, 4–5, 5–16. Paper 2–4, 4–7, 7–12. Phones 2–4, 4–5, 5–17. Appliances 2–4, 4–12. Bookcases 3–4, 4–6, 6–7. Fasteners 2–4, 4–6, 6–8. Furnishings 1–5, 5–12. Labels 2–4, 4–12. Tables 2–4, 4–10. Chairs 2–3, 3–9. Accessories 1–19. Envelopes 3–7. Storage 2–7, 7–22. That's 35 orders.</p><p>Phones 15/3 = 5, Art 20/5 = 4, Binders 15/4 = 3.75, Paper 10/3 ≈ 3.33. Order: <b>Phones, Art, Binders, Paper</b>.</p>"
+ },
+ "10": {
+  "ans": "B",
+  "hints": [
+   "List each bar as (booking day, dispatch day). A colour change inside a row starts a new order.",
+   "Count the bars exactly one day long, and count all bars."
+  ],
+  "why": "<p>Orders as (booked–dispatched): Art 1–3, 3–4, 4–6, 6–13, 13–21. Binders 1–2, 2–4, 4–5, 5–16. Paper 2–4, 4–7, 7–12. Phones 2–4, 4–5, 5–17. Appliances 2–4, 4–12. Bookcases 3–4, 4–6, 6–7. Fasteners 2–4, 4–6, 6–8. Furnishings 1–5, 5–12. Labels 2–4, 4–12. Tables 2–4, 4–10. Chairs 2–3, 3–9. Accessories 1–19. Envelopes 3–7. Storage 2–7, 7–22. That's 35 orders.</p><p>One-day orders: Art 3–4, Binders 1–2 and 4–5, Phones 4–5, Bookcases 3–4 and 6–7, Chairs 2–3: 7 of 35 = <b>20%</b>.</p>"
+ },
  "11": {
   "ans": "C",
   "hints": [

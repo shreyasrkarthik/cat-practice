@@ -39,6 +39,46 @@
   ],
   "why": "<p>All 24 votes: Pakrasi 3, Qureshi 14, Ramaswamy 6, Samuel 1. Take out the four candidates' own votes, and the non-candidate blocks gave Pakrasi 2, Ramaswamy 5, Qureshi 13, Samuel 0.</p><p>Only B&H's block can be as small as 2, so B&H has one candidate and its 2 others vote Pakrasi. Ramaswamy's 5 can only be M&S with two candidates. Then F&A (9, no candidates) and O&Q (4 non-candidates) vote Qureshi: 9 + 4 = 13.</p><p>M&S's pair can't include Ramaswamy (M&S votes for him). Pakrasi–Samuel and Qureshi–Samuel can't share a department, because one votes for the other. So M&S = Pakrasi and Qureshi. Ramaswamy and Samuel are split between O&Q and B&H.</p><p>M&S's non-candidates voted Ramaswamy, and F&A's voted Qureshi. So <b>only statement B</b> is true.</p>"
  },
+ "6": {
+  "ans": "0",
+  "hints": [
+   "Use each worker's mean, median, mode and range to find their five ratings as a set, before working out who gave which.",
+   "R2's total is only 11, and three of its five ratings are given. What must Ullas and Vasu get from R2?"
+  ],
+  "why": "<p>Row totals (mean × 5): R1 17, R2 11, R3 19, R4 14, R5 17. Worker totals: Ullas 11, Vasu 19, Waman 17, Xavier 18, Yusuf 13.</p><p>Each worker's five ratings are fixed by mean, median, mode and range: Ullas {1,2,2,2,4}, Vasu {2,4,4,4,5}, Waman {1,2,4,5,5}, Xavier {1,3,4,5,5}, Yusuf {1,1,3,4,4}.</p><p>R2 (total 11) already has Waman 1, Xavier 5, Yusuf 1, so Ullas + Vasu = 4: both 2. R3 (19) has 5, 5, 1, so Ullas + Vasu = 8: both 4. That fixes Ullas and Vasu. R1, R4 and R5 totals then leave only one way to place the rest.</p><p>R1: U1 V4 W5 X3 Y4. R2: U2 V2 W1 X5 Y1. R3: U4 V4 W5 X5 Y1. R4: U2 V4 W4 X1 Y3. R5: U2 V5 W2 X4 Y4.</p><p>Every rating is fixed: <b>0</b> unknown.</p>"
+ },
+ "7": {
+  "ans": "0",
+  "hints": [
+   "Use each worker's mean, median, mode and range to find their five ratings as a set, before working out who gave which.",
+   "R2's total is only 11, and three of its five ratings are given. What must Ullas and Vasu get from R2?"
+  ],
+  "why": "<p>Row totals (mean × 5): R1 17, R2 11, R3 19, R4 14, R5 17. Worker totals: Ullas 11, Vasu 19, Waman 17, Xavier 18, Yusuf 13.</p><p>Each worker's five ratings are fixed by mean, median, mode and range: Ullas {1,2,2,2,4}, Vasu {2,4,4,4,5}, Waman {1,2,4,5,5}, Xavier {1,3,4,5,5}, Yusuf {1,1,3,4,4}.</p><p>R2 (total 11) already has Waman 1, Xavier 5, Yusuf 1, so Ullas + Vasu = 4: both 2. R3 (19) has 5, 5, 1, so Ullas + Vasu = 8: both 4. That fixes Ullas and Vasu. R1, R4 and R5 totals then leave only one way to place the rest.</p><p>R1: U1 V4 W5 X3 Y4. R2: U2 V2 W1 X5 Y1. R3: U4 V4 W5 X5 Y1. R4: U2 V4 W4 X1 Y3. R5: U2 V5 W2 X4 Y4.</p><p>R2 gave 2, 2, 1, 5, 1: <b>no</b> 4s.</p>"
+ },
+ "8": {
+  "ans": "3",
+  "hints": [
+   "Use each worker's mean, median, mode and range to find their five ratings as a set, before working out who gave which.",
+   "R2's total is only 11, and three of its five ratings are given. What must Ullas and Vasu get from R2?"
+  ],
+  "why": "<p>Row totals (mean × 5): R1 17, R2 11, R3 19, R4 14, R5 17. Worker totals: Ullas 11, Vasu 19, Waman 17, Xavier 18, Yusuf 13.</p><p>Each worker's five ratings are fixed by mean, median, mode and range: Ullas {1,2,2,2,4}, Vasu {2,4,4,4,5}, Waman {1,2,4,5,5}, Xavier {1,3,4,5,5}, Yusuf {1,1,3,4,4}.</p><p>R2 (total 11) already has Waman 1, Xavier 5, Yusuf 1, so Ullas + Vasu = 4: both 2. R3 (19) has 5, 5, 1, so Ullas + Vasu = 8: both 4. That fixes Ullas and Vasu. R1, R4 and R5 totals then leave only one way to place the rest.</p><p>R1: U1 V4 W5 X3 Y4. R2: U2 V2 W1 X5 Y1. R3: U4 V4 W5 X5 Y1. R4: U2 V4 W4 X1 Y3. R5: U2 V5 W2 X4 Y4.</p><p>R1 gave Xavier <b>3</b>.</p>"
+ },
+ "9": {
+  "ans": "4",
+  "hints": [
+   "Use each worker's mean, median, mode and range to find their five ratings as a set, before working out who gave which.",
+   "R2's total is only 11, and three of its five ratings are given. What must Ullas and Vasu get from R2?"
+  ],
+  "why": "<p>Row totals (mean × 5): R1 17, R2 11, R3 19, R4 14, R5 17. Worker totals: Ullas 11, Vasu 19, Waman 17, Xavier 18, Yusuf 13.</p><p>Each worker's five ratings are fixed by mean, median, mode and range: Ullas {1,2,2,2,4}, Vasu {2,4,4,4,5}, Waman {1,2,4,5,5}, Xavier {1,3,4,5,5}, Yusuf {1,1,3,4,4}.</p><p>R2 (total 11) already has Waman 1, Xavier 5, Yusuf 1, so Ullas + Vasu = 4: both 2. R3 (19) has 5, 5, 1, so Ullas + Vasu = 8: both 4. That fixes Ullas and Vasu. R1, R4 and R5 totals then leave only one way to place the rest.</p><p>R1: U1 V4 W5 X3 Y4. R2: U2 V2 W1 X5 Y1. R3: U4 V4 W5 X5 Y1. R4: U2 V4 W4 X1 Y3. R5: U2 V5 W2 X4 Y4.</p><p>R3's ratings sorted: 1, 4, 4, 5, 5. Median <b>4</b>.</p>"
+ },
+ "10": {
+  "ans": "D",
+  "hints": [
+   "Use each worker's mean, median, mode and range to find their five ratings as a set, before working out who gave which.",
+   "Once the grid is filled, sort each restaurant's five ratings and count how many equal the middle one."
+  ],
+  "why": "<p>Row totals (mean × 5): R1 17, R2 11, R3 19, R4 14, R5 17. Worker totals: Ullas 11, Vasu 19, Waman 17, Xavier 18, Yusuf 13.</p><p>Each worker's five ratings are fixed by mean, median, mode and range: Ullas {1,2,2,2,4}, Vasu {2,4,4,4,5}, Waman {1,2,4,5,5}, Xavier {1,3,4,5,5}, Yusuf {1,1,3,4,4}.</p><p>R2 (total 11) already has Waman 1, Xavier 5, Yusuf 1, so Ullas + Vasu = 4: both 2. R3 (19) has 5, 5, 1, so Ullas + Vasu = 8: both 4. That fixes Ullas and Vasu. R1, R4 and R5 totals then leave only one way to place the rest.</p><p>R1: U1 V4 W5 X3 Y4. R2: U2 V2 W1 X5 Y1. R3: U4 V4 W5 X5 Y1. R4: U2 V4 W4 X1 Y3. R5: U2 V5 W2 X4 Y4.</p><p>R1 1,3,4,4,5 (two 4s), R2 1,1,2,2,5 (two 2s), R3 1,4,4,5,5 (two 4s), R4 1,2,3,4,4 (one 3), R5 2,2,4,4,5 (two 4s). Only <b>R4</b>.</p>"
+ },
  "11": {
   "ans": "0",
   "hints": [

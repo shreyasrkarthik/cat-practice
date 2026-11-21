@@ -31,3 +31,13 @@ H = {
 19: dict(ans="A", hints=[_rh1, _rh2], why=_rv + "<p>Atal's ratings: Behaviour 7, Packaging 5, Hygiene 5, Timeliness 6. Highest: <b>Behaviour</b>.</p>"),
 20: dict(ans="B", hints=[_rh2, "Deepak must have the same rank in Packaging and Hygiene, and so must Atal."], why=_rv + "<p>Deepak gave <b>7</b> for Packaging.</p>"),
 }
+
+# ---- DI ----
+_so = ("<p>Orders as (booked–dispatched): Art 1–3, 3–4, 4–6, 6–13, 13–21. Binders 1–2, 2–4, 4–5, 5–16. Paper 2–4, 4–7, 7–12. Phones 2–4, 4–5, 5–17. Appliances 2–4, 4–12. Bookcases 3–4, 4–6, 6–7. Fasteners 2–4, 4–6, 6–8. Furnishings 1–5, 5–12. Labels 2–4, 4–12. Tables 2–4, 4–10. Chairs 2–3, 3–9. Accessories 1–19. Envelopes 3–7. Storage 2–7, 7–22. That's 35 orders.</p>")
+_soh1 = "List each bar as (booking day, dispatch day). A colour change inside a row starts a new order."
+H.update({
+7: dict(ans="6", hints=[_soh1, "Bookings happen only at the left end of each bar. Which days from Sep 1 to 14 have no left end?"], why=_so + "<p>Bookings fall on Sep 1–7 and Sep 13 only. No booking on Sep 8, 9, 10, 11, 12 and 14: <b>6</b> days.</p>"),
+8: dict(ans="11", hints=[_soh1, "Which rows are a single colour all the way?"], why=_so + "<p>Only Accessories (18 days) and Envelopes (4 days) use one ship mode. Average (18 + 4) ÷ 2 = <b>11</b>.</p>"),
+9: dict(ans="D", hints=[_soh1, "Average processing time = (last dispatch − first booking) ÷ number of orders, since orders follow each other with no gap."], why=_so + "<p>Phones 15/3 = 5, Art 20/5 = 4, Binders 15/4 = 3.75, Paper 10/3 ≈ 3.33. Order: <b>Phones, Art, Binders, Paper</b>.</p>"),
+10: dict(ans="B", hints=[_soh1, "Count the bars exactly one day long, and count all bars."], why=_so + "<p>One-day orders: Art 3–4, Binders 1–2 and 4–5, Phones 4–5, Bookcases 3–4 and 6–7, Chairs 2–3: 7 of 35 = <b>20%</b>.</p>"),
+})

@@ -127,6 +127,70 @@
   ],
   "why": "<p>Client 1 (10:00): Anish makes the burger 10:00–10:10, Bani the ice cream 10:00–10:02, fries 10:00–10:05.</p><p>Bani: ice cream for client 2 10:05–10:07, then client 3's burger 10:07–10:17. Anish is free from 10:10.</p><p>Exactly one idle: 10:02–10:05 (Bani idle, Anish busy) = 3 min, and 10:10–10:17 (Anish idle, Bani busy) = 7 min. After 10:17 both are idle. Total <b>10</b> minutes.</p>"
  },
+ "17": {
+  "ans": "A",
+  "hints": [
+   "Start with the region sizes: 50 kids per village. Then work out S fully, using fact 1.",
+   "The table only counts kids whose mothers dropped out. Subtract it from the region totals to get the other group."
+  ],
+  "why": "<p>Kids: NE 7500, W 12500, S 10000. All regions: G 16500, P 11100, O 2400.</p><p>S: G = 60% = 6000. Kids of mothers who finished school are all in school, so S's O kids are just the 300 in the table. S's P = 10000 − 6000 − 300 = 3700.</p><p>NE: the table's 300 O kids are half, so NE has 600 O kids. W's O = 2400 − 600 − 300 = 1500. G in NE = G in W = (16500 − 6000) ÷ 2 = 5250.</p><p>S's P share: 3700 ÷ 10000 = <b>37%</b>.</p>"
+ },
+ "18": {
+  "ans": "A",
+  "hints": [
+   "Start with the region sizes: 50 kids per village. Then work out S fully, using fact 1.",
+   "W's O kids = all O kids minus NE's and S's. Then remove the table's W figure."
+  ],
+  "why": "<p>Kids: NE 7500, W 12500, S 10000. All regions: G 16500, P 11100, O 2400.</p><p>S: G = 60% = 6000. Kids of mothers who finished school are all in school, so S's O kids are just the 300 in the table. S's P = 10000 − 6000 − 300 = 3700.</p><p>NE: the table's 300 O kids are half, so NE has 600 O kids. W's O = 2400 − 600 − 300 = 1500. G in NE = G in W = (16500 − 6000) ÷ 2 = 5250.</p><p>W's O kids of mothers who finished school: 1500 − 1200 = <b>300</b>.</p>"
+ },
+ "19": {
+  "ans": "A",
+  "hints": [
+   "The table only counts kids whose mothers dropped out. Subtract it from the region totals to get the other group.",
+   "Try the three rates (25%, 100%, 50%) on NE 600, W 1500 and S 300 in every order. Which order gives 1200 joining G?"
+  ],
+  "why": "<p>Kids: NE 7500, W 12500, S 10000. All regions: G 16500, P 11100, O 2400.</p><p>S: G = 60% = 6000. Kids of mothers who finished school are all in school, so S's O kids are just the 300 in the table. S's P = 10000 − 6000 − 300 = 3700.</p><p>NE: the table's 300 O kids are half, so NE has 600 O kids. W's O = 2400 − 600 − 300 = 1500. G in NE = G in W = (16500 − 6000) ÷ 2 = 5250.</p><p>Follow-up: out-of-school kids were NE 600, W 1500, S 300, and 1200 of the 2400 joined G. The only split that gives 1200 is NE 25% (150), W 50% (750), S 100% (300).</p><p>G in W now: 5250 + 750 = <b>6000</b>.</p>"
+ },
+ "20": {
+  "ans": "A",
+  "hints": [
+   "The table only counts kids whose mothers dropped out. Subtract it from the region totals to get the other group.",
+   "Try the three rates (25%, 100%, 50%) on NE 600, W 1500 and S 300 in every order. Which order gives 1200 joining G?"
+  ],
+  "why": "<p>Kids: NE 7500, W 12500, S 10000. All regions: G 16500, P 11100, O 2400.</p><p>S: G = 60% = 6000. Kids of mothers who finished school are all in school, so S's O kids are just the 300 in the table. S's P = 10000 − 6000 − 300 = 3700.</p><p>NE: the table's 300 O kids are half, so NE has 600 O kids. W's O = 2400 − 600 − 300 = 1500. G in NE = G in W = (16500 − 6000) ÷ 2 = 5250.</p><p>Follow-up: out-of-school kids were NE 600, W 1500, S 300, and 1200 of the 2400 joined G. The only split that gives 1200 is NE 25% (150), W 50% (750), S 100% (300).</p><p>In S, all 300 O kids (all with mothers who dropped out) joined G. So that group's G = 5100 + 300 = 5400 of 5700 = <b>94.7%</b>.</p>"
+ },
+ "21": {
+  "ans": "1",
+  "hints": [
+   "Amda and Calla have identical scores, so each value they use must appear at least twice in the chart.",
+   "What's the lowest S anyone can have?"
+  ],
+  "why": "<p>Score counts: S has three 3s, three 4s, two 5s, one 6, one 7. F has two 1s, one 2, two 3s, one 4, three 5s, one 7. C has one 1, three 2s, four 3s, one 4, one 6.</p><p>Amda and Calla match and total 7. S can't be below 3, so both have S 3, and F + C = 4 with a value both can share: F 1, C 3.</p><p>Zooma's 17 must include S 6: either (6, 7, 4) or (6, 5, 6). Each happy country holds exactly one of the top scores (S 7, F 7, C 6).</p><p>Amda's F is <b>1</b>.</p>"
+ },
+ "22": {
+  "ans": "6",
+  "hints": [
+   "Amda and Calla have identical scores, so each value they use must appear at least twice in the chart.",
+   "A happy country holds one top score (S 7, F 7 or C 6) and none of the others. What's the most Zooma can make with each?"
+  ],
+  "why": "<p>Score counts: S has three 3s, three 4s, two 5s, one 6, one 7. F has two 1s, one 2, two 3s, one 4, three 5s, one 7. C has one 1, three 2s, four 3s, one 4, one 6.</p><p>Amda and Calla match and total 7. S can't be below 3, so both have S 3, and F + C = 4 with a value both can share: F 1, C 3.</p><p>Zooma's 17 must include S 6: either (6, 7, 4) or (6, 5, 6). Each happy country holds exactly one of the top scores (S 7, F 7, C 6).</p><p>With S 7, the best is 7 + 5 + 4 = 16, short of 17. Both ways to reach 17 use S 6. Zooma's S is <b>6</b>.</p>"
+ },
+ "23": {
+  "ans": "B",
+  "hints": [
+   "A happy country holds one top score (S 7, F 7 or C 6) and none of the others. What's the most Zooma can make with each?",
+   "Zooma takes the only S 6. Try both versions of Zooma and find the best equal score for the other two happy countries."
+  ],
+  "why": "<p>Score counts: S has three 3s, three 4s, two 5s, one 6, one 7. F has two 1s, one 2, two 3s, one 4, three 5s, one 7. C has one 1, three 2s, four 3s, one 4, one 6.</p><p>Amda and Calla match and total 7. S can't be below 3, so both have S 3, and F + C = 4 with a value both can share: F 1, C 3.</p><p>Zooma's 17 must include S 6: either (6, 7, 4) or (6, 5, 6). Each happy country holds exactly one of the top scores (S 7, F 7, C 6).</p><p>If Zooma is (6, 7, 4): the S 7 country gets at most 7 + 5 + 3 = 15. If Zooma is (6, 5, 6): the S 7 and F 7 countries each reach 16 only with C 4, and there's just one C 4, so a tie tops out at 15. Maximum <b>15</b>.</p>"
+ },
+ "24": {
+  "ans": "B",
+  "hints": [
+   "A happy country holds one top score (S 7, F 7 or C 6) and none of the others. What's the most Zooma can make with each?",
+   "The five non-happy countries share the leftover scores and must each stay at 13 or below. What's left after the five known countries?"
+  ],
+  "why": "<p>Score counts: S has three 3s, three 4s, two 5s, one 6, one 7. F has two 1s, one 2, two 3s, one 4, three 5s, one 7. C has one 1, three 2s, four 3s, one 4, one 6.</p><p>Amda and Calla match and total 7. S can't be below 3, so both have S 3, and F + C = 4 with a value both can share: F 1, C 3.</p><p>Zooma's 17 must include S 6: either (6, 7, 4) or (6, 5, 6). Each happy country holds exactly one of the top scores (S 7, F 7, C 6).</p><p>Either way Benga 16 and Delma 15 work out, the leftover scores are S 3, 4, 4, 4, 5; F 2, 3, 3, 4, 5; C 1, 2, 2, 2, 3. A 13 needs 5 + 5 + 3, and there's only one 5 in each list, so at most <b>1</b> country scores 13.</p>"
+ },
  "25": {
   "ans": "C",
   "hints": [

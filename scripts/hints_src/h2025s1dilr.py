@@ -30,3 +30,24 @@ H = {
 21: dict(ans="D", hints=[_th2, "Ehsaan's rule: Clive's answer to Ehsaan can't equal Ehsaan's answer to Clive. Fill in Ehsaan's answers first (he tapped 9)."], why=_tap + "<p>Clive answered Ehsaan's question <b>No</b>.</p>"),
 22: dict(ans="6", hints=[_th2, "Once the grid is filled in, count the 1-tap answers."], why=_tap + "<p>Yes answers: Alia 2, Badal 2, Clive 1, Ehsaan 1 = <b>6</b>.</p>"),
 }
+
+# ---- DI ----
+_tr = ("<p>Tickets: A–C, A–D, A–E, B–C = 40, B–E = 30, C–D, C–E (A–B, B–D, D–E are 0). Seats on each segment: B–C = (A–C + A–D + A–E) + 70, C–D = A–D + A–E + 30 + C–D + C–E = 190, D–E = A–E + 30 + C–E.</p>"
+ "<p>B–C must beat 190 but can't pass 200, and is a multiple of 10, so B–C = 200 and A–C + A–D + A–E = 130.</p>"
+ "<p>On D–E, 4/7 came from before C (A–E + 30), so D–E is a multiple of 70: 70 or 140. With 70, A–E = 10, but A–E must be more than B–E = 30. So D–E = 140, A–E = 50, C–E = 60, A–C = 50, A–D = 30, and from C–D: C–D tickets = 20.</p>")
+_trh1 = "Write the seats on each segment as a sum of the tickets that cross it. Which segment must be the full 200?"
+_trh2 = "\"Four-sevenths of D–E came from before C\" means D–E is a multiple of 7. Combine that with multiples of 10."
+_tf = ("<p>Imports of X from Y = (tariff X charged on Y) ÷ (X's tariff % on Y). Read the money from the bar chart and the % from the radar chart.</p>")
+_tfh1 = "Import value = tariff collected ÷ tariff percentage. Which chart gives which?"
+_tfh2 = "Exports of X to Y are the same as imports of Y from X, so use Y's tariff and Y's percentage."
+H.update({
+1: dict(ans="D", hints=[_trh1, _trh2], why=_tr + "<p>D–E has 140 of 200 seats: <b>70%</b>.</p>"),
+2: dict(ans="50", hints=[_trh1, _trh2], why=_tr + "<p>A–E = <b>50</b>.</p>"),
+3: dict(ans="80", hints=[_trh1, _trh2], why=_tr + "<p>From C: C–D 20 + C–E 60 = <b>80</b>.</p>"),
+4: dict(ans="40", hints=[_trh1, _trh2], why=_tr + "<p>To C: A–C 50 + B–C 40 = 90. To D: A–D 30 + C–D 20 = 50. Difference <b>40</b>.</p>"),
+5: dict(ans="60", hints=[_trh1, _trh2], why=_tr + "<p>One-segment tickets: A–B 0, B–C 40, C–D 20, D–E 0. Total <b>60</b>.</p>"),
+15: dict(ans="A", hints=[_tfh1, _tfh2], why=_tf + "<p>Japan's exports to India = India's imports from Japan = 3.5 ÷ 50% = <b>7.0 billion USD</b>. (1.75 comes from multiplying instead of dividing.)</p>"),
+16: dict(ans="A", hints=[_tfh1, _tfh2], why=_tf + "<p>A: US from France = 6 ÷ 20% = <b>30</b>. B: Japan from France = 3 ÷ 30% = 10. C: UK from Japan = 6 ÷ 40% = 15. D: France from India = 6.5 ÷ 40% ≈ 16. A is highest.</p>"),
+17: dict(ans="A", hints=[_tfh1, _tfh2], why=_tf + "<p>India's exports to UK = UK's imports from India = 3 ÷ 30% = 10. India's imports from UK = 5 ÷ 20% = 25. 10 − 25 = −15: a <b>deficit of 15 billion USD</b>.</p>"),
+18: dict(ans="D", hints=[_tfh1, _tfh2], why=_tf + "<p>France: exports to US = 6 ÷ 20% = 30; imports from US = 5.5 ÷ 30% ≈ 18.3. Surplus. UK: exports to US = 3 ÷ 30% = 10; imports from US = 2.5 ÷ 20% = 12.5. Deficit. So <b>only France</b>.</p>"),
+})

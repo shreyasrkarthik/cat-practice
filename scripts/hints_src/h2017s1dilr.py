@@ -53,3 +53,27 @@ H = {
 31: dict(ans="B", hints=["How many projects does each employee work on, and how many points does each kind give per person?", "A challenging team has 5 people, a standard one has 4."], why=_pts + "<p><b>150</b> is not on the list.</p>"),
 32: dict(ans="D", hints=["185 = 125 + 15k. How many challenging projects did Aneek work on?", "If Aneek missed T2's challenging month, where could Aneek be in month 2, and can Aneek reach T3 in month 3 from there?"], why=_pts + "<p>185 means 4 challenging projects: Aneek was in Ti in month i for four months. Option D skips T2 in month 2.</p><p>Aneek is in T1 in month 1. Not going to T2 means Aneek is in T1 or T5 in month 2. Between months 2 and 3, T1 and T5 only swap people with each other, and T3 only takes people from T2. So Aneek can't be in T3 in month 3. <b>D can't be true.</b></p>"),
 }
+
+# ---- DI ----
+_rk = ("<p>Kids: NE 7500, W 12500, S 10000. All regions: G 16500, P 11100, O 2400.</p>"
+ "<p>S: G = 60% = 6000. Kids of mothers who finished school are all in school, so S's O kids are just the 300 in the table. S's P = 10000 − 6000 − 300 = 3700.</p>"
+ "<p>NE: the table's 300 O kids are half, so NE has 600 O kids. W's O = 2400 − 600 − 300 = 1500. G in NE = G in W = (16500 − 6000) ÷ 2 = 5250.</p>")
+_rkh1 = "Start with the region sizes: 50 kids per village. Then work out S fully, using fact 1."
+_rkh2 = "The table only counts kids whose mothers dropped out. Subtract it from the region totals to get the other group."
+_rk2 = ("<p>Follow-up: out-of-school kids were NE 600, W 1500, S 300, and 1200 of the 2400 joined G. The only split that gives 1200 is NE 25% (150), W 50% (750), S 100% (300).</p>")
+_rkh3 = "Try the three rates (25%, 100%, 50%) on NE 600, W 1500 and S 300 in every order. Which order gives 1200 joining G?"
+_sh = ("<p>Score counts: S has three 3s, three 4s, two 5s, one 6, one 7. F has two 1s, one 2, two 3s, one 4, three 5s, one 7. C has one 1, three 2s, four 3s, one 4, one 6.</p>"
+ "<p>Amda and Calla match and total 7. S can't be below 3, so both have S 3, and F + C = 4 with a value both can share: F 1, C 3.</p>"
+ "<p>Zooma's 17 must include S 6: either (6, 7, 4) or (6, 5, 6). Each happy country holds exactly one of the top scores (S 7, F 7, C 6).</p>")
+_shh1 = "Amda and Calla have identical scores, so each value they use must appear at least twice in the chart."
+_shh2 = "A happy country holds one top score (S 7, F 7 or C 6) and none of the others. What's the most Zooma can make with each?"
+H.update({
+17: dict(ans="A", hints=[_rkh1, _rkh2], why=_rk + "<p>S's P share: 3700 ÷ 10000 = <b>37%</b>.</p>"),
+18: dict(ans="A", hints=[_rkh1, "W's O kids = all O kids minus NE's and S's. Then remove the table's W figure."], why=_rk + "<p>W's O kids of mothers who finished school: 1500 − 1200 = <b>300</b>.</p>"),
+19: dict(ans="A", hints=[_rkh2, _rkh3], why=_rk + _rk2 + "<p>G in W now: 5250 + 750 = <b>6000</b>.</p>"),
+20: dict(ans="A", hints=[_rkh2, _rkh3], why=_rk + _rk2 + "<p>In S, all 300 O kids (all with mothers who dropped out) joined G. So that group's G = 5100 + 300 = 5400 of 5700 = <b>94.7%</b>.</p>"),
+21: dict(ans="1", hints=[_shh1, "What's the lowest S anyone can have?"], why=_sh + "<p>Amda's F is <b>1</b>.</p>"),
+22: dict(ans="6", hints=[_shh1, _shh2], why=_sh + "<p>With S 7, the best is 7 + 5 + 4 = 16, short of 17. Both ways to reach 17 use S 6. Zooma's S is <b>6</b>.</p>"),
+23: dict(ans="B", hints=[_shh2, "Zooma takes the only S 6. Try both versions of Zooma and find the best equal score for the other two happy countries."], why=_sh + "<p>If Zooma is (6, 7, 4): the S 7 country gets at most 7 + 5 + 3 = 15. If Zooma is (6, 5, 6): the S 7 and F 7 countries each reach 16 only with C 4, and there's just one C 4, so a tie tops out at 15. Maximum <b>15</b>.</p>"),
+24: dict(ans="B", hints=[_shh2, "The five non-happy countries share the leftover scores and must each stay at 13 or below. What's left after the five known countries?"], why=_sh + "<p>Either way Benga 16 and Delma 15 work out, the leftover scores are S 3, 4, 4, 4, 5; F 2, 3, 3, 4, 5; C 1, 2, 2, 2, 3. A 13 needs 5 + 5 + 3, and there's only one 5 in each list, so at most <b>1</b> country scores 13.</p>"),
+})

@@ -45,3 +45,18 @@ H = {
 20: dict(ans="D", hints=[_hh1, "A 15-lakh price with road value 0 needs a base of 12."],
  why=_house + "<p>So Block YY's one parking space is at <b>E1</b>.</p>"),
 }
+
+# ---- DI ----
+_gw = ("<p>Row totals (mean × 5): R1 17, R2 11, R3 19, R4 14, R5 17. Worker totals: Ullas 11, Vasu 19, Waman 17, Xavier 18, Yusuf 13.</p>"
+ "<p>Each worker's five ratings are fixed by mean, median, mode and range: Ullas {1,2,2,2,4}, Vasu {2,4,4,4,5}, Waman {1,2,4,5,5}, Xavier {1,3,4,5,5}, Yusuf {1,1,3,4,4}.</p>"
+ "<p>R2 (total 11) already has Waman 1, Xavier 5, Yusuf 1, so Ullas + Vasu = 4: both 2. R3 (19) has 5, 5, 1, so Ullas + Vasu = 8: both 4. That fixes Ullas and Vasu. R1, R4 and R5 totals then leave only one way to place the rest.</p>"
+ "<p>R1: U1 V4 W5 X3 Y4. R2: U2 V2 W1 X5 Y1. R3: U4 V4 W5 X5 Y1. R4: U2 V4 W4 X1 Y3. R5: U2 V5 W2 X4 Y4.</p>")
+_gwh1 = "Use each worker's mean, median, mode and range to find their five ratings as a set, before working out who gave which."
+_gwh2 = "R2's total is only 11, and three of its five ratings are given. What must Ullas and Vasu get from R2?"
+H.update({
+6: dict(ans="0", hints=[_gwh1, _gwh2], why=_gw + "<p>Every rating is fixed: <b>0</b> unknown.</p>"),
+7: dict(ans="0", hints=[_gwh1, _gwh2], why=_gw + "<p>R2 gave 2, 2, 1, 5, 1: <b>no</b> 4s.</p>"),
+8: dict(ans="3", hints=[_gwh1, _gwh2], why=_gw + "<p>R1 gave Xavier <b>3</b>.</p>"),
+9: dict(ans="4", hints=[_gwh1, _gwh2], why=_gw + "<p>R3's ratings sorted: 1, 4, 4, 5, 5. Median <b>4</b>.</p>"),
+10: dict(ans="D", hints=[_gwh1, "Once the grid is filled, sort each restaurant's five ratings and count how many equal the middle one."], why=_gw + "<p>R1 1,3,4,4,5 (two 4s), R2 1,1,2,2,5 (two 2s), R3 1,4,4,5,5 (two 4s), R4 1,2,3,4,4 (one 3), R5 2,2,4,4,5 (two 4s). Only <b>R4</b>.</p>"),
+})

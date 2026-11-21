@@ -26,3 +26,51 @@ H = {
 27: dict(ans="A", hints=[_lch1, _lch2], why=_lc + "<p>Only 8 (T, P, K) and 9 (C, O) are complete: <b>2</b> digits.</p>"),
 28: dict(ans="A", hints=[_lch2, "S is 5, and 5 already has S and E. How many spaces does it have left?"], why=_lc + "<p>S, U and V would need two more spaces at digit 5, which has only one left. So <b>S, U, V</b> can't share a digit. X, Y, Z fit at 2; S, E, Z at 5; I, B, M at 3.</p>"),
 }
+
+# ---- DI ----
+_ap = ("<p>Old = x, Middle = 2x, Young = 4x, so 7x = 140: Old 20, Middle 40, Young 80. Of 55 Economy, Young bought 38, so Old + Middle Economy = 17.</p>"
+ "<p>Let P be all Platinum and e be Old's Gold (= Old's Economy). Young: P/2 Platinum, so Young Gold = 80 − 38 − P/2 = 42 − P/2. Old Platinum = 20 − 2e. Old + Middle Platinum = P/2, so Middle Platinum = P/2 − 20 + 2e. Middle Economy = 17 − e, and Middle Gold = 43 − e − P/2.</p>")
+_aph1 = "Find how many Old, Middle-aged and Young visitors there were first."
+_aph2 = "Let e be Old's Gold (which equals Old's Economy) and P the total Platinum. Write every other cell in terms of e and P."
+_cx = ("<p>Let the base rates be 100k, 120k and k for A, B and C. Buying is at 0.95 × base, selling at 1.1 × base.</p>"
+ "<p>A sold: 88000 ÷ 110k = 800/k units. B sales bring in 88000 × 9/5 = 158400, so B sold = 158400 ÷ 132k = 1200/k units. B's stock didn't change, so B bought = 1200/k units, costing 1200/k × 114k = 136800. A purchases cost 136800 × 5/3 = 228000, so A bought = 228000 ÷ 95k = 2400/k units.</p>"
+ "<p>A's stock rose by 800: 2400/k − 800/k = 800, so k = 2. Base rates: A 200, B 240, C 2.</p>")
+_cxh1 = "Call the base rates 100k, 120k and k. Every amount of L is units × rate, with buying at 0.95 and selling at 1.1 of base."
+_cxh2 = "B's stock didn't change, so B bought as many units as it sold. A's stock went up by 800."
+_ca = ("<p>Comparing pairs that differ in only a few grades: Education Aid beats A-one only if I weighs more than P. Best Ed beats Cosmopolitan only if R weighs more than I. High Q beats Best Ed only if 2 × I beats F + R.</p>"
+ "<p>So R > I > P, and only F 0.1, R 0.4, P 0.2, I 0.3 also passes 2I > F + R (0.6 > 0.5).</p>"
+ "<p>Scores: A-one 47, Best Ed 26, Cosmopolitan 25, Dominance 27, Education Aid 48, Fancy 45, Global 13, High Q 27.</p>")
+_cah1 = "Compare Education Aid with A-one: their grades differ only in P and I. What does that tell you about those two weights?"
+_cah2 = "Do the same with Best Ed vs Cosmopolitan, then High Q vs Best Ed."
+_sp = ("<p>Per 100 phones in 2016, revenue (share × price, in thousands): Azra 600, Bysi 500, Cxqi 450, Dipq 500. Profit: Azra 60, Bysi 150, Cxqi 180, Dipq 150.</p>")
+_sp7 = ("<p>2017: 140 phones for every 100 in 2016. Shares move by percentage points: Cxqi 30%, Azra 35%, Bysi 20%, Dipq 15%. Cxqi's price is 18,000 and its profitability 20%.</p>"
+ "<p>2017 profit (per 100 of 2016 volume): Azra 35 × 15 × 0.1 × 1.4 = 73.5, Bysi 20 × 20 × 0.3 × 1.4 = 168, Cxqi 30 × 18 × 0.2 × 1.4 = 151.2, Dipq 15 × 25 × 0.3 × 1.4 = 157.5.</p>")
+_sph1 = "Revenue is share × price; profit is revenue × profitability. Work per 100 phones."
+_sph2 = "The share changes are in percentage points: Cxqi goes from 15% to 30%, and the others drop 5 points each. Total sales are 1.4 times 2016."
+_pc = ("<p>Sort the 23 boxes by where their centres fall. Promising: three blank boxes (areas 2, 9, 3). Blockbuster: Alfa 3 and 6, Charlie 6 and 2, Bravo 6, blanks 4 and 9. Doubtful: Alfa 4 and 1, Bravo 6 and 2, blanks 9, 1 and 6. No-hope: Alfa 2 and 4, Bravo 4, blanks 1, 1 and 3.</p>"
+ "<p>Doubtful: Alfa gets two blanks and Bravo one (fact 4), and Bravo out-earns Alfa (fact 5) only if Bravo takes the 9. Blockbuster: Alfa and Bravo tie on count (fact 1), so one blank goes to Bravo and one to Charlie, and Charlie out-earns Bravo (fact 6) only if Charlie takes the 9. No-hope: counts Bravo < Charlie < Alfa means Charlie gets two blanks and Alfa one, and Bravo = Charlie in revenue gives Charlie the 1 and 3. Promising: one each, and Alfa = Charlie in total revenue gives Charlie 9, Alfa 2, Bravo 3.</p>"
+ "<p>Revenue by category: Promising 14, Blockbuster 36 (Alfa 9, Bravo 10, Charlie 17), Doubtful 29 (Alfa 12, Bravo 17), No-hope 15 (Alfa 7, Bravo 4, Charlie 4). Bravo has 1 No-hope, 3 Doubtful, 1 Promising, 2 Blockbuster, total revenue 34.</p>")
+_pch1 = "Put each box in its category by its centre, and note its area by counting grid squares. Which boxes are blank in each category?"
+_pch2 = "Start with Doubtful: Charlie has none there, and Alfa has one more than Bravo. Then use the revenue facts to decide which blank goes where."
+H.update({
+17: dict(ans="A", hints=[_aph1, _aph2], why=_ap + "<p>Old Platinum = Middle Platinum = P/4, and Old Platinum = 20 − 2e is even. So P/4 is even: P = 32 (36 gives 9, which is odd). <b>32</b>.</p>"),
+18: dict(ans="0", hints=[_aph1, _aph2], why=_ap + "<p>Old Gold > Young Gold means e > 42 − P/2. Middle Gold ≥ 0 means P/2 ≤ 43 − e. The only whole number between is P/2 = 43 − e, so Middle Gold = <b>0</b>.</p>"),
+19: dict(ans="3", hints=[_aph1, _aph2], why=_ap + "<p>Old Platinum = Middle Economy: 20 − 2e = 17 − e, so e = <b>3</b>.</p>"),
+20: dict(ans="C", hints=[_aph2, "Old and Middle Economy add to 17. Can they be equal?"], why=_ap + "<p>Old and Middle Economy add to 17, an odd number, so they <b>can't be equal</b>. A works with P = 42, B with e = 1, D with P = 32.</p>"),
+29: dict(ans="1200", hints=[_cxh1, _cxh2], why=_cx + "<p>A bought = 2400/2 = <b>1200</b> units.</p>"),
+30: dict(ans="D", hints=[_cxh1, "For C, the L spent buying equals the L received selling, and the stock rose by 3000 units."], why=_cx + "<p>C: bought × 1.9 = sold × 2.2, and bought − sold = 3000. So sold × (2.2/1.9 − 1) = 3000, sold = <b>19000</b>.</p>"),
+31: dict(ans="240", hints=[_cxh1, _cxh2], why=_cx + "<p>B's base rate is 120 × 2 = <b>240</b>.</p>"),
+32: dict(ans="D", hints=[_cxh1, _cxh2], why=_cx + "<p>C's buying rate = 0.95 × 2 = <b>1.90</b>. (2.20 is the selling rate.)</p>"),
+1: dict(ans="B", hints=[_cah1, _cah2], why=_ca + "<p>Faculty quality weighs <b>0.1</b>.</p>"),
+2: dict(ans="3", hints=[_cah1, _cah2], why=_ca + "<p>45 or more: A-one, Education Aid and Fancy. <b>3</b> colleges.</p>"),
+3: dict(ans="48", hints=[_cah1, _cah2], why=_ca + "<p>Education Aid scores 5 + 20 + 8 + 15 = <b>48</b>.</p>"),
+4: dict(ans="D", hints=[_cah1, _cah2], why=_ca + "<p>The scores jump from 27 to 45, so <b>none</b> fall from 31 to 40.</p>"),
+5: dict(ans="C", hints=[_sph1, "Multiply share by price for each brand."], why=_sp + "<p><b>Azra</b> has the highest revenue.</p>"),
+6: dict(ans="D", hints=[_sph1, "Multiply revenue by profitability."], why=_sp + "<p><b>Cxqi</b> has the highest profit.</p>"),
+7: dict(ans="B", hints=[_sph1, _sph2], why=_sp + _sp7 + "<p><b>Bysi</b> has the highest 2017 profit.</p>"),
+8: dict(ans="D", hints=[_sph1, _sph2], why=_sp + _sp7 + "<p>Up: Azra (60 → 73.5), Bysi (150 → 168), Dipq (150 → 157.5). Cxqi fell (180 → 151.2). <b>Azra, Bysi, Dipq</b>.</p>"),
+13: dict(ans="D", hints=[_pch1, _pch2], why=_pc + "<p><b>Blockbuster</b> has the most revenue.</p>"),
+14: dict(ans="B", hints=[_pch1, _pch2], why=_pc + "<p>Bravo: <b>1, 3, 1, 2</b>.</p>"),
+15: dict(ans="B", hints=[_pch1, _pch2], why=_pc + "<p>Bravo's Blockbuster revenue (10) is less than Alfa's Doubtful revenue (12), so <b>B is wrong</b>. A (9 = 9), C (15 < 29) and D (4 = 4) hold.</p>"),
+16: dict(ans="C", hints=[_pch1, _pch2], why=_pc + "<p>With the smallest box = 1 crore, Bravo's revenue is about <b>34</b> crore.</p>"),
+})

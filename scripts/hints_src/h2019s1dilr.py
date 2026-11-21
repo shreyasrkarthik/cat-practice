@@ -48,3 +48,21 @@ H = {
 31: dict(ans="C", hints=[_dh1, _dh2], why=_dn + "<p>The 6th performance was <b>Badal's</b>.</p>"),
 32: dict(ans="C", hints=[_dh1, _dh2], why=_dn + "<p>The <b>first and sixth</b> are both Badal's.</p>"),
 }
+
+# ---- DI ----
+_cr = ("<p>Reading the bars (IPC, SLL, Other): Delhi 64, 35, 44. Karnataka 16, 49, 26. Goa 27, 34, 19. Tamil Nadu 2, 25, 36. Maharashtra 16, 34, 6. Haryana 3, 28, 7. Kerala 8, 15, 11. Puducherry about 0, 1, 30. Telangana 4, 15, 6. West Bengal 0, 520, 0.</p>"
+ "<p>The ranks given in the table match these readings (e.g. SLL: West Bengal 1, Karnataka 2, Goa and Maharashtra tied 4). Any state outside the top ten has a total below Telangana's 25.</p>")
+_crh1 = "Read the three parts of each bar. Then check them against the ranks the table does give."
+_crh2 = "A state outside the top ten has fewer than 25 cases in total. Could it beat any of the numbers you need?"
+_vd = ("<p>Approximate scores from the chart (Reliability, Reach, Quality, Features, Customer Service, Cost): V1 52, 85, 70, 40, about 52, 75. V2 40, 65, 70, 45, 40, 80. V3 75, 70, 60, 55, about 48, 90. V4 30, 40, 40, 90, 70, 70. V5 60, 75, 50, 70, 40, 50.</p>")
+_vdh1 = "Read each vendor's six scores off the chart, using the given ones (V1 Reliability 52, V2 Features 45, V3 Cost 90) to calibrate."
+H.update({
+9: dict(ans="5", hints=[_crh1, _crh2], why=_cr + "<p>IPC: Delhi 64, Goa 27, Karnataka and Maharashtra 16 are above Kerala's 8. Telangana (4) is ranked 6, so only five states beat 4, and Kerala is one of them. Kerala's rank is <b>5</b>.</p>"),
+10: dict(ans="C", hints=[_crh1, "West Bengal's 520 cases are all SLL. Is it in the top two?"], why=_cr + "<p>The top two by total are West Bengal (520) and Delhi (143). IPC: 0 + 64 = 64. SLL: 520 + 35 = 555. 64 : 555 is about <b>1 : 9</b>.</p>"),
+11: dict(ans="B", hints=[_crh1, _crh2], why=_cr + "<p>Other crimes: Delhi 44, Tamil Nadu 36, Puducherry about 30, then Karnataka 26. No state outside the list can reach 30. So Tamil Nadu is 2 and Puducherry 3: <b>both are true</b>.</p>"),
+12: dict(ans="5", hints=[_crh1, _crh2], why=_cr + "<p>Delhi: IPC 1 (64 is the most), SLL 3 (behind West Bengal and Karnataka), Other 1 (44 is the most). Sum = <b>5</b>.</p>"),
+13: dict(ans="D", hints=[_vdh1, "For each option, sort the five scores and take the middle one."], why=_vd + "<p>Medians: Cost 75, Quality 60, Reliability 52, Customer Service about 48. <b>Customer Service</b> is least.</p>"),
+14: dict(ans="B", hints=[_vdh1, "Add each vendor's six scores. The highest total has the highest average."], why=_vd + "<p>Totals: V3 about 398, V1 about 374, V2 340, V4 340, V5 345. <b>Vendor 3</b> leads.</p>"),
+15: dict(ans="D", hints=[_vdh1, "For each aspect, mark the top two vendors, then count the marks."], why=_vd + "<p>Top two: Reliability V3, V5. Reach V1, V5. Quality V1, V2. Features V4, V5. Customer Service V4, V1. Cost V3, V2. V1 and V5 are top two 3 times each, more than anyone else: <b>Vendor 1 and Vendor 5</b>.</p>"),
+16: dict(ans="D", hints=[_vdh1, "Knock out any vendor that's 4th or 5th on even one aspect."], why=_vd + "<p>V1 is 5th on Features, V2 is 4th on Reliability, V4 is last on Reliability, V5 is last on Cost. V3 is in the top three everywhere (it's 3rd on Reach, Quality, Features and Customer Service). <b>Only Vendor 3</b>.</p>"),
+})
