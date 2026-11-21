@@ -1,0 +1,178 @@
+{
+ "1": {
+  "ans": "A",
+  "hints": [
+   "Factor the top and the bottom: (x + 5)(x − 3) over (x − 9)(x + 2).",
+   "Mark −5, −2, 3 and 9 on a number line. The sign flips each time you cross one of them. Start from the right, where everything is positive."
+  ],
+  "why": "<p>f = (x + 5)(x − 3)/((x − 9)(x + 2)). Right of 9: positive. Between 3 and 9: negative. Between −2 and 3: positive. Between −5 and −2: negative. Left of −5: positive.</p><p>So f < 0 exactly when <b>−5 < x < −2 or 3 < x < 9</b>. The other options pick the positive stretches.</p>"
+ },
+ "2": {
+  "ans": "D",
+  "hints": [
+   "|n − a| < |n − b| means n is closer to a than to b, so it's on a's side of their midpoint.",
+   "Closer to 60 than 100 means n < 80. Closer to 100 than 20 means n > 60."
+  ],
+  "why": "<p>Both conditions together: 60 < n < 80.</p><p>That's n = 61 to 79, which is <b>19</b> integers. 21 and 20 count one or both ends wrongly.</p>"
+ },
+ "3": {
+  "ans": "A",
+  "hints": [
+   "Let the small box weigh w and cost p. The large box costs 2p and weighs W.",
+   "The large box's price per gram is 0.88 times the small box's: 2p/W = 0.88 × p/w."
+  ],
+  "why": "<p>W/w = 2/0.88 = 2.2727.</p><p>So the large box is about 127.3% heavier. Nearest is <b>127</b>.</p>"
+ },
+ "4": {
+  "ans": "99",
+  "hints": [
+   "Turn every term into log(1 + x) and log(1 − x): log√y = ½ log y, and log(1/√(1 − x<sup>2</sup>)) = −½ log(1 − x) − ½ log(1 + x).",
+   "The log(1 + x) terms cancel. Solve for log(1 − x)."
+  ],
+  "why": "<p>5 − ½ log(1 + x) + 2 log(1 − x) = −½ log(1 − x) − ½ log(1 + x).</p><p>So 5 + 2.5 log(1 − x) = 0, which gives log(1 − x) = −2 and 1 − x = 0.01.</p><p>x = 0.99, so 100x = <b>99</b>.</p>"
+ },
+ "5": {
+  "ans": "B",
+  "hints": [
+   "Set the first two baskets equal to find the price of an apple in mangoes.",
+   "Then set the second and third equal to find an orange in mangoes. Price any basket in mangoes."
+  ],
+  "why": "<p>2a + 4o + 6m = a + 4o + 8m gives a = 2m. a + 4o + 8m = 8o + 7m gives 4o = a + m = 3m.</p><p>Basket 2 = 2m + 3m + 8m = <b>13</b> mangoes.</p>"
+ },
+ "6": {
+  "ans": "C",
+  "hints": [
+   "Equilateral triangle area = (√3/4)s<sup>2</sup>. A regular hexagon is six of those triangles.",
+   "So 6 × (√3/4)a<sup>2</sup> = (√3/4) × 144."
+  ],
+  "why": "<p>6a<sup>2</sup> = 144, so a<sup>2</sup> = 24.</p><p>a = <b>2√6</b>. 4√6 is the trap from forgetting to take the square root of 6 properly.</p>"
+ },
+ "7": {
+  "ans": "A",
+  "hints": [
+   "Average price per kg = total money spent ÷ total kg bought, not the average of the five prices.",
+   "Pick a handy amount, like ₹100 for each of the first three months, and ₹50 for each of the last two."
+  ],
+  "why": "<p>Kg bought: 100/10 + 100/20 + 100/25 + 50/25 + 50/50 = 10 + 5 + 4 + 2 + 1 = 22 kg.</p><p>Money spent: 400. 400/22 ≈ 18.2, so <b>18</b>. 26 is the trap: that's the plain average of the five prices.</p>"
+ },
+ "8": {
+  "ans": "C",
+  "hints": [
+   "Complete the square: x<sup>2</sup> − 4x − 13 = (x − 2)<sup>2</sup> − 17.",
+   "Taking the absolute value flips the part below the axis. The flipped vertex sits at height 17. A flat line hits the graph 3 times only at one height."
+  ],
+  "why": "<p>Below 17, the line y = r cuts the W shape 4 times. Above 17, only twice.</p><p>At r = 17 it touches the flipped vertex and cuts the two outer arms: 3 roots. So r = <b>17</b>.</p>"
+ },
+ "9": {
+  "ans": "1000",
+  "hints": [
+   "Let him buy N pens and pay a wage w. Write profit as revenue − 8N − w for each case.",
+   "The two cases differ only in the price of the last N − 100 pens (₹11 vs ₹9), and the profit differs by ₹600."
+  ],
+  "why": "<p>2(N − 100) = 600, so N = 400.</p><p>Profit in the ₹11 case: 1200 + 11 × 300 − 8 × 400 − w = 1300 − w = 300, so w = <b>₹1000</b>.</p>"
+ },
+ "10": {
+  "ans": "A",
+  "hints": [
+   "Each year's interest is the previous year's interest times (1 + r).",
+   "So 1 + r = 866.72/806.25."
+  ],
+  "why": "<p>866.72/806.25 = 1.075, so the rate is 7.5%.</p><p>Fourth year: 866.72 × 1.075 = <b>931.72</b>.</p>"
+ },
+ "11": {
+  "ans": "200",
+  "hints": [
+   "Let v cc be taken out of bottle 1 and replaced from bottle 2. Bottle 1 still holds 800 cc.",
+   "Indigo balance: 33(800 − v) + 17v = 21 × 800."
+  ],
+  "why": "<p>26400 − 16v = 16800, so v = 600 cc.</p><p>Bottle 2 gave away 600 of its 800 cc, so <b>200 cc</b> is left.</p>"
+ },
+ "12": {
+  "ans": "32",
+  "hints": [
+   "Use rates per month: Amar + Akbar = 1/12, Akbar + Anthony = 1/16, Anthony + Amar = 1/24.",
+   "Add all three to get twice the total rate. Then subtract each pair to get each person."
+  ],
+  "why": "<p>Sum = 9/48, so all three together = 3/32 a month.</p><p>Amar = 3/32 − 1/16 = 1/32. Akbar = 3/32 − 1/24 = 5/96. Anthony = 3/32 − 1/12 = 1/96.</p><p>Akbar is fastest and Anthony slowest. Amar, in the middle, takes <b>32 months</b>.</p>"
+ },
+ "13": {
+  "ans": "47",
+  "hints": [
+   "3 and 5 are always in, so you're choosing extras from {1, 2, 4, 6, 7, 8}. You need at least one extra.",
+   "Count all subsets of those 6, take away the ones with both 7 and 8, then take away the empty one."
+  ],
+  "why": "<p>All subsets: 2<sup>6</sup> = 64. With both 7 and 8: 2<sup>4</sup> = 16. That leaves 48.</p><p>Remove the empty set (the group would be just {3, 5}, only two numbers): <b>47</b>.</p>"
+ },
+ "14": {
+  "ans": "120",
+  "hints": [
+   "In a right triangle, inradius = (leg + leg − hypotenuse)/2. Here the inradius is 4.",
+   "With legs 10 and b, the hypotenuse is b + 2. Use Pythagoras."
+  ],
+  "why": "<p>(b + 2)<sup>2</sup> = b<sup>2</sup> + 100 gives 4b + 4 = 100, so b = 24.</p><p>Area = ½ × 10 × 24 = <b>120</b>.</p>"
+ },
+ "15": {
+  "ans": "B",
+  "hints": [
+   "In a regular hexagon, AD is a diameter of the circumcircle. So angle ACD is 90°.",
+   "AC = 2√3 for side 2, and CT = 1. Use Pythagoras in triangle ACT."
+  ],
+  "why": "<p>AT<sup>2</sup> = AC<sup>2</sup> + CT<sup>2</sup> = 12 + 1 = 13.</p><p>AT = <b>√13</b>.</p>"
+ },
+ "16": {
+  "ans": "35",
+  "hints": [
+   "Let A admit a patients and B admit a + 21. Then 200/a = 152/(a + 21) + 3.",
+   "Clear the fractions, or try the TITA-friendly values that divide 200 nicely."
+  ],
+  "why": "<p>200(a + 21) = 152a + 3a(a + 21) gives a<sup>2</sup> + 5a − 1400 = 0, so (a + 40)(a − 35) = 0.</p><p>a = <b>35</b>. Check: 200/35 ≈ 5.71 and 152/56 ≈ 2.71, which differ by 3.</p>"
+ },
+ "17": {
+  "ans": "B",
+  "hints": [
+   "Write N + G = 6S and S + N = 2G.",
+   "From the second, N = 2G − S. Put that into the first to get G in terms of S, then N."
+  ],
+  "why": "<p>3G − S = 6S gives G = 7S/3. Then N = 14S/3 − S = 11S/3.</p><p>Neeta earns most and Sita least: 11/3 : 1 = <b>11 : 3</b>. 7 : 3 is the trap: that's Geeta to Sita.</p>"
+ },
+ "18": {
+  "ans": "A",
+  "hints": [
+   "Group k has 2k − 1 numbers and ends at k<sup>2</sup>.",
+   "Group 15 runs from 14<sup>2</sup> + 1 to 15<sup>2</sup>."
+  ],
+  "why": "<p>That's 197 to 225: 29 numbers, average 211.</p><p>Sum = 29 × 211 = <b>6119</b>.</p>"
+ },
+ "19": {
+  "ans": "D",
+  "hints": [
+   "Call the work 60 units. Anu does 4 a day, Vinu 5 and Manu 3.",
+   "Odd days are Vinu + Anu, even days are Vinu + Manu. Add up a two-day block."
+  ],
+  "why": "<p>Odd day: 9 units. Even day: 8 units. Two days: 17.</p><p>After 6 days: 51 units. Day 7 adds 9, reaching 60. So <b>7 days</b>. 6 is the trap: work isn't finished after 6.</p>"
+ },
+ "20": {
+  "ans": "70",
+  "hints": [
+   "Write the number as abc. Reversed minus original = 99(c − a).",
+   "99(c − a) = 198 means c = a + 2. Count the choices for a and b."
+  ],
+  "why": "<p>a can be 1 to 7 (so c ≤ 9), and b can be anything from 0 to 9.</p><p>7 × 10 = <b>70</b>.</p>"
+ },
+ "21": {
+  "ans": "C",
+  "hints": [
+   "The faster train passes a post in 12 s, so its speed is 160/12 m/s. Convert to km/h.",
+   "Opposite directions: add the speeds. In 14 s they cover both lengths together."
+  ],
+  "why": "<p>Faster: 40/3 m/s = 48 km/h. Slower: 42 km/h = 35/3 m/s. Together: 25 m/s.</p><p>14 × 25 = 350 m = 160 + L, so L = <b>190 m</b>.</p>"
+ },
+ "22": {
+  "ans": "D",
+  "hints": [
+   "Work out the first several terms. The sequence repeats.",
+   "Find how long the cycle is, then reduce 2021 by it."
+  ],
+  "why": "<p>x<sub>0</sub> to x<sub>6</sub>: 1, 2, 3, 2, 1, 1, 2. So it repeats every 5 terms.</p><p>2021 leaves 1 when divided by 5, so x<sub>2021</sub> = x<sub>1</sub> = <b>2</b>.</p>"
+ }
+}

@@ -1,0 +1,90 @@
+H = {
+1: dict(ans="A", hints=[
+ "Write each altitude using side AB and a sine: AD comes from the angle at B, and BE from the angle at A.",
+ "AD = AB sin θ and BE = AB sin 45°."],
+ why="<p>In right triangle ABD, AD = AB sin B = AB sin θ. In right triangle ABE, BE = AB sin A = AB sin 45° = AB/√2.</p><p>AD/BE = sin θ ÷ (1/√2) = <b>√2 sin θ</b>.</p>"),
+2: dict(ans="6", hints=[
+ "Let their times be 5k, 8k and 10k hours. Together they finish in 4 × 8 = 32 hours. Use that to find k.",
+ "Anu and Tanu then work 6 × 6⅔ = 40 hours together. Find what's left and give it to Manu."],
+ why="<p>Combined hourly rate = (1/5 + 1/8 + 1/10)/k = 17/(40k). 32 × 17/(40k) = 1, so k = 13.6.</p><p>Anu + Tanu rate = 13/(40k). In 40 hours they do 13/k = 13/13.6 of the job, leaving 0.6/13.6 = 3/68.</p><p>Manu takes 10k = 136 hours for the whole job, so 136 × 3/68 = <b>6 hours</b>.</p>"),
+3: dict(ans="10", hints=[
+ "A regular n-gon has interior angle 180 − 360/n degrees.",
+ "Let A have n sides and B have 2n. Set the angles' ratio to 3 : 4."],
+ why="<p>4(180 − 360/n) = 3(180 − 180/n) gives 720 − 1440/n = 540 − 540/n, so 180 = 900/n and n = 5.</p><p>B has 2n = <b>10</b> sides (angles 108° and 144°, ratio 3 : 4).</p>"),
+4: dict(ans="B", hints=[
+ "Write a = 6 − 2b, then a + b in terms of b alone.",
+ "Both a and b must be ≥ 0. What range does that allow for b?"],
+ why="<p>a + b = 6 − b, with 0 ≤ b ≤ 3.</p><p>So a + b runs from 3 (b = 3) to 6 (b = 0).</p><p>Average of max and min = (3 + 6)/2 = <b>4.5</b>.</p>"),
+5: dict(ans="B", hints=[
+ "His yearly target is 12 × 550 = 6600.",
+ "Work out what he saves in the first nine months, then what each of the last three months must save."],
+ why="<p>First nine months: 9 × (4000 − 3500) = 4500 saved.</p><p>He needs 2100 more over 3 months, so 700 a month. With expenses of 3700, he must earn 3700 + 700 = <b>4400</b>.</p>"),
+6: dict(ans="A", hints=[
+ "Use numbers: start with 1 litre of syrup in the first container and 1 litre of milk in the second.",
+ "Track syrup and milk separately through each of the three transfers."],
+ why="<p>Transfer 1: 0.5 syrup goes to the second. Second = 0.5 syrup + 1 milk.</p><p>Transfer 2: half of that comes back: 0.25 syrup + 0.5 milk. First = 0.75 syrup + 0.5 milk; second = 0.25 syrup + 0.5 milk.</p><p>Transfer 3: half the first goes over: 0.375 syrup + 0.25 milk. Second = 0.625 syrup + 0.75 milk, which is <b>5 : 6</b>.</p>"),
+7: dict(ans="A", hints=[
+ "On day n the count is multiplied by (1 + 1/n) = (n + 1)/n.",
+ "Multiply these factors from day 2 to day m. Most of them cancel."],
+ why="<p>100 × (3/2)(4/3)(5/4)...((m + 1)/m) = 100 × (m + 1)/2.</p><p>100(m + 1)/2 = 1000 gives m + 1 = 20, so m = <b>19</b>.</p>"),
+8: dict(ans="14", hints=[
+ "Replacing a<sub>1</sub> with 6a<sub>1</sub> adds 5a<sub>1</sub> to the total, which raises the average by 100. So 5a<sub>1</sub> = 100N.",
+ "a<sub>1</sub> is the smallest number, so it can't be more than the average 300. What does that say about N?"],
+ why="<p>a<sub>1</sub> = 20N, and a<sub>1</sub> ≤ 300 gives N ≤ 15.</p><p>N = 1 fails: then a<sub>1</sub> would have to be 300 and 20 at once. Every N from 2 to 15 works (for N = 15, all numbers are 300).</p><p>So there are <b>14</b> possible values of a<sub>1</sub>.</p>"),
+9: dict(ans="A", hints=[
+ "Let the third root be s. Use the sum of products of roots taken two at a time: −r<sup>2</sup> + rs − rs.",
+ "That gives r<sup>2</sup>. Then the product of the roots gives s, and the sum of the roots gives c."],
+ why="<p>Pairwise products: −r<sup>2</sup> = −10/5, so r<sup>2</sup> = 2.</p><p>Product: r × (−r) × s = −9/5, so 2s = 9/5 and s = 9/10.</p><p>Sum: r − r + s = −c/5, so c = −5 × 9/10 = <b>−9/2</b>.</p>"),
+10: dict(ans="12", hints=[
+ "f(x) + f(x − 1) = 1 means f(x) = f(x − 2): f has one value on even numbers and another on odd numbers.",
+ "x<sup>2</sup> − x = x(x − 1) is always even. So f(even) = 5. What is f(odd)?"],
+ why="<p>f(even) = 5, so f(odd) = 1 − 5 = −4.</p><p>f(g(5)) = f(25) = −4 (25 is odd). g(f(5)) = (f(5))<sup>2</sup> = (−4)<sup>2</sup> = 16.</p><p>Sum = <b>12</b>.</p>"),
+11: dict(ans="D", hints=[
+ "The other three split 70% of the votes cast in the ratio 1 : 2 : 3. Work out each share.",
+ "Compare the winner with the second-highest. The gap of 2512 is a percentage of votes cast, and votes cast are 80% of registered voters."],
+ why="<p>The three shares are 70/6, 140/6 and 35 percent. So the winner has 35% and second place has 30%.</p><p>5% of votes cast = 2512, so votes cast = 50240.</p><p>Registered voters = 50240 / 0.8 = <b>62800</b>. 50240 is the trap: that's votes cast.</p>"),
+12: dict(ans="A", hints=[
+ "Count 4-digit, 5-digit and 6-digit numbers separately.",
+ "4-digit numbers above 2000 must start with 2, 3, 4 or 5. Longer numbers just can't start with 0."],
+ why="<p>4-digit: 4 × 5 × 4 × 3 = 240. 5-digit: 5 × 5 × 4 × 3 × 2 = 600. 6-digit: 5 × 5! = 600.</p><p>Total = <b>1440</b>. (2000 itself repeats 0, so there's nothing to remove.)</p>"),
+13: dict(ans="B", hints=[
+ "a! divides b! exactly when a ≤ b.",
+ "So you need n! ≤ 15000. Work out factorials."],
+ why="<p>7! = 5040 ≤ 15000 and 8! = 40320 > 15000.</p><p>The largest n is <b>7</b>.</p>"),
+14: dict(ans="47", hints=[
+ "Let t = log<sub>2</sub> n. Then log<sub>4</sub> n = t/2.",
+ "The fraction is 2(4 − t)/(6 − t). A fraction is negative when the top and bottom have opposite signs."],
+ why="<p>(4 − t) and (6 − t) have opposite signs only when 4 < t < 6.</p><p>So 16 < n < 64, which gives n = 17 to 63.</p><p>That's <b>47</b> integers.</p>"),
+15: dict(ans="24", hints=[
+ "Let c be correct, w wrong, u unattempted. c + w + u = 75 and 3c − w + u = 97.",
+ "Subtracting gives c − w = 11. Unattempted beats attempted means u ≥ 38, so c + w ≤ 37."],
+ why="<p>c = ((c + w) + 11)/2. To make c as big as possible, make c + w as big as allowed: 37.</p><p>Then c = 24, w = 13 and u = 38. Check: 72 − 13 + 38 = 97.</p><p>The maximum is <b>24</b>.</p>"),
+16: dict(ans="C", hints=[
+ "The five marks add to 190. Three are above 32; the fourth is at most 32, and Amit is below the fourth.",
+ "For Amit's highest: give the fourth student 32 and Amit 31, then check the top three can make up the rest. For his lowest: make the top three as big as possible."],
+ why="<p>Highest: Amit 31, fourth 32. The top three need 127, for example 41, 42, 44. That works, so the maximum is 31.</p><p>Lowest: top three = 50 + 49 + 48 = 147, leaving 43. With the fourth at 32, Amit gets 11.</p><p>Difference = 31 − 11 = <b>20</b>.</p>"),
+17: dict(ans="4", hints=[
+ "a<sup>b</sup> = 1 in three ways: a = 1; b = 0 with a ≠ 0; or a = −1 with b even.",
+ "Check each case with whole-number x."],
+ why="<p>Base 1: x<sup>2</sup> = 11, no integer.</p><p>Exponent 0: x<sup>2</sup> − 3x − 10 = 0 gives x = 5 or −2, and the base isn't 0. Two solutions.</p><p>Base −1: x = ±3. The exponent is −10 for x = 3 and 8 for x = −3, both even. Two more. Total = <b>4</b>.</p>"),
+18: dict(ans="20", hints=[
+ "Take a capital of 15, so the fractions are whole: 3, 5 and the rest, 7.",
+ "Add up one year's interest, then see how many years it takes to reach 15."],
+ why="<p>Yearly interest: 3 × 6% + 5 × 10% + 7 × 1% = 0.18 + 0.5 + 0.07 = 0.75.</p><p>That's 5% of 15 a year, so it takes 15 / 0.75 = <b>20 years</b>.</p>"),
+19: dict(ans="C", hints=[
+ "The AP has first term 3 and difference 4, so A<sub>n</sub> = n(2n + 1) = 2n<sup>2</sup> + n.",
+ "Sum 2n<sup>2</sup> + n for n = 1 to 25 using Σn<sup>2</sup> = n(n + 1)(2n + 1)/6."],
+ why="<p>Σn<sup>2</sup> = 25 × 26 × 51/6 = 5525, and Σn = 325.</p><p>ΣA<sub>n</sub> = 2 × 5525 + 325 = 11375.</p><p>Divided by 25: <b>455</b>.</p>"),
+20: dict(ans="C", hints=[
+ "A quadratic that's never negative and is 0 at x = 2 must touch the x-axis there.",
+ "So f(x) = a(x − 2)<sup>2</sup>. Use f(4) = 6 to find a."],
+ why="<p>f(4) = 4a = 6, so a = 1.5.</p><p>f(−2) = 1.5 × 16 = <b>24</b>.</p>"),
+21: dict(ans="D", hints=[
+ "ADC and ABD have the same height from A, so their areas are in the ratio DC : BD. That gives BD = 2 and DC = 1.",
+ "Use the cosine rule in triangle ADC with angle C = 60°."],
+ why="<p>AD<sup>2</sup> = AC<sup>2</sup> + DC<sup>2</sup> − 2 × AC × DC × cos 60° = 9 + 1 − 3 = 7.</p><p>AD = <b>√7</b>.</p>"),
+22: dict(ans="B", hints=[
+ "South and west are at right angles, so the distance apart is the hypotenuse.",
+ "With speeds v and v + 6, after 2 hours: (2v)<sup>2</sup> + (2v + 12)<sup>2</sup> = 60<sup>2</sup>."],
+ why="<p>v<sup>2</sup> + (v + 6)<sup>2</sup> = 900 gives v<sup>2</sup> + 6v − 432 = 0, so (v + 24)(v − 18) = 0.</p><p>The slower ship goes <b>18 km/h</b>. Check: 36 and 48 km after 2 hours, and √(36<sup>2</sup> + 48<sup>2</sup>) = 60.</p>"),
+}
