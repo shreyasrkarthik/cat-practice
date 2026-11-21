@@ -1,0 +1,178 @@
+{
+ "1": {
+  "ans": "A",
+  "hints": [
+   "b and c only ever appear as b − c (−6b + 6c and 3b − 3c). Call u = b − c.",
+   "Now you have two equations in a and u. Solve them, then 2a + 3b − 3c = 2a + 3u."
+  ],
+  "why": "<p>a − 6u = 4 and 6a + 3u = 50. From the first, a = 4 + 6u. Substituting: 24 + 39u = 50, so u = 2/3 and a = 8.</p><p>2a + 3u = 16 + 2 = <b>18</b>.</p>"
+ },
+ "2": {
+  "ans": "A",
+  "hints": [
+   "Multiply the independent choices: sandwich type, bread and size.",
+   "\"Up to 2 of 6 sauces\" means 0, 1 or 2 sauces. Count each case and add."
+  ],
+  "why": "<p>Type × bread × size = 5 × 4 × 2 = 40.</p><p>Sauces: none (1) + one (6) + two (C(6,2) = 15) = 22.</p><p>40 × 22 = <b>880</b>. 840 is what you get if you forget the no-sauce option (40 × 21).</p>"
+ },
+ "3": {
+  "ans": "B",
+  "hints": [
+   "With base 1/4 (less than 1), log > 0 means the argument is between 0 and 1.",
+   "Solve n<sup>2</sup> − 7n + 11 < 1 for integers, then check each one is also above 0."
+  ],
+  "why": "<p>n<sup>2</sup> − 7n + 10 < 0 means 2 < n < 5, so n = 3 or 4.</p><p>But for n = 3 and n = 4, n<sup>2</sup> − 7n + 11 = −1, which is negative, so the log isn't even defined.</p><p>So there are <b>0</b> such integers. The trap is answering 2 without checking the argument is positive.</p>"
+ },
+ "4": {
+  "ans": "A",
+  "hints": [
+   "1 + 3 + ... + 57 has 29 terms and adds up to 29<sup>2</sup> = 841. The sum of the first m odd numbers is m<sup>2</sup>.",
+   "If k is the (m + 1)th odd number, k = 2m + 1, the numbers below k add to m<sup>2</sup> and those above add to 841 − m<sup>2</sup> − k."
+  ],
+  "why": "<p>m<sup>2</sup> = 841 − m<sup>2</sup> − (2m + 1) gives m<sup>2</sup> + m − 420 = 0, so m = 20.</p><p>k = 2 × 20 + 1 = <b>41</b>.</p><p>Check: 1 + ... + 39 = 400, and 43 + ... + 57 = 841 − 400 − 41 = 400.</p>"
+ },
+ "5": {
+  "ans": "6",
+  "hints": [
+   "Remove the square digits 1, 4 and 9. You're left with 2, 3, 5, 6, 7, 8, of which 2, 3, 5, 7 are prime.",
+   "Exactly one prime means the other two digits must be 6 and 8. Make the smallest such number."
+  ],
+  "why": "<p>The digits are {p, 6, 8} with p prime. The smallest choice is p = 2, giving N = 268.</p><p>268 = 2<sup>2</sup> × 67, so it has (2 + 1)(1 + 1) = <b>6</b> factors.</p>"
+ },
+ "6": {
+  "ans": "D",
+  "hints": [
+   "Between 3 years and 6.5 years the amount grows by 5040, so simple interest is 1440 a year. Work back to the principal.",
+   "Half-yearly compounding at r% a year means r/2 % per half-year, for 4 half-years."
+  ],
+  "why": "<p>Principal = 13920 − 3 × 1440 = 9600. Rate = 1440/9600 = 15% a year.</p><p>7.5% per half-year for 4 periods: 1.075<sup>4</sup> ≈ 1.33547.</p><p>Interest ≈ 9600 × 0.33547 ≈ 3220.5, nearest to <b>3221</b>.</p>"
+ },
+ "7": {
+  "ans": "3",
+  "hints": [
+   "If the roots are integers r and s, then r + s = 5 and rs = k.",
+   "k must be non-negative, so list pairs of non-negative integers that add to 5."
+  ],
+  "why": "<p>Pairs (0, 5), (1, 4), (2, 3) give k = 0, 4, 6.</p><p>A negative root would make k negative, which isn't allowed. So there are <b>3</b> values.</p>"
+ },
+ "8": {
+  "ans": "D",
+  "hints": [
+   "The minimum of x<sup>2</sup> + bx + c is at x = −b/2. Find min f and max g in terms of c.",
+   "Set min f > max g. You get a quadratic inequality in c."
+  ],
+  "why": "<p>min f (at x = 2c) = 8c − 4c<sup>2</sup>. max g (at x = 3c/2) = 9c<sup>2</sup>/4 − 2c.</p><p>8c − 4c<sup>2</sup> > 9c<sup>2</sup>/4 − 2c gives 25c<sup>2</sup> < 40c, so 0 < c < 1.6.</p><p>Of the options, only <b>1/2</b> fits.</p>"
+ },
+ "9": {
+  "ans": "D",
+  "hints": [
+   "Track litres of acid, not percentages. Start with 60 litres in 200.",
+   "Replacing with water multiplies acid by what's kept. Replacing with acid keeps 90% of the acid and adds 20 litres."
+  ],
+  "why": "<p>After the first step: 60 × 0.8 = 48 litres.</p><p>Second: 48 × 0.9 + 20 = 63.2 litres. Third: 63.2 × 0.85 = 53.72 litres.</p><p>53.72 / 200 ≈ 26.9%, nearest to <b>27</b>.</p>"
+ },
+ "10": {
+  "ans": "D",
+  "hints": [
+   "Part 1: 960 m/min for 30 min = 28.8 km in 0.5 h, so speed 57.6 km/h. The four times are in AP and add to 3 h.",
+   "Times: 0.5, 0.5 + d, 0.5 + 2d, 0.5 + 3d with 2 + 6d = 3. Then write the total distance with speeds 57.6 + e, 57.6 + 2e, 57.6 + 3e."
+  ],
+  "why": "<p>d = 1/6, so the times are 1/2, 2/3, 5/6 and 1 hour.</p><p>Distance = 57.6 × 3 + e(2/3 + 2 × 5/6 + 3 × 1) = 172.8 + (16/3)e = 224, so e = 9.6.</p><p>Fourth part: speed 57.6 + 28.8 = 86.4 km/h for 1 hour = 86.4 km = <b>86400 m</b>.</p>"
+ },
+ "11": {
+  "ans": "D",
+  "hints": [
+   "Let the shifts be 13k and 9k. After 21 move: (13k − 21)/(9k + 21) = 19/14.",
+   "Then new students join as 3j and 8j. Set the new ratio to 5 : 4."
+  ],
+  "why": "<p>14(13k − 21) = 19(9k + 21) gives 11k = 693, so k = 63. Shifts become 798 and 588.</p><p>(798 + 3j)/(588 + 8j) = 5/4 gives 28j = 252, so j = 9.</p><p>New students = 3j + 8j = 11 × 9 = <b>99</b>.</p>"
+ },
+ "12": {
+  "ans": "C",
+  "hints": [
+   "CP = CQ (both radii), so ∠PQC = 45° makes triangle PCQ right-angled at C. Find PQ and its distance from C.",
+   "The chords are on opposite sides of C. Use the 3 : 2 ratio to place SR, find its length, then use the trapezium area formula."
+  ],
+  "why": "<p>PQ = 6√2 × √2 = 12, at distance 6 from C. So SR is at distance 4 on the other side.</p><p>Half of SR = √(72 − 16) = √56 = 2√14, so SR = 4√14. The chords are 6 + 4 = 10 apart.</p><p>Area = ½ (12 + 4√14) × 10 = 60 + 20√14 = <b>20(3 + √14)</b>.</p>"
+ },
+ "13": {
+  "ans": "B",
+  "hints": [
+   "In parallelogram PQRS, the diagonals bisect each other, so S = P + R − Q.",
+   "Find the line through S and Q, then set y = 0."
+  ],
+  "why": "<p>S = (−3 + 9 − 1, −2 + 1 + 5) = (5, 4).</p><p>Line from Q(1, −5) to S(5, 4) has slope 9/4. At y = 0: x = 1 + 5 × 4/9 = 1 + 20/9.</p><p>a = <b>29/9</b>.</p>"
+ },
+ "14": {
+  "ans": "55",
+  "hints": [
+   "60% of girls stay and 40% of boys stay: 0.6g = 0.4b + 8.",
+   "Both 0.6g and 0.4b must be whole numbers, so g and b are multiples of 5. Try b = 15, 20, 25, ..."
+  ],
+  "why": "<p>3g = 2b + 40, so g = (2b + 40)/3.</p><p>b = 15 and b = 20 don't give whole g. b = 25 gives g = 30, a multiple of 5.</p><p>Minimum total = 25 + 30 = <b>55</b>.</p>"
+ },
+ "15": {
+  "ans": "60",
+  "hints": [
+   "Area of a rhombus = d<sub>1</sub>d<sub>2</sub>/2, so d<sub>1</sub>d<sub>2</sub> = 792.",
+   "The diagonals bisect at right angles, so (d<sub>1</sub>/2)<sup>2</sup> + (d<sub>2</sub>/2)<sup>2</sup> = 36<sup>2</sup>. Then use (d<sub>1</sub> − d<sub>2</sub>)<sup>2</sup>."
+  ],
+  "why": "<p>d<sub>1</sub><sup>2</sup> + d<sub>2</sub><sup>2</sup> = 4 × 1296 = 5184.</p><p>(d<sub>1</sub> − d<sub>2</sub>)<sup>2</sup> = 5184 − 2 × 792 = 3600.</p><p>Difference = <b>60 cm</b>.</p>"
+ },
+ "16": {
+  "ans": "175",
+  "hints": [
+   "13 chairs cost 1300. A 26% profit means the customer pays 1638.",
+   "That 1638 is the discounted price of 12 chairs. The discounted price is 78% of the marked price."
+  ],
+  "why": "<p>Discounted price per chair = 1638 / 12 = 136.5.</p><p>Marked price = 136.5 / 0.78 = <b>175</b>.</p>"
+ },
+ "17": {
+  "ans": "16",
+  "hints": [
+   "Fix y, starting at 3, and count the x that are bigger than y with x + y ≤ 13.",
+   "The count drops by 2 each time y goes up by 1."
+  ],
+  "why": "<p>y = 3: x = 4 to 10 (7). y = 4: x = 5 to 9 (5). y = 5: x = 6 to 8 (3). y = 6: x = 7 (1). y = 7 gives none.</p><p>Total = 7 + 5 + 3 + 1 = <b>16</b>.</p>"
+ },
+ "18": {
+  "ans": "D",
+  "hints": [
+   "Compare the cost of the whole job for each worker: days × daily charge.",
+   "Use the cheapest worker as much as the 10-day limit allows, then the next cheapest for the rest."
+  ],
+  "why": "<p>Whole job: Arun 24 × 2160 = 51840, Varun 21 × 2400 = 50400, Tarun 15 × 2160 = 32400. Tarun is cheapest, but alone he needs 15 days.</p><p>Tarun works all 10 days (2/3 of the job, 21600). Varun, next cheapest, does the last 1/3 in exactly 7 days (16800).</p><p>Total = <b>38400</b>.</p>"
+ },
+ "19": {
+  "ans": "C",
+  "hints": [
+   "Write both sides as powers of 3. The left side is 3 to the power 1<sup>2</sup> + 2<sup>2</sup> + ... + 20<sup>2</sup>.",
+   "The right side is 3 to the power 21 + 22 + ... + (20 + m). Compare the exponents."
+  ],
+  "why": "<p>Left exponent: 20 × 21 × 41/6 = 2870. Right exponent: 20m + m(m + 1)/2.</p><p>m = 57 gives 1140 + 1653 = 2793, too small. m = 58 gives 1160 + 1711 = 2871, just over.</p><p>m = <b>58</b>.</p>"
+ },
+ "20": {
+  "ans": "15",
+  "hints": [
+   "10 shares of A are worth 1200, so B and C together are worth 2100.",
+   "Let B = b shares and C = 20 − b. Write the value equation."
+  ],
+  "why": "<p>90b + 150(20 − b) = 2100 gives 3000 − 60b = 2100, so b = <b>15</b>.</p>"
+ },
+ "21": {
+  "ans": "900",
+  "hints": [
+   "Let gold = G. Bonds = 0.25G and stocks = 100000 − 1.25G.",
+   "Total gain: 10% of stocks + 6% of bonds + 8% of gold = 8200."
+  ],
+  "why": "<p>0.1(100000 − 1.25G) + 0.015G + 0.08G = 8200 gives 10000 − 0.03G = 8200, so G = 60000.</p><p>Bonds = 15000, and 6% of that is <b>900</b>.</p>"
+ },
+ "22": {
+  "ans": "D",
+  "hints": [
+   "Split by [x]. For [x] = 3 you need [x<sup>2</sup>] = 9, that is 9 ≤ x<sup>2</sup> < 10.",
+   "Do the same for [x] = 4 and 5, and check x = 6. Watch the endpoints: √10 itself gives [x<sup>2</sup>] = 10."
+  ],
+  "why": "<p>S = [3, √10) ∪ [4, √17) ∪ [5, √26) ∪ {6}.</p><p>Options B and C include √10, where [x<sup>2</sup>] = 10 ≠ 9, so they fail. Option A includes numbers up to √18, beyond √17.</p><p>Option D, (3, √10) ∪ [5, √26) ∪ {6}, sits inside S, so it's <b>a possible subset</b>.</p>"
+ }
+}

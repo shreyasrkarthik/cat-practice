@@ -129,7 +129,7 @@
   // ---------- stats ----------
   function renderStats() {
     var tot = { all: [0, 0, 0] }, bySec = { Quant: [0, 0, 0], LR: [0, 0, 0], DI: [0, 0, 0] };
-    var timeSum = 0;
+    var timeSum = 0, solved = 0;
     DATA.units.forEach(function (u) {
       u.qs.forEach(function (q) {
         var s = store.q[q.id] || {};
@@ -139,10 +139,11 @@
           if (s.firstCorrect) { bySec[u.section][1]++; tot.all[1]++; }
           timeSum += s.time || 0;
         }
+        if (s.solved || (s.done && s.lastCorrect && !s.peeked && s.solved === undefined)) solved++;
       });
     });
     var a = tot.all, acc = a[0] ? Math.round(100 * a[1] / a[0]) : 0;
-    var html = '<span>Solved <b>' + a[0] + "</b>/" + a[2] + "</span>" +
+    var html = '<span>Solved <b>' + solved + "</b>/" + a[2] + "</span>" +
       '<span>Right first time <b>' + a[1] + "</b> (" + acc + "%)</span>";
     ["Quant", "LR", "DI"].forEach(function (k) {
       var b = bySec[k];
@@ -196,8 +197,9 @@
       qhtml += '<div class="tita"><input id="titaIn" type="text" inputmode="decimal" autocomplete="off" placeholder="Your answer" aria-label="Your answer"></div>';
     }
     qhtml += '<div class="actions"><button class="check" id="checkBtn" disabled>Check</button>' +
-      '<button class="ghost reveal" id="revealBtn">Show answer</button></div>';
-    qhtml += '<div id="result"></div></div>';
+      '<button class="ghost" id="hintBtn">Hint</button>' +
+      '<button class="ghost reveal" id="explainBtn">Explain answer</button></div>';
+    qhtml += '<div id="hints"></div><div id="result"></div></div>';
 
     var body;
     if (u.kind === "set") {
@@ -212,10 +214,19 @@
     document.getElementById("nextBtn").disabled = pos >= seq.length - 1;
 
     wireCard(id, q, s);
-    if (s.done && !s.retrying) showResult(id, q, s, false);
+    paintState(id, q, s);
     startTimer(id);
     renderStats();
   }
+
+  // ---------- answering flow ----------
+  // 1. Answer and press Check. Right or wrong is shown, but a wrong try does not give the answer away.
+  // 2. Hint shows up to two nudges, one at a time.
+  // 3. Explain answer shows the answer and the full working. If it is opened before you get the
+  //    question right, the question is not counted as solved and stays in "My mistakes".
+  function hintsOf(q) { return q.hints || []; }
+  function isLocked(s) { return !!(s.done && s.lastCorrect && !s.retrying); }
+  function showsExplain(s) { return !!(s.explainOpen && !s.retrying); }
 
   function wireCard(id, q, s) {
     var checkBtn = document.getElementById("checkBtn");
@@ -228,40 +239,106 @@
       var inp = document.getElementById("titaIn");
       inp.oninput = function () { checkBtn.disabled = inp.value.trim() === ""; };
       inp.onkeydown = function (e) { if (e.key === "Enter") { e.preventDefault(); doCheck(); } };
-      if (!s.done || s.retrying) setTimeout(function () { try { inp.focus({ preventScroll: true }); } catch (e) {} }, 0);
+      if (!isLocked(s) && !showsExplain(s)) setTimeout(function () { try { inp.focus({ preventScroll: true }); } catch (e) {} }, 0);
     }
     checkBtn.onclick = doCheck;
-    document.getElementById("revealBtn").onclick = reveal;
+    document.getElementById("hintBtn").onclick = nextHint;
+    document.getElementById("explainBtn").onclick = explain;
   }
 
-  // Show the answer without an attempt. Not counted as solved; if you never
-  // answered first, the question shows up in "My mistakes" so you come back to it.
-  function reveal() {
-    var id = seq[pos], q = qIndex[id].q, s = st(id);
-    if (!s.done) { s.revealed = true; save(); }
-    stopTimer();
+  // Draw everything below the options from the saved state of this question.
+  function paintState(id, q, s) {
+    var locked = isLocked(s), expl = showsExplain(s);
+    var hints = hintsOf(q), shown = Math.min(s.hints || 0, hints.length);
+    if (s.retrying) shown = Math.min(shown, hints.length);
+    // options / input
     if (q.type === "MCQ") {
       Array.prototype.forEach.call(document.querySelectorAll(".opt"), function (b) {
-        b.disabled = true; b.classList.remove("picked");
-        if (Number(b.getAttribute("data-i")) === q.ans) b.classList.add("right");
+        var i = Number(b.getAttribute("data-i"));
+        b.classList.remove("picked", "right", "wrong");
+        b.disabled = locked || expl;
+        if ((locked || expl) && i === q.ans) b.classList.add("right");
+        if (locked && !s.lastCorrect && i === s.lastAnswer) b.classList.add("wrong");
+        if (!locked && !expl && s.done && !s.lastCorrect && !s.retrying && i === s.lastAnswer) {
+          b.classList.add("wrong"); b.disabled = true;
+        }
       });
     } else {
-      document.getElementById("titaIn").disabled = true;
+      var inp = document.getElementById("titaIn");
+      inp.disabled = locked || expl;
+      if (locked) inp.value = s.lastAnswer;
+      else if (s.done && !s.lastCorrect && !s.retrying && !expl) inp.value = s.lastAnswer;
     }
-    document.getElementById("checkBtn").style.display = "none";
-    document.getElementById("revealBtn").style.display = "none";
-    document.getElementById("result").innerHTML = '<div class="result shown">The answer is <b>' + render(ansText(q)) + "</b>. " +
-      '<a href="' + esc(q.sol) + '" target="_blank" rel="noopener">See the explanation on 2IIM</a>' +
-      '<div class="sub">' + (s.done ? "" : "Not counted as solved. ") +
-      (q.unverified ? "Answer key not double-checked. " : "") +
-      '<button class="retry" id="retryBtn">Hide and try it</button></div></div>';
-    document.getElementById("retryBtn").onclick = retry;
+    var checkBtn = document.getElementById("checkBtn");
+    checkBtn.style.display = locked || expl ? "none" : "";
+    checkBtn.disabled = true;
+    // hints
+    var hb = document.getElementById("hintBtn");
+    hb.style.display = (!locked && !expl && shown < hints.length) ? "" : "none";
+    hb.textContent = shown === 0 ? "Hint" : "Hint " + (shown + 1) + " of " + hints.length;
+    var hh = "";
+    for (var k = 0; k < shown; k++) hh += '<div class="hint"><span class="hk">Hint ' + (k + 1) + "</span>" + render(hints[k]) + "</div>";
+    document.getElementById("hints").innerHTML = hh;
+    // explain button
+    var eb = document.getElementById("explainBtn");
+    eb.style.display = expl ? "none" : "";
+    eb.textContent = locked ? "Explain why" : "Explain answer";
+    // result line
+    var res = "";
+    if (expl) {
+      res = '<div class="result shown"><div>The answer is <b>' + render(ansText(q)) + "</b>.</div>" +
+        (q.why ? '<div class="why">' + render(q.why) + "</div>" : "") +
+        '<div class="sub"><a href="' + esc(q.sol) + '" target="_blank" rel="noopener">2IIM\'s explanation</a>' +
+        (s.done && s.lastCorrect && !s.peeked ? "" : " · Not counted as solved.") +
+        (q.unverified ? " · Answer key not double-checked." : "") +
+        (s.done && s.lastCorrect ? ' · <button class="retry" id="hideBtn">Hide</button>'
+          : ' · <button class="retry" id="hideBtn">Hide and try again</button>') + "</div></div>";
+    } else if (locked) {
+      res = '<div class="result good"><b>Correct.</b>' +
+        '<div class="sub">Time ' + fmtTime(s.time) +
+        (s.tries > 1 ? " · " + s.tries + " tries" : "") +
+        (s.hints ? " · " + s.hints + (s.hints === 1 ? " hint" : " hints") : "") +
+        (!s.firstCorrect ? " · counted as a miss in your first-try score" : "") +
+        (s.peeked ? " · not counted as solved, you opened the explanation first" : "") +
+        ' · <button class="retry" id="retryBtn">Try again</button></div></div>';
+    } else if (s.done && !s.lastCorrect && !s.retrying) {
+      res = '<div class="result bad"><b>Not quite.</b> ' +
+        (q.type === "MCQ" ? "Pick another option" : "Change your answer") +
+        (shown < hints.length ? ", or take a hint." : ", or open the explanation.") + "</div>";
+    }
+    document.getElementById("result").innerHTML = res;
+    var rb = document.getElementById("retryBtn"); if (rb) rb.onclick = retry;
+    var hd = document.getElementById("hideBtn"); if (hd) hd.onclick = hideExplain;
+  }
+
+  function nextHint() {
+    var id = seq[pos], q = qIndex[id].q, s = st(id);
+    s.hints = Math.min((s.hints || 0) + 1, hintsOf(q).length); save();
+    paintState(id, q, s);
+  }
+
+  function explain() {
+    var id = seq[pos], q = qIndex[id].q, s = st(id);
+    if (!(s.done && s.lastCorrect)) { s.revealed = true; s.peeked = true; }
+    s.explainOpen = true; s.retrying = false; save();
+    stopTimer();
+    paintState(id, q, s);
     renderStats();
   }
 
+  function hideExplain() {
+    var id = seq[pos], q = qIndex[id].q, s = st(id);
+    s.explainOpen = false;
+    if (!(s.done && s.lastCorrect)) s.retrying = true;
+    save();
+    show();
+  }
+
   function pick(i) {
-    var id = seq[pos], s = st(id);
-    if (s.done && !s.retrying) return;
+    var id = seq[pos], q = qIndex[id].q, s = st(id);
+    if (isLocked(s) || showsExplain(s)) return;
+    var b0 = document.querySelector('.opt[data-i="' + i + '"]');
+    if (!b0 || b0.disabled) return;
     picked = i;
     Array.prototype.forEach.call(document.querySelectorAll(".opt"), function (b) {
       b.classList.toggle("picked", Number(b.getAttribute("data-i")) === i);
@@ -271,7 +348,7 @@
 
   function doCheck() {
     var id = seq[pos], info = qIndex[id], q = info.q, s = st(id);
-    if (s.done && !s.retrying) return;
+    if (isLocked(s) || showsExplain(s)) return;
     var given, ok;
     if (q.type === "MCQ") {
       if (picked === null) return;
@@ -281,50 +358,23 @@
       if (v.trim() === "") return;
       given = v.trim(); ok = titaMatch(v, q.ans);
     }
-    stopTimer();
     if (!s.done) { s.firstCorrect = ok; s.firstAnswer = given; }
     s.done = true; s.retrying = false;
     s.lastCorrect = ok; s.lastAnswer = given;
     s.tries = (s.tries || 0) + 1;
+    if (ok) { stopTimer(); if (!s.peeked) s.solved = true; }
     save();
-    showResult(id, q, s, true);
+    picked = null;
+    paintState(id, q, s);
+    if (!ok && q.type === "TITA") { var inp = document.getElementById("titaIn"); try { inp.focus(); inp.select(); } catch (e) {} }
     renderStats();
-  }
-
-  function showResult(id, q, s, fresh) {
-    var ok = s.lastCorrect;
-    if (q.type === "MCQ") {
-      Array.prototype.forEach.call(document.querySelectorAll(".opt"), function (b) {
-        var i = Number(b.getAttribute("data-i"));
-        b.disabled = true;
-        b.classList.remove("picked");
-        if (i === q.ans) b.classList.add("right");
-        else if (i === s.lastAnswer) b.classList.add("wrong");
-      });
-    } else {
-      var inp = document.getElementById("titaIn");
-      inp.value = s.lastAnswer; inp.disabled = true;
-    }
-    document.getElementById("checkBtn").style.display = "none";
-    document.getElementById("revealBtn").style.display = "none";
-    var html = '<div class="result ' + (ok ? "good" : "bad") + '">' +
-      (ok ? "<b>Correct.</b> " : "<b>Not quite.</b> The answer is <b>" + render(ansText(q)) + "</b>. ") +
-      '<a href="' + esc(q.sol) + '" target="_blank" rel="noopener">See the explanation on 2IIM</a>' +
-      '<div class="sub">Time ' + fmtTime(s.time) +
-      (s.tries > 1 ? " · " + s.tries + " tries" : "") +
-      (!s.firstCorrect && ok ? " · counted as a miss in your first-try score" : "") +
-      (q.unverified ? " · answer key not double-checked" : "") +
-      ' · <button class="retry" id="retryBtn">Try again</button></div></div>';
-    document.getElementById("result").innerHTML = html;
-    document.getElementById("retryBtn").onclick = retry;
   }
 
   function retry() {
     var s = st(seq[pos]);
-    s.retrying = true; save();
+    s.retrying = true; s.explainOpen = false; save();
     show();
   }
-
   function toggleFlag() {
     var id = seq[pos], s = st(id);
     s.flag = !s.flag; save();

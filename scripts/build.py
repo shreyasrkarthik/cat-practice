@@ -42,6 +42,29 @@ def answer(q, key):
     return key["val"], key["unsure"], ""
 
 units, problems = [], []
+HINTS = os.path.join(ROOT, "data", "hints")
+hint_stats = {"with": 0, "without": 0, "mismatch": []}
+
+def load_hints(name):
+    p = os.path.join(HINTS, name)
+    if not os.path.exists(p):
+        return {}
+    return {int(k): v for k, v in json.load(open(p, encoding="utf-8")).items()}
+
+def add_hints(qd, h, label):
+    """Attach hints/why. h["ans"] is the answer my own working reached; it must match the key."""
+    if not h:
+        hint_stats["without"] += 1
+        return
+    hint_stats["with"] += 1
+    qd["hints"] = h.get("hints", [])
+    qd["why"] = h.get("why", "")
+    mine = str(h.get("ans", "")).strip()
+    if qd["ans"] is None:
+        return
+    key = "ABCD"[qd["ans"]] if qd["type"] == "MCQ" else str(qd["ans"])
+    if mine != key:
+        hint_stats["mismatch"].append(f"{label}: my working gives {mine!r}, key says {key!r}")
 for path in sorted(glob.glob(os.path.join(RAW, "*.json"))):
     d = json.load(open(path, encoding="utf-8"))
     tag = f'{d["year"]}-s{d["slot"]}'
@@ -49,6 +72,7 @@ for path in sorted(glob.glob(os.path.join(RAW, "*.json"))):
     if d["section"] == "QA":
         pat = d.get("solPattern", "quants-question-{n}.shtml")
         keys = qa_keys.get(tag, {})
+        hints = load_hints(f"{tag}-qa.json")
         for it in d["items"]:
             ans, unv, note = answer(it, keys.get(it["n"]))
             if note: problems.append(f"{tag} QA q{it['n']}: {note}")
@@ -60,9 +84,11 @@ for path in sorted(glob.glob(os.path.join(RAW, "*.json"))):
                         "ans": ans, "unverified": unv,
                         "sol": base + pat.format(n=it["n"])}],
                 "source": base})
+            add_hints(units[-1]["qs"][0], hints.get(it["n"]), f"{tag} QA q{it['n']}")
     else:
         pat = d.get("solPattern", "dilr-question-{n}.shtml")
         keys = lr_keys.get(tag, {})
+        hints = load_hints(f"{tag}-dilr.json")
         for si, s in enumerate(d["sets"]):
             qs = []
             for q in s["qs"]:
@@ -71,6 +97,7 @@ for path in sorted(glob.glob(os.path.join(RAW, "*.json"))):
                 qs.append({"id": f"{tag}-lr-{q['n']}", "n": q["n"], "type": q["type"], "q": q["q"],
                            "opts": q.get("opts"), "ans": ans, "unverified": unv,
                            "sol": (lambda s: s if s.startswith("http") else base + s)(q.get("sol") or pat.format(n=q["n"]))})
+                add_hints(qs[-1], hints.get(q["n"]), f"{tag} DILR q{q['n']}")
             units.append({"id": f"{tag}-set-{si+1}", "kind": "set", "section": s["section"],
                           "year": d["year"], "slot": d["slot"], "title": s["title"],
                           "passage": s["passage"], "qs": qs, "source": base})
@@ -88,6 +115,8 @@ print("by section:", dict(Counter(s for s, _, _ in qs)))
 print("by year:", dict(sorted(Counter(y for _, y, _ in qs).items())))
 print("unverified:", sum(1 for *_, q in qs if q["unverified"]))
 print("problems:", problems)
+print("with hints:", hint_stats["with"], "without:", hint_stats["without"])
+print("hint answer mismatches:", hint_stats["mismatch"])
 
 # Stamp index.html so browsers fetch the new data.js/app.js/styles.css instead of a cached copy.
 import hashlib

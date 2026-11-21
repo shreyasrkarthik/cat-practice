@@ -1,0 +1,178 @@
+{
+ "1": {
+  "ans": "66",
+  "hints": [
+   "Let apples = 5k and mangoes = 2k. Then oranges = 187 − 7k.",
+   "After the sales: apples 5k − 75, oranges (187 − 7k)/2. Set their ratio to 3 : 2 and solve for k."
+  ],
+  "why": "<p>2 × (5k − 75) = 3 × (187 − 7k)/2 gives 20k − 300 = 561 − 21k, so 41k = 861 and k = 21.</p><p>So 105 apples, 42 mangoes and 40 oranges.</p><p>Unsold: 105 − 75 = 30 apples, 42 − 26 = 16 mangoes, 20 oranges. Total = <b>66</b>.</p>"
+ },
+ "2": {
+  "ans": "C",
+  "hints": [
+   "Square (a + b√n) and match it with 29 − 12√5: a<sup>2</sup> + nb<sup>2</sup> = 29 and 2ab√n = −12√5.",
+   "√n doesn't have to be √5. It can be √20 = 2√5 or √45 = 3√5. Try each, and remember the root must be positive."
+  ],
+  "why": "<p>With n = 5: ab = −6 and a<sup>2</sup> + 5b<sup>2</sup> = 29 gives a = −3, b = 2 (−3 + 2√5 is positive). a + b + n = 4.</p><p>With n = 20: 2ab × 2√5 = −12√5, so ab = −3, and a<sup>2</sup> + 20b<sup>2</sup> = 29 gives a = −3, b = 1. −3 + √20 ≈ 1.47 is positive. a + b + n = <b>18</b>.</p><p>n = 45 would need a<sup>2</sup> + 45b<sup>2</sup> = 29, which is impossible. So the maximum is 18. Most people stop at n = 5 and pick 4.</p>"
+ },
+ "3": {
+  "ans": "B",
+  "hints": [
+   "Write everything as powers of 2: 8 = 2<sup>3</sup> and 32768 = 2<sup>15</sup>.",
+   "Compare exponents to get an equation in k. It turns into a quadratic; you only need the sum of its roots."
+  ],
+  "why": "<p>Left side: 2<sup>−3k</sup> × 2<sup>−5</sup>. Right side: 2<sup>−3</sup> × 2<sup>−15/k</sup>.</p><p>So 3k + 5 = 3 + 15/k, which gives 3k<sup>2</sup> + 2k − 15 = 0. Its discriminant is positive, so both roots are real.</p><p>Sum of roots = <b>−2/3</b>.</p>"
+ },
+ "4": {
+  "ans": "B",
+  "hints": [
+   "Complete the squares in x<sup>2</sup> + y<sup>2</sup> + 4(x − y). The inequality describes a ring between two circles.",
+   "Check where the line y = x + 4 goes relative to the centre of those circles."
+  ],
+  "why": "<p>x<sup>2</sup> + y<sup>2</sup> + 4x − 4y = (x + 2)<sup>2</sup> + (y − 2)<sup>2</sup> − 8. So the condition is 4 ≤ (x + 2)<sup>2</sup> + (y − 2)<sup>2</sup> ≤ 8: a ring around (−2, 2) with radii 2 and 2√2.</p><p>The line y = x + 4 passes through the centre (−2, 2), so it cuts the ring exactly in half.</p><p>Area = (8π − 4π)/2 = <b>2π</b>.</p>"
+ },
+ "5": {
+  "ans": "6",
+  "hints": [
+   "Measure the task in hours of work: Renu needs 15 × 4 = 60 hours, Seema needs 8 × 5 = 40 hours.",
+   "Renu works 2 hours a day for 2d days; Seema works 4 hours a day for d days. Add the fractions of the task."
+  ],
+  "why": "<p>Renu does 2 × 2d / 60 = d/15 of the task. Seema does 4 × d / 40 = d/10.</p><p>d/15 + d/10 = d/6 = 1, so d = 6.</p><p>Seema works <b>6 days</b> (Renu works 12).</p>"
+ },
+ "6": {
+  "ans": "C",
+  "hints": [
+   "Take incomes as 8, 6 and 5. Work out the rent from the percentages.",
+   "Rent stays the same in October. Find the new total income and divide."
+  ],
+  "why": "<p>Rent = 15% of 8 + 12% of 6 + 18% of 5 = 1.2 + 0.72 + 0.9 = 2.82.</p><p>October incomes: 8.8 + 6.72 + 5.75 = 21.27.</p><p>2.82 / 21.27 ≈ 13.26%, so <b>13.26</b>.</p>"
+ },
+ "7": {
+  "ans": "A",
+  "hints": [
+   "You're counting onto functions: every element of B must be hit. Start with all functions from 6 elements to 3: 3<sup>6</sup>.",
+   "Subtract the functions that miss at least one element of B, using inclusion and exclusion."
+  ],
+  "why": "<p>All functions: 3<sup>6</sup> = 729.</p><p>Missing a given element: 2<sup>6</sup> = 64, and there are 3 choices, so subtract 192. Missing two given elements: 1 function each, 3 choices, so add 3 back.</p><p>729 − 192 + 3 = <b>540</b>.</p>"
+ },
+ "8": {
+  "ans": "A",
+  "hints": [
+   "Subtract the second equation from the first to get rid of a.",
+   "Complete the square in x, y and z separately. The result is a sum of squares equal to 0."
+  ],
+  "why": "<p>4(x<sup>2</sup> + y<sup>2</sup> + z<sup>2</sup>) − 4(x − y − z) = −3, so (2x − 1)<sup>2</sup> + (2y + 1)<sup>2</sup> + (2z + 1)<sup>2</sup> = 0.</p><p>Each square is 0: x = 1/2, y = −1/2, z = −1/2.</p><p>a = 4(1/4 + 1/4 + 1/4) = <b>3</b>.</p>"
+ },
+ "9": {
+  "ans": "31",
+  "hints": [
+   "Each digit appears in each place 3! = 6 times across all 24 numbers.",
+   "So the sum is 6 × 1111 × (a + b + c + d) = 6666 × (a + b + c + d). Which multiple of 6666 lies between 153311 and 153319?"
+  ],
+  "why": "<p>6666 × 23 = 153318. So a + b + c + d = 23 and n = 8.</p><p>a + b + c + d + n = 23 + 8 = <b>31</b>.</p>"
+ },
+ "10": {
+  "ans": "D",
+  "hints": [
+   "10 leaves remainder 3 when divided by 7, so look at powers of 3 mod 7.",
+   "Powers of 3 mod 7 repeat every 6. Find 100 mod 6."
+  ],
+  "why": "<p>3<sup>6</sup> ≡ 1 (mod 7). 100 = 6 × 16 + 4, so 10<sup>100</sup> ≡ 3<sup>4</sup> = 81 (mod 7).</p><p>81 = 77 + 4, so the remainder is <b>4</b>.</p>"
+ },
+ "11": {
+  "ans": "15",
+  "hints": [
+   "Call the numbers a, b, c, d. Turn each sentence into an equation, starting with (a + b)/2 = a + 1.",
+   "Express b, c and d in terms of a. The answer won't depend on a."
+  ],
+  "why": "<p>(a + b)/2 = a + 1 gives b = a + 2.</p><p>The average of three is (a + 1) + 2 = a + 3, so a + b + c = 3a + 9 and c = a + 7.</p><p>The average of four is a + 6, so the sum is 4a + 24 and d = a + 15. Largest − smallest = d − a = <b>15</b>.</p>"
+ },
+ "12": {
+  "ans": "C",
+  "hints": [
+   "Interest from bank A after n years = 500n. The maturity amount is 10000 + 500n.",
+   "Bank B pays 6% for 5 years on that amount, so 30% of it. Set the interest ratio to 10 : 13."
+  ],
+  "why": "<p>500n / (0.3 × (10000 + 500n)) = 10/13.</p><p>6500n = 30000 + 1500n, so 5000n = 30000.</p><p>n = <b>6 years</b>.</p>"
+ },
+ "13": {
+  "ans": "D",
+  "hints": [
+   "Work backwards from the end, when nothing is left.",
+   "If a customer takes half plus 3 and leaves r, then the amount before was 2(r + 3)."
+  ],
+  "why": "<p>Before the third customer: 2(0 + 3) = 6 kg.</p><p>Before the second: 2(6 + 3) = 18 kg. Before the first: 2(18 + 3) = <b>42 kg</b>.</p><p>18 is the trap: it's the amount before the second customer.</p>"
+ },
+ "14": {
+  "ans": "B",
+  "hints": [
+   "Write every term as a + (k − 1)d and expand 2x<sub>6</sub> + 2x<sub>9</sub> = x<sub>11</sub> + x<sub>13</sub>.",
+   "That gives a relation between a and d. Use x<sub>5</sub> = −4 to find d."
+  ],
+  "why": "<p>2(a + 5d) + 2(a + 8d) = (a + 10d) + (a + 12d) gives 4a + 26d = 2a + 22d, so a = −2d.</p><p>x<sub>5</sub> = a + 4d = 2d = −4, so d = −2 and a = 4.</p><p>x<sub>100</sub> = 4 + 99 × (−2) = <b>−194</b>.</p>"
+ },
+ "15": {
+  "ans": "C",
+  "hints": [
+   "They meet after 1.5 hours on a 45 km road, so their speeds add up to 30 km/h.",
+   "Anil's time 45/a is 1.25 hours more than Sunil's 45/s. Try the options for a."
+  ],
+  "why": "<p>Try a = 12: then s = 18. Anil takes 45/12 = 3.75 h, Sunil 45/18 = 2.5 h.</p><p>The difference is 1.25 h = 1 hour 15 minutes, as required.</p><p>Anil's speed = <b>12 km/h</b>.</p>"
+ },
+ "16": {
+  "ans": "B",
+  "hints": [
+   "The box's space diagonal is the sphere's diameter. Diagonal<sup>2</sup> = l<sup>2</sup> + w<sup>2</sup> + h<sup>2</sup>.",
+   "(l + w + h)<sup>2</sup> = l<sup>2</sup> + w<sup>2</sup> + h<sup>2</sup> + 2(lw + wh + hl). You know l + w + h and the surface area."
+  ],
+  "why": "<p>12 edges add to 144, so l + w + h = 36. Surface area 846 = 2(lw + wh + hl).</p><p>Diagonal<sup>2</sup> = 36<sup>2</sup> − 846 = 450, so the diameter is 15√2 and the radius is 15√2/2.</p><p>Volume = (4/3)π × (15√2/2)<sup>3</sup> = <b>1125π√2</b>.</p>"
+ },
+ "17": {
+  "ans": "D",
+  "hints": [
+   "Each round keeps one-third of the milk.",
+   "The process happens four times in all, not three."
+  ],
+  "why": "<p>Milk left = (1/3)<sup>4</sup> = 1/81 of the glass. Water = 80/81.</p><p>Milk : water = <b>1 : 80</b>. 1 : 81 is the trap: that's milk to the whole glass. 1 : 26 comes from counting only three rounds.</p>"
+ },
+ "18": {
+  "ans": "217",
+  "hints": [
+   "a<sub>n</sub> = ⌊√n⌋ stays the same between perfect squares. For example, it's 1 for n = 1 to 3.",
+   "Value k appears for n from k<sup>2</sup> to (k + 1)<sup>2</sup> − 1, which is 2k + 1 values. Careful at the end: only 49 and 50 give 7."
+  ],
+  "why": "<p>1 × 3 + 2 × 5 + 3 × 7 + 4 × 9 + 5 × 11 + 6 × 13 = 3 + 10 + 21 + 36 + 55 + 78 = 203.</p><p>Then n = 49 and 50 add 7 + 7 = 14.</p><p>Total = <b>217</b>.</p>"
+ },
+ "19": {
+  "ans": "10",
+  "hints": [
+   "ADE is a right triangle with the right angle at D. Its legs are AD = 45 and DE = 28.",
+   "For a right triangle, the inradius is r = (leg1 + leg2 − hypotenuse)/2."
+  ],
+  "why": "<p>AE = √(45<sup>2</sup> + 28<sup>2</sup>) = √2809 = 53.</p><p>r = (45 + 28 − 53)/2 = <b>10 cm</b>.</p>"
+ },
+ "20": {
+  "ans": "38",
+  "hints": [
+   "Call the common root α. Add the first two equations and compare with the third.",
+   "The mα and nα terms cancel, leaving an equation in α alone."
+  ],
+  "why": "<p>Adding the first two: 2α<sup>2</sup> + (m + n)α + 26 = 0. Subtracting the third: α<sup>2</sup> − 9 = 0, so α = −3 (it's negative).</p><p>Then 9 − 3m + 9 = 0 gives m = 6, and 9 − 3n + 17 = 0 gives n = 26/3.</p><p>2m + 3n = 12 + 26 = <b>38</b>.</p>"
+ },
+ "21": {
+  "ans": "D",
+  "hints": [
+   "Let the cost be c. The original price is 1.4c.",
+   "The new cost is 0.6c and the new price is 1.4c − 5, which is a 50% profit. Set 1.4c − 5 = 1.5 × 0.6c."
+  ],
+  "why": "<p>1.4c − 5 = 0.9c, so 0.5c = 5 and c = 10.</p><p>The original price = 1.4 × 10 = <b>14 rupees</b>. 10 is the trap: that's the cost, not the price.</p>"
+ },
+ "22": {
+  "ans": "31",
+  "hints": [
+   "Change of base: log<sub>100</sub> x = (log<sub>10</sub> x)/2 and log<sub>1000</sub> x = (log<sub>10</sub> x)/3.",
+   "That gives one equation in log<sub>10</sub> x. Then x = 10<sup>log x</sup>."
+  ],
+  "why": "<p>4L + 2L + (8/3)L = 13, where L = log<sub>10</sub> x. So (26/3)L = 13 and L = 1.5.</p><p>x = 10<sup>1.5</sup> = 10√10 ≈ 31.6.</p><p>The greatest integer not exceeding x is <b>31</b>.</p>"
+ }
+}

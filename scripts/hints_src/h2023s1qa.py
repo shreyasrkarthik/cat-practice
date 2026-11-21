@@ -1,0 +1,90 @@
+H = {
+1: dict(ans="D", hints=[
+ "Turn the first log into a power: log<sub>x</sub>(x<sup>2</sup> + 12) = 4 means x<sup>4</sup> = x<sup>2</sup> + 12. Treat it as a quadratic in x<sup>2</sup>.",
+ "3 log<sub>y</sub> x = 1 means log<sub>y</sub> x = 1/3, so x = y<sup>1/3</sup>, which gives y = x<sup>3</sup>."],
+ why="<p>x<sup>4</sup> − x<sup>2</sup> − 12 = 0 factors as (x<sup>2</sup> − 4)(x<sup>2</sup> + 3) = 0, so x<sup>2</sup> = 4 and x = 2 (x must be positive).</p><p>From log<sub>y</sub> x = 1/3, y = x<sup>3</sup> = 8.</p><p>So x + y = 2 + 8 = <b>10</b>.</p>"),
+2: dict(ans="B", hints=[
+ "Move everything to one side. The terms x<sup>2</sup> + 4xy + 4y<sup>2</sup> form a perfect square.",
+ "A sum of two squares is 0 only when each square is 0."],
+ why="<p>Bring −4y(x + y) across: x<sup>2</sup> + 4xy + 4y<sup>2</sup> + (x − 2y − 1)<sup>2</sup> = 0, that is (x + 2y)<sup>2</sup> + (x − 2y − 1)<sup>2</sup> = 0.</p><p>Both squares must be 0, so x − 2y − 1 = 0, which gives x − 2y = <b>1</b>.</p><p>(It also gives x + 2y = 0, so x = 1/2 and y = −1/4. Real numbers exist, so the answer is safe.)</p>"),
+3: dict(ans="D", hints=[
+ "Call the two roots a = √(5x + 9) and b = √(5x − 9). What is a<sup>2</sup> − b<sup>2</sup>?",
+ "a<sup>2</sup> − b<sup>2</sup> = (a + b)(a − b). You know a + b, so you can get a − b, then a."],
+ why="<p>a<sup>2</sup> − b<sup>2</sup> = 18 and a + b = 3(2 + √2), so a − b = 18 / (3(2 + √2)) = 6/(2 + √2) = 3(2 − √2).</p><p>Adding: 2a = 3(2 + √2) + 3(2 − √2) = 12, so a = 6 and 5x + 9 = 36, giving 5x = 27.</p><p>Then 10x + 9 = 54 + 9 = 63, and √63 = <b>3√7</b>.</p>"),
+4: dict(ans="C", hints=[
+ "Write both numbers as prime factors: 168 = 2<sup>3</sup> × 3 × 7 and 1134 = 2 × 3<sup>4</sup> × 7.",
+ "For n, the power of 2 is the bottleneck. For m, look at the power of 3 in 1134<sup>n</sup>."],
+ why="<p>1134<sup>n</sup> = 2<sup>n</sup> × 3<sup>4n</sup> × 7<sup>n</sup>. To contain 2<sup>3</sup>, n must be at least 3, so n = 3.</p><p>1134<sup>3</sup> = 2<sup>3</sup> × 3<sup>12</sup> × 7<sup>3</sup>. For it to divide 168<sup>m</sup> = 2<sup>3m</sup> × 3<sup>m</sup> × 7<sup>m</sup>, we need m ≥ 12 (from the 3s). So m = 12.</p><p>m + n = <b>15</b>. (12 is the trap if you forget to add n.)</p>"),
+5: dict(ans="3", hints=[
+ "Check x = 0 first. Then, for x ≠ 0, write t = |x| and note x<sup>2</sup> = t<sup>2</sup>.",
+ "Dividing by t gives a quadratic 2t<sup>2</sup> − 5t + 2 = 0. Which roots are whole numbers, and how many x does each give?"],
+ why="<p>x = 0 works (both sides are 0).</p><p>For x ≠ 0, with t = |x| > 0: 2t(t<sup>2</sup> + 1) = 5t<sup>2</sup> gives 2t<sup>2</sup> − 5t + 2 = 0, so t = 2 or t = 1/2.</p><p>Only t = 2 is an integer, giving x = 2 and x = −2. With x = 0, there are <b>3</b> integer solutions.</p>"),
+6: dict(ans="6", hints=[
+ "From 2x<sup>2</sup> − 6x + k = 0: α + β = 3 and αβ = k/2.",
+ "Now 3 and k/2 are the roots of x<sup>2</sup> + px + p = 0. Write their sum and product in terms of p."],
+ why="<p>Sum of roots: 3 + k/2 = −p. Product: 3 × k/2 = p.</p><p>Substitute p: 3 + k/2 = −3k/2, so 2k = −3 and k = −3/2. Then p = 3k/2 = −9/4.</p><p>8(k − p) = 8(−3/2 + 9/4) = 8 × 3/4 = <b>6</b>.</p>"),
+7: dict(ans="2", hints=[
+ "Since −2 is a root, (x + 2) is a factor. Divide it out to get a quadratic x<sup>2</sup> + bx + 1.",
+ "Match coefficients to find b in terms of r, then ask when that quadratic has real roots."],
+ why="<p>(x + 2)(x<sup>2</sup> + bx + 1) = x<sup>3</sup> + (b + 2)x<sup>2</sup> + (2b + 1)x + 2. Matching gives b = 2r − 1.</p><p>Real roots need b<sup>2</sup> ≥ 4, so |2r − 1| ≥ 2, meaning r ≥ 1.5 or r ≤ −0.5.</p><p>The smallest non-negative integer r is <b>2</b>. (r = 0 and r = 1 give complex roots.)</p>"),
+8: dict(ans="B", hints=[
+ "In 8 hours at most 110 km/h, she covers at most 880 km. So the starting reading x is at least 26862 − 880 = 25982.",
+ "x must also be a palindrome below 26862. List 5-digit palindromes just above 25982."],
+ why="<p>Five-digit palindromes near here look like 2 a b a 2. The ones just above 25982 are 26062, 26162, and so on.</p><p>To get the greatest speed, take the smallest valid start: 26062. Distance = 26862 − 26062 = 800 km.</p><p>Average speed = 800 / 8 = <b>100 km/h</b>. 110 is impossible because no palindrome sits exactly 880 km below 26862.</p>"),
+9: dict(ans="B", hints=[
+ "Find the angle at 8:48. The hour hand is at 8 × 30 + 48 × 0.5 degrees, the minute hand at 48 × 6 degrees.",
+ "The minute hand is ahead and gains 5.5° per minute on the hour hand. How long until the gap grows by half?"],
+ why="<p>Hour hand: 240 + 24 = 264°. Minute hand: 288°. The gap is 24°.</p><p>A 50% increase means 36°, so the gap must grow by 12°. The minute hand pulls away at 5.5° a minute.</p><p>Time = 12 / 5.5 = <b>24/11 minutes</b>. 36/11 is what you get if you wrongly use 18° for the change.</p>"),
+10: dict(ans="B", hints=[
+ "Let a girl score g and a boy score b. The average gives 4g + 6b = 240, so 2g + 3b = 120. The condition is b ≤ g ≤ 2b.",
+ "The asked total is 2g + 6b = 120 + 3b. Find the range of b, remembering marks need not be integers, only the total."],
+ why="<p>g = (120 − 3b)/2. g ≥ b gives 120 ≥ 5b, so b ≤ 24. g ≤ 2b gives 120 − 3b ≤ 4b, so b ≥ 120/7 ≈ 17.14.</p><p>The total 120 + 3b then runs from about 171.43 up to 192.</p><p>The integers in that range are 172 to 192, which is <b>21</b> values.</p>"),
+11: dict(ans="C", hints=[
+ "If a fraction f is removed and replaced each time, the coffee left after two rounds is (1 − f)<sup>2</sup> of the original.",
+ "Coffee : cocoa = 16 : 9 means coffee is 16/25 of Q. Solve for f, then find cocoa in P and in Q."],
+ why="<p>(1 − f)<sup>2</sup> = 16/25, so 1 − f = 4/5 and f = 1/5.</p><p>After one round, P has cocoa = 1/5 of the jar. Q has cocoa = 9/25.</p><p>Ratio = (5/25) : (9/25) = <b>5 : 9</b>. 4 : 9 is the trap if you take P's coffee share instead.</p>"),
+12: dict(ans="A", hints=[
+ "Start with salaries 5, 6, 7 and apply the first-year hikes.",
+ "In year two, Gita's salary G equals the mean of Sita's, Gita's and Mita's new salaries. Write that as an equation in G."],
+ why="<p>After year one: Sita 6, Gita 7.5, Mita 8.4.</p><p>After year two: Sita 8.4, Mita 10.5, and G = (8.4 + G + 10.5)/3, so 2G = 18.9 and G = 9.45.</p><p>Gita's hike = 9.45 / 7.5 − 1 = 0.26, so <b>26%</b>.</p>"),
+13: dict(ans="B", hints=[
+ "Same selling price at +20% on A and −10% on B means 1.2 × cost(A) = 0.9 × cost(B). Find the ratio of the costs.",
+ "Pick easy numbers: cost(B) = 100. Then work out the new selling price and the profit on A."],
+ why="<p>1.2A = 0.9B, so A : B = 3 : 4. Take B = 100, A = 75.</p><p>New price: 10% profit on B means 110, and A sells at 110 too.</p><p>Profit on A = 110/75 − 1 ≈ 46.7%, nearest to <b>47%</b>.</p>"),
+14: dict(ans="972", hints=[
+ "A classic result: if after meeting they take t<sub>1</sub> and t<sub>2</sub> hours to finish, the time until meeting is √(t<sub>1</sub> × t<sub>2</sub>).",
+ "Find Arvind's total travel time, then multiply by his speed."],
+ why="<p>Why the rule works: before meeting, Arvind covers what Surbhi covers after meeting, and the other way round. That gives speed ratio = t/6 = 24/t, so t<sup>2</sup> = 144 and t = 12 hours.</p><p>Arvind's total time = 12 + 6 = 18 hours.</p><p>Distance = 18 × 54 = <b>972 km</b>.</p>"),
+15: dict(ans="27", hints=[
+ "If daily work amounts are in harmonic progression, the times to finish the job alone are in arithmetic progression.",
+ "Let Amal take a days, so Kamal takes 2a and Sunil, in the middle of the AP, takes 1.5a. Add up the fractions of the job done."],
+ why="<p>Amal does 4/a of the job, Sunil 9/(1.5a) = 6/a, Kamal 16/(2a) = 8/a.</p><p>Together: 18/a = 1, so a = 18.</p><p>Sunil alone takes 1.5 × 18 = <b>27 days</b>.</p>"),
+16: dict(ans="20808", hints=[
+ "4% a year compounded half-yearly is 2% per half-year. Anil's money grows by (1.02)<sup>12</sup>.",
+ "Sunil's grows by (1.02)<sup>10</sup>, then by 1.1 for the final year. Set the two amounts equal."],
+ why="<p>22000 × 1.02<sup>12</sup> = P × 1.02<sup>10</sup> × 1.1.</p><p>Cancel 1.02<sup>10</sup>: P = 22000 × 1.02<sup>2</sup> / 1.1 = 20000 × 1.0404.</p><p>P = <b>20808</b>.</p>"),
+17: dict(ans="C", hints=[
+ "Complete the squares to get the circle's centre and radius.",
+ "If two tangents from a point meet at 60°, each makes 30° with the line to the centre. How far is that point from the centre?"],
+ why="<p>(x + 2)<sup>2</sup> + (y − 3)<sup>2</sup> = 16, so the centre is (−2, 3) and the radius is 4.</p><p>sin 30° = r/d, so d = 8. The locus L is a circle with the same centre and radius 8.</p><p>The line x = 6 is exactly 8 away from the centre, so it touches L at the point level with the centre: <b>(6, 3)</b>.</p>"),
+18: dict(ans="C", hints=[
+ "In a cyclic quadrilateral, the diagonals cut it into pairs of similar triangles: AEB ~ DEC and AED ~ BEC.",
+ "Write AE/BE from one pair and BE/CE from the other, then multiply."],
+ why="<p>From AED ~ BEC: AE/BE = AD/BC = 4/5.</p><p>From AEB ~ DEC: BE/CE = AB/DC = 2.</p><p>AE/CE = (4/5) × 2 = 8/5, so AE : CE = <b>8 : 5</b>. 5 : 8 is the same ratio flipped.</p>"),
+19: dict(ans="2", hints=[
+ "All three triangles share the height AB, so their areas are proportional to BP, BQ and BC.",
+ "Area ABC = 30. Use the 1.5 times condition to find BP, then the AP condition to find BQ."],
+ why="<p>Area ABP = 30/1.5 = 20, so BP = 8 (area = ½ × 5 × BP).</p><p>20, ABQ, 30 in AP means ABQ = 25, so BQ = 10.</p><p>PQ = 10 − 8 = <b>2 cm</b>.</p>"),
+20: dict(ans="C", hints=[
+ "Write a = √x, b = √y, c = √z. The condition is 2/(b + c) = 1/(a + c) + 1/(a + b).",
+ "Cross-multiply and expand both sides. Most terms cancel."],
+ why="<p>2(a + c)(a + b) = (b + c)(2a + b + c).</p><p>Left: 2a<sup>2</sup> + 2ab + 2ac + 2bc. Right: 2ab + 2ac + b<sup>2</sup> + 2bc + c<sup>2</sup>.</p><p>So 2a<sup>2</sup> = b<sup>2</sup> + c<sup>2</sup>, that is 2x = y + z. That means <b>y, x and z are in AP</b>. The √ options look tempting, but the squares are what end up in AP.</p>"),
+21: dict(ans="D", hints=[
+ "Count 1-digit, 2-digit and 3-digit numbers with all digits different. 1000 itself repeats digits.",
+ "For 3-digit numbers: the first digit can't be 0, so 9 choices, then 9, then 8."],
+ why="<p>1-digit: 9. 2-digit: 9 × 9 = 81. 3-digit: 9 × 9 × 8 = 648.</p><p>Total = 9 + 81 + 648 = <b>738</b>. 648 is the trap if you count only 3-digit numbers.</p>"),
+22: dict(ans="19", hints=[
+ "The rule is a<sub>n</sub> = 2a<sub>n−1</sub> + 3. Adding 3 to both sides makes it a pure doubling.",
+ "a<sub>n</sub> + 3 = 2(a<sub>n−1</sub> + 3), and a<sub>1</sub> + 3 = 5. So a<sub>n</sub> = 5 × 2<sup>n−1</sup> − 3."],
+ why="<p>We need 5 × 2<sup>n−1</sup> − 3 > 1,000,000, so 2<sup>n−1</sup> > about 200,001.</p><p>2<sup>17</sup> = 131,072 is too small and 2<sup>18</sup> = 262,144 works, so n − 1 = 18.</p><p>n = <b>19</b>.</p>"),
+}
